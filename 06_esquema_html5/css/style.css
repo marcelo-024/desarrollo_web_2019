@@ -1,0 +1,89 @@
+
+footer {
+
+    color: black
+}
+
+.main_footer {
+
+    background-color: crimson;
+    min-width: 270px;
+
+    text-align: center;
+
+    padding: 1rem;
+}
+.main_header {
+
+    background-color: blueviolet;
+
+    color: blanchedalmond;
+ /* min-height: 20px; */
+
+ padding: 5rem 0rem 5rem 0rem;
+
+ margin-top: 1rem;
+
+/*  font-weight: bolder; */
+
+ font-size: 20px
+}
+.sub_header {
+
+    background-color: crimson ;
+   
+
+    color: blanchedalmond;
+ /* min-height: 20px; */
+  
+ padding: 1rem 0rem 1rem 0rem
+
+}
+
+h1 {
+    font-style: normal
+}
+
+
+
+header {
+ 
+    font-style: italic;
+    text-align: justify;
+    color: black
+}
+
+h2, h3 {
+ 
+font-style: normal;
+font-size: 30px;
+color: black
+
+}
+
+.animales {
+color: blanchedalmond;
+background-color: chocolate;
+
+padding: 1rem 0rem 1rem 0rem
+}
+
+.plantas{
+    color: blanchedalmond;
+
+    background-color: darkcyan;
+    padding: 1rem 0rem 1rem 0rem
+}
+
+.fillgreen {
+
+    background-color: forestgreen
+}
+
+
+.fillred {
+
+background-color: firebrick
+
+
+}
