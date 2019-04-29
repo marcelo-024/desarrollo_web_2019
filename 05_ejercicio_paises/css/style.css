@@ -1,52 +1,79 @@
 
 
 h1{
+font-weight: bolder;
+font-size: 60px;
+font-style: oblique;
 
-font-size: 60px
-
+color: darkblue
 }
- h1{
-
-font-weight: bolder
-
- }
-
- h1{
-
-    font-style: oblique
- }
+ 
 
 h2, h3{
 
 
-font-size: 40px
+font-size: 40px ;
+font-weight: normal;
+color: burlywood;
 
 
 }
 
-h2, h3 {
-
-
-font-weight: normal
-
-
-}
 
 
 strong {
 
-font-weight: normal
+font-weight: normal;
+
 
 }
 
 body  {
 
-background-color: pink
+background-color: pink;
+
+/* text-align: center */
 
 }
 
-img {
+/* 
+USAR ID'S EN CSS NO ESTÁ RECOMENDADO
 
-size: 200px x 200px
+#p01, #p02{
+
+   color: blue
+} */
+
+.Población {
+
+   color:palegreen
+}
+
+a {
+
+color:red;
+font-style: unset
+
+}
+
+.centrar {
+
+text-align: center
+
+}
+
+
+
+/* 
+img {
+text-align: center
+} */
+
+
+
+pre {
+
+text-align: inherit;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 }
