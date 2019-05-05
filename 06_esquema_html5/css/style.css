@@ -1,7 +1,9 @@
 
 footer {
 
-    color: black
+    color: black;
+    margin-top: 2rem;
+    text-align: inherit
 }
 
 .main_footer {
@@ -20,7 +22,7 @@ footer {
     color: blanchedalmond;
  /* min-height: 20px; */
 
- padding: 5rem 0rem 5rem 0rem;
+ padding: 1rem 0rem 1rem -5rem;
 
  margin-top: 1rem;
 
@@ -65,14 +67,14 @@ color: black
 color: blanchedalmond;
 background-color: chocolate;
 
-padding: 1rem 0rem 1rem 0rem
+padding: 0.5rem 0rem 0.5rem 0rem
 }
 
 .plantas{
     color: blanchedalmond;
 
     background-color: darkcyan;
-    padding: 1rem 0rem 1rem 0rem
+    padding: 0.5rem 0rem 0.5rem 0rem
 }
 
 .fillgreen {
@@ -83,8 +85,16 @@ padding: 1rem 0rem 1rem 0rem
 
 .fillred {
 
-background-color: firebrick
+background-color: firebrick;
 
+color: cornsilk
+
+
+}
+
+body {
+
+background-color: darkblue
 
 }
 
