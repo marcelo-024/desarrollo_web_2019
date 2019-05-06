@@ -1,0 +1,27 @@
+{
+  "name": "desarrollo_web_2019",
+  "version": "1.0.0",
+  "description": "Ejercicios del Curso DESARROLLOWEB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelo-024/desarrollo_web_2019.git"
+  },
+  "keywords": [
+    "html5",
+    "web",
+    "CSS"
+  ],
+  "author": "Marcelo Maderuelo Sacido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelo-024/desarrollo_web_2019/issues"
+  },
+  "homepage": "https://github.com/marcelo-024/desarrollo_web_2019#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
