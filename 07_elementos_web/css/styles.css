@@ -9,16 +9,52 @@
     background-color: #50808E;
     /* min-height: 20px; */
     color: #DDD8C4;
-    /*  padding: 0.8rem 0rem 0.5rem 1rem; */
+     padding: 0.8rem 0rem 0.5rem 1rem;
     /* margin-top: 1rem; */
     font-weight: bolder;
     font-size: 20px;
     font-style: italic;
     /*  margin: 10px */
 }
+/* .main_header p {
+
+    padding: 0.5rem;
+} */
+.main_header nav {   text-align: center;
+    /* min-height: 20px; */
+    color: #DDD8C4;
+    padding: 0.5rem 0rem 1rem 0rem;
+    margin-left: -0.5rem;font-weight: bold ;font-size: 1.2rem;
+}
+.main_header nav a {
+    
+    color: #DDD8C4;
+    text-decoration: underline;
+   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    
+}
+
+
+
+.main_header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_header nav li {
+    display: inline-block;
+ 
+}
+
+
 
 .main_wrapper {
-    margin-left: 1.5rem
+    margin-left: 1rem
+}
+
+.back_home a {
+    color: blue;
 }
 
 h3 {
@@ -89,47 +125,15 @@ blockquote footer {
     width: fit-content;
 }
 
-/* ol {
-    
-} */
-
-/* dt */
-
-    {
-    /* text-decoration: underline;
-    font-weight: bold */
 }
 
-/* dd  */
-
-    {
-    /*   display: block;
-    margin-inline-start: 40px;
-border-bottom: 2px solid lightblue;
-   width: inherit */
-    /*    /* padding-top: 0 */
-    /*    margin: 0.5rem; */
-    */
-}
-
-/* dd p  */
-
-    {
-    /*  margin: 0.5rem */
-}
-
-.
-/* dt */
-
-    {
+. .dt {
     float: left;
     clear: left;
     font-weight: bold
 }
 
-/* .dd */
-
-    {
+.dd {
     float: left;
     clear: right;
 }
@@ -139,7 +143,7 @@ border-bottom: 2px solid lightblue;
 }
 
 a {
-    color: #DDD8C4;
+    color: rgb(92, 81, 40);
 }
 
 address {
@@ -147,20 +151,24 @@ address {
 }
 
 .main_footer a {
-    
     font-family: monospace;
-/*     text-decoration: wavy
- */}
- .main_footer p {
+    /*     text-decoration: wavy
+ */
+}
 
-margin: 0;
- }
+.main_footer p {
+    margin: 0;
+}
 
- .verde {
-     color: lime;
-     font-weight: 700;
- }
- abbr {
+.verde {
+    color: lime;
+    font-weight: 700;
+}
 
+abbr {
     text-decoration: none;
- }
+}
+
+.back_home {
+    padding: 1rem 0rem 0.5rem 0rem;
+}

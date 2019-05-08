@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elementos de la web</title>
+    <title>Inicio - Elementos de la Web</title>
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -14,109 +14,126 @@
 
 <body>
 
-    <header class="main_header">
+    <header class="main_header" id="home">
 
         <h1>Etiquetas HTML</h1>
         <p> Clasificación y usos de las etiquetas según el estandar HTML 5.2</p>
 
+        <nav>
+            <ul>
 
+                <li><a href="#section_elements" lang="en">Section Elements</a></li>
+                <li><a href="#grouping" lang="en">Grouping</a></li>
+                <li><a href="#text_level" lang="en">Text-Level Semantics</a></li>
+                <li><a href="./mmedia.html" target="_blank">Multimedia</a></li>
+
+            </ul>
+        </nav>
     </header>
 
     <div class="main_wrapper">
+        <main>
 
-        <p>El estándar <abbr title="HyperText Markup Language"><a href="https://www.w3.org/TR/html52/">HTML</a> </abbr>
-            diferencia inicialmente 3 tipos de etiquetas:
-            <span lang="en">Sections, Grouping content y
-                Text-level semantics</span>
-        </p>
-
-        <section id="section_elements">
-            <header>
-                <h2 lang="en"> Section Elements </h2>
-            </header>
-            <p>Esto trata de elementos de seccionado, que son los que se reflejan en el <strong>esquema</strong>
-                (outline) de la
-                página.
+            <p>El estándar <abbr title="HyperText Markup Language"><a href="https://www.w3.org/TR/html52/">HTML</a>
+                </abbr>
+                diferencia inicialmente 3 tipos de etiquetas:
+                <span lang="en">Sections, Grouping content y
+                    Text-level semantics</span>
             </p>
-            <p>Inicialmenrte estos elementos incluían body y los encabezados (h1...h6)</p>
-            <p>En HTML5 se añaden los nuevos elementos semánticos: </p>
-            <ul>
-                <li>section</li>
-                <li>header</li>
-                <li>footer</li>
-                <li>nav</li>
-                <li>article</li>
-                <li>aside</li>
-            </ul>
 
-            <section id="tag_section">
+            <section id="section_elements">
                 <header>
-                    <h3> La etiqueta Section</h3>
+                    <h2 lang="en"> Section Elements </h2>
                 </header>
+                <p>Esto trata de elementos de seccionado, que son los que se reflejan en el <strong>esquema</strong>
+                    (outline) de la
+                    página.
+                </p>
+                <p>Inicialmenrte estos elementos incluían body y los encabezados (h1...h6)</p>
+                <p>En HTML5 se añaden los nuevos elementos semánticos: </p>
+                <ul>
+                    <li>section</li>
+                    <li>header</li>
+                    <li>footer</li>
+                    <li>nav</li>
+                    <li>article</li>
+                    <li>aside</li>
+                </ul>
 
-                <!--  USO DE ATRIBUTOS CITE Y TITLE PARA RECONOCER LA AUTORIA FRENTE A INDEXADORES
+                <section id="tag_section">
+                    <header>
+                        <h3> La etiqueta Section</h3>
+                    </header>
+
+                    <!--  USO DE ATRIBUTOS CITE Y TITLE PARA RECONOCER LA AUTORIA FRENTE A INDEXADORES
                 
                 ES POSIBLE UTILIZAR TITLE PARA OFRECER INFORMACIÓN AL USUARIO AL PASAR EL MOUSE POR ENCIMA-->
-                <blockquote>
+                    <blockquote>
 
-                    <p> El elemento de HTML section (&lt;section&gt;) representa una
-                        sección genérica de un documento.
-                        Sirve
-                        para determinar qué contenido corresponde a qué parte de un <strong>esquema</strong> . Piensa en
-                        el
-                        esquema como
-                        en el
-                        índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto,
-                        una
-                        etiquéta semántica.</p>
-                    <p> Su funcionalidad principal es estructurar semánticamente un documento a la
-                        hora
-                        de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que
-                        represente
-                        el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar
-                        rápidamente por las distintas partes.
-                    </p>
-
-
-                    <footer>
-                        <cite>
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">Mozilla
-                                Developer</a>
+                        <p> El elemento de HTML section (&lt;section&gt;) representa una
+                            sección genérica de un documento.
+                            Sirve
+                            para determinar qué contenido corresponde a qué parte de un <strong>esquema</strong> .
+                            Piensa en
+                            el
+                            esquema como
+                            en el
+                            índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo
+                            tanto,
+                            una
+                            etiquéta semántica.</p>
+                        <p> Su funcionalidad principal es estructurar semánticamente un documento a la
+                            hora
+                            de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que
+                            represente
+                            el documento en voz, podría exponer al usuario el índice de contenido por niveles para
+                            navegar
+                            rápidamente por las distintas partes.
+                        </p>
 
 
-                        </cite>
-
-                    </footer>
-
-                </blockquote>
-
+                        <footer>
+                            <cite>
+                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">Mozilla
+                                    Developer</a>
 
 
-            </section>
-            <section id="tag_header">
-                <header>
-                    <h3> La etiqueta Header</h3>
+                            </cite>
 
-                </header>
-                <blockquote>
-                    <p>El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de
-                        navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como
-                        un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas
-                        parecidas.
-                    </p>
-                    <footer> <cite>
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">Mozilla
-                                Developer</a>
+                        </footer>
+
+                    </blockquote>
 
 
-                        </cite></footer>
 
-                </blockquote>
+                </section>
+                <section id="tag_header">
+                    <header>
+                        <h3> La etiqueta Header</h3>
 
-            </section>
-            <section id="tag_footer">
-                <header>
-                    <h3>Etiqueta footer</h3>
+                    </header>
+                    <blockquote>
+                        <p>El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de
+                            navegación . Puede contener algunos elementos de encabezado, pero también otros elementos
+                            como
+                            un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o
+                            cosas
+                            parecidas.
+                        </p>
+                        <footer> <cite>
+                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">Mozilla
+                                    Developer</a>
+
+
+                            </cite></footer>
+
+                    </blockquote>
+
+                </section>
+                <section id="tag_footer">
+                    <header>
+                        <h3>Etiqueta footer</h3>
+                    </header>
 
                     <blockquote>
                         <p>
@@ -139,38 +156,42 @@
                     </blockquote>
 
 
-                </header>
-
-            </section>
-            <section id="tag_nav">
-                <header>
-                    <h3>Etiqueta nav</h3>
-                </header>
-                <blockquote>
-                    <p>
-                        La MDN indica que esta etiqueta crea un <em> menú de navegación</em>
-                        (https://developer.mozilla.org).
-                    </p>
-                    <p>El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es proporcionar
-                        enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes
-                        de
-                        secciones de navegación son menús, tablas de contenido e índices.
-                    </p>
-                    <footer><cite>
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav">Mozilla
-                                Developer</a>
 
 
-                        </cite></footer>
+                </section>
+                <section id="tag_nav">
+                    <header>
+                        <h3>Etiqueta nav</h3>
+                    </header>
+                    <blockquote>
+                        <p>
+                            La MDN indica que esta etiqueta crea un <em> menú de navegación</em>
+                            (https://developer.mozilla.org).
+                        </p>
+                        <p>El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es
+                            proporcionar
+                            enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos
+                            comunes
+                            de
+                            secciones de navegación son menús, tablas de contenido e índices.
+                        </p>
+                        <footer><cite>
+                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav">Mozilla
+                                    Developer</a>
 
 
-                </blockquote>
+                            </cite></footer>
 
-            </section>
-            <section id="tag_article">
-                <header>
-                    <h3>Etiqueta article</h3>
 
+                    </blockquote>
+
+                </section>
+                <section id="tag_article">
+                    <header>
+                        <h3>Etiqueta article</h3>
+
+
+                    </header>
                     <blockquote>
                         <p>
                             El Elemento article de HTML (&lt;article&gt;) representa una <em>composición
@@ -192,89 +213,97 @@
 
                     </blockquote>
 
-                </header>
+                </section>
+                <section id="tag_aside">
+                    <header>
+                        <h3>Etiqueta aside</h3>
+                    </header>
+
+                    <blockquote>
+                        <p>
+                            El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en
+                            contenido que está <em>tangencialmente relacionado</em> con el contenido que le rodea, que
+                            podría
+                            ser
+                            considerado independiente de ese contenido.
+                        </p>
+                        <p>Estas secciones son a menudo representadas como barras
+                            laterales o como inserciones y contienen una explicación al margen como una definición de
+                            glosario,
+                            elementos relacionados indirectamente, como publicidad, la biografía del autor, o en
+                            aplicaciones
+                            web, la información de perfil o enlaces a blogs relacionados.
+                        </p>
+                        <footer>
+                            <cite>
+                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/aside">Mozilla
+                                    Developer</a>
+
+
+                            </cite>
+                        </footer>
+
+                    </blockquote>
+
+
+
+                </section>
+                <figure class="image_wrapper">
+                    <!--     USO DE IMAGENES CON ENLACES -->
+                    <a href="https://www.w3.org/TR/html52/sections.html#sections" target="_blank" rel="noreferrer">
+                        <img src="./assets/html5demo1.jpg" alt="HTML5 Semantics Scheme"> </a>
+
+                    <figcaption>
+                        <p> HTML5 Semantics Scheme</p>
+                        <footer>Tomado de
+
+                            <a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">CodePen</a>
+                        </footer>
+
+                    </figcaption>
+
+                </figure>
+                <footer class="back_home">
+                    <nav>
+                        <a href="#home">Volver al inicio</a>
+                    </nav>
+                </footer>
             </section>
-            <section id="tag_aside">
+
+            <section id="grouping">
+
                 <header>
-                    <h3>Etiqueta aside</h3>
+                    <h2 lang="en">Grouping content</h2>
                 </header>
 
-                <blockquote>
+                <p>Son etiquetas que por defecto tienen un display bloque pero no contribullen a la composición del
+                    <strong lang="en">outline</strong> o <strong>esquema</strong> de la página </p>
+
+                <section id="paragraph">
+                    <header>
+                        <h3>Párrafos</h3>
+                        <p>Se pueden crear párrafos con las etiquetas: &lt;p &gt;,&lt;pre&gt; y &lt; blockquote &gt;.
+                        </p>
+                    </header>
+
                     <p>
-                        El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en
-                        contenido que está <em>tangencialmente relacionado</em> con el contenido que le rodea, que
-                        podría
-                        ser
-                        considerado independiente de ese contenido.
+                        Ejemplo de párrafo preformateado:
                     </p>
-                    <p>Estas secciones son a menudo representadas como barras
-                        laterales o como inserciones y contienen una explicación al margen como una definición de
-                        glosario,
-                        elementos relacionados indirectamente, como publicidad, la biografía del autor, o en
-                        aplicaciones
-                        web, la información de perfil o enlaces a blogs relacionados.
-                    </p>
-                    <footer>
-                        <cite>
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/aside">Mozilla
-                                Developer</a>
-
-
-                        </cite>
-                    </footer>
-
-                </blockquote>
-
-
-
-            </section>
-            <figure class="image_wrapper">
-
-                <img src="./assets/html5demo1.jpg" alt="HTML5 Semantics Scheme">
-
-                <figcaption>
-                    <p> HTML5 Semantics Scheme</p>
-                    <footer>Tomado de <a
-                            href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">CodePen</a>
-                    </footer>
-
-                </figcaption>
-            </figure>
-        </section>
-
-        <section id="grouping">
-
-            <header>
-                <h2 lang="en">Grouping content</h2>
-            </header>
-
-            <p>Son etiquetas que por defecto tienen un display bloque pero no contribullen a la composición del <strong
-                    lang="en">outline</strong> o <strong>esquema</strong> de la página </p>
-
-            <section id="paragraph">
-                <header>
-                    <h3>Párrafos</h3>
-                    <p>Se pueden crear párrafos con las etiquetas: &lt;p &gt;,&lt;pre&gt; y &lt; blockquote &gt;.</p>
-                </header>
-
-                <p>
-                    Ejemplo de párrafo preformateado:
-                </p>
-                <pre>
+                    <pre>
                     Esto está dentro 
                     de la etiqueta &lt;pre&gt;.
                 </pre>
-                <p>Es útil para incluir fragmentos de código</p>
-                <pre class="pre_mod">
+                    <p>Es útil para incluir fragmentos de código</p>
+                    <pre class="pre_mod">
                          let x = 25
                          let y = -6
                          let z = x/y
                 </pre>
 
-                <div>
-                    <p>La etiqueta blockquote se utiliza para crear citas literales en bloque, tal como hemos hecho
-                        anteriormente</p>
-                    <pre id="blockquote_example">
+                    <div>
+                        <p>La etiqueta blockquote se utiliza para crear citas literales en bloque, tal como hemos hecho
+                            anteriormente</p>
+                        <pre id="blockquote_example">
           &lt; section id="tag_nav" &gt;
                   &lt; header &gt;
                             
@@ -303,342 +332,381 @@
                         
                  &lt;/section&gt;
                         </pre>
-                </div>
+                    </div>
 
-            </section>
-            <section id="lists">
-                <header>
-                    <h3>Listas</h3>
-                </header>
-                <p>
-                    Existen 3 tipos de listas
-                </p>
-                <dl>
-                    <dt class="dt"> - Desordenadas: </dt>
-                    <dd class="dd">
-                        <p>&lt;ul&gt;</p>
-                    </dd>
-                    <dt class="dt"> - Ordenadas: </dt>
-                    <dd class="dd">
-                        <p>&lt;ol&gt;</p>
-                    </dd>
-                    <dt class="dt">- Listas de definiciones: </dt>
-                    <dd class="dd">
-                        <p> &lt;dl&gt;</p>
-                        <p>Dentro de una lista de definiciones podemos encontrar dos tipos de items: &lt;dt&gt; y
-                            &lt;dd&gt;</p>
-
-
-                    </dd>
-
-                </dl>
-                <div class="clearfix"></div>
+                </section>
+                <section id="lists">
+                    <header>
+                        <h3>Listas</h3>
+                    </header>
+                    <p>
+                        Existen 3 tipos de listas
+                    </p>
+                    <dl>
+                        <dt class="dt"> - Desordenadas: </dt>
+                        <dd class="dd">
+                            <p>&lt;ul&gt;</p>
+                        </dd>
+                        <dt class="dt"> - Ordenadas: </dt>
+                        <dd class="dd">
+                            <p>&lt;ol&gt;</p>
+                        </dd>
+                        <dt class="dt">- Listas de definiciones: </dt>
+                        <dd class="dd">
+                            <p> &lt;dl&gt;</p>
+                            <p>Dentro de una lista de definiciones podemos encontrar dos tipos de items: &lt;dt&gt; y
+                                &lt;dd&gt;</p>
 
 
+                        </dd>
+
+                    </dl>
+                    <div class="clearfix"></div>
 
 
 
 
 
 
-                <p>Ejemplo de lista ordenada</p>
-                <ol>
-                    <li>Lunes</li>
-                    <li>Martes</li>
-                    <li>Miércoles</li>
-                    <li>Jueves</li>
-                    <li>Viernes</li>
-                    <li>Sábado</li>
-                    <li>Domingo</li>
-                </ol>
-                <p>Ejemplo de lista con definiciones largas:</p>
-                <dl>
-                    <dt>Bolígrafo BIC</dt>
-                    <dd>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, amet fugiat? Quae quas,
-                            cupiditate inventore, quis veritatis reprehenderit ducimus, delectus sunt architecto
-                            reiciendis
-                            tempora ab dignissimos voluptates id. Voluptatum, id!</p>
 
-                    </dd>
-                    <dt>Bolígrafo Pilot</dt>
-                    <dd>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quo nesciunt. Magnam
-                            eligendi eos quasi laborum reiciendis quidem accusantium, quis qui, nobis sequi ipsa eaque
-                            eveniet soluta consequatur laudantium molestias.</p>
-                        <p>Ex cum quidem atque ullam, tempore blanditiis quo consequatur vel quisquam maiores
-                            reiciendis. Facilis, laboriosam suscipit, dolorum illum beatae a error atque expedita ut eos
-                            natus nostrum ratione consectetur dolores.</p>
 
-                    </dd>
-                    <dt></dt>
+                    <p>Ejemplo de lista ordenada</p>
+                    <ol>
+                        <li>Lunes</li>
+                        <li>Martes</li>
+                        <li>Miércoles</li>
+                        <li>Jueves</li>
+                        <li>Viernes</li>
+                        <li>Sábado</li>
+                        <li>Domingo</li>
+                    </ol>
+                    <p>Ejemplo de lista con definiciones largas:</p>
+                    <dl>
+                        <dt>Bolígrafo BIC</dt>
+                        <dd>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, amet fugiat? Quae
+                                quas,
+                                cupiditate inventore, quis veritatis reprehenderit ducimus, delectus sunt architecto
+                                reiciendis
+                                tempora ab dignissimos voluptates id. Voluptatum, id!</p>
 
-                </dl>
-                <p>
-                    Hay algunos atributos específicos del elemento lista:
-                </p>
-                <p>Podemos seguir un orden anterior de una lista ordenada mediante el atributo start.</p>
-                <p>Ejemplo del uso del atributo start:</p>
-                <ol start="5">
-                    <li>Item</li>
-                    <li>Item</li>
-                </ol>
+                        </dd>
+                        <dt>Bolígrafo Pilot</dt>
+                        <dd>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quo nesciunt. Magnam
+                                eligendi eos quasi laborum reiciendis quidem accusantium, quis qui, nobis sequi ipsa
+                                eaque
+                                eveniet soluta consequatur laudantium molestias.</p>
+                            <p>Ex cum quidem atque ullam, tempore blanditiis quo consequatur vel quisquam maiores
+                                reiciendis. Facilis, laboriosam suscipit, dolorum illum beatae a error atque expedita ut
+                                eos
+                                natus nostrum ratione consectetur dolores.</p>
 
-                <p>El atributo reversed nos permite invertir el orden de los elementos incluidos en la lista</p>
-                <p>Ejemplo del uso de reversed</p>
-                <ol reversed>
+                        </dd>
 
-                    <!--  ol>li*x{Item $} -->
 
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                    <li>Item 5</li>
-                </ol>
-            </section>
+                    </dl>
+                    <p>
+                        Hay algunos atributos específicos del elemento lista:
+                    </p>
+                    <p>Podemos seguir un orden anterior de una lista ordenada mediante el atributo start.</p>
+                    <p>Ejemplo del uso del atributo start:</p>
+                    <ol start="5">
+                        <li>Item</li>
+                        <li>Item</li>
+                    </ol>
 
-            <section id="neutral_blocks">
-                <header>
-                    <h3>Bloques neutros</h3>
-                </header>
-                <p> La etiqueta &lt;div&gt; no tiene ningún valor semántico.
-                </p>
-                <p> Unida al uso de las clases CSS es el principal elemento de diseño de la Web.
-                    Nos permite configurar el layout o distribución del espacio.
-                </p>
-            </section>
-            <section id="new_block_tags">
-                <header>
-                    <h3>Nuevos bloques de HTML5</h3>
-                </header>
-                <ul>
-                    <li>Adress.</li>
-                    <li>Main.</li>
-                    <li>Figure.</li>
-                </ul>
-                <p>Según aparece en la Web de <a
-                        href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address">MDN</a> ,
-                    <q cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address">el elemento HTML
-                        <strong>&lt;address&gt;</strong> aporta información de contacto.</q>
-                    Normalmente suele ser colocado dentro del elemento &lt;footer&gt; de la sección.
-                </p>
-                <blockquote>
-                    El elemento HTML &lt;main&gt; representa el contenido principal del
+                    <p>El atributo reversed nos permite invertir el orden de los elementos incluidos en la lista</p>
+                    <p>Ejemplo del uso de reversed</p>
+                    <ol reversed>
 
-                    &lt;body&gt; de un documento o aplicación. El área principal del contenido consiste en el
-                    contenido que está <em>directamente relacionado</em> , o se expande sobre el tema central de un
-                    documento o la funcionalidad central de una aplicación. Este contenido debe ser único al
-                    documento, excluyendo cualquier contenido que se repita a través de un conjunto de
-                    documentos como barras laterales, enlaces de navegación, información de derechos de
-                    autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función
-                    principal del documento sea un formulario de búsqueda).
-                    <footer>
-                        <cite>
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main">Mozilla Developer</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-                <p>El elemento figure es un contenedor de imágenes del que hablaremos al referirnos a estas</p>
+                        <!--  ol>li*x{Item $} -->
 
-            </section>
-            <section id="other_tags">
-                <header>
-                    <h3>Otras etiquetas relacionadas con bloques</h3>
-                </header>
-                <p>La etiqueta &lt;hr&gt; crea una línea horizontal</p>
-                <blockquote>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ol>
+                </section>
 
-                    El elemento HTML &lt;hr&gt; representa un cambio de tema entre párrafos (por ejemplo, un cambio de
-                    escena en una historia,
-                    un cambio de tema en una sección). En versiones previas de HTML representaba una línea horizontal.
-                    Aún puede ser representada como una línea horizontal en los navegadores visuales, pero ahora es
-                    definida en términos semánticos y no tanto en términos representativos, por tanto para dibujar una
-                    línea horizontal se debería usar el CSS apropiado.
-
-                    <footer>
-                        <cite>
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/hr">Mozilla Developer</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-                <p>El elemento HTML &lt;br&gt; genera un salto de línea.</p>
-                <blockquote>El elemento HTML line break &lt;br&gt; produce un salto de línea en el texto (retorno de
-                    carro). Es útil
-                    para escribir un poema o una dirección, donde la división de las líneas es significante.
-
-                    No utilices &lt;br&gt; para incrementar el espacio entre líneas de texto; para ello utiliza la
-                    propiedad
-                    margin de CSS o el elemento &lt;p&gt;.
-                    <footer>
-                        <cite>
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/br">Mozilla Developer</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-
-            </section>
-        </section>
-
-        <section id="text-level">
-
-            <header>
-                <h2 lang="en">Text-level semantics</h2>
-            </header>
-            <section>
-                <header>
-                    <h3>
-                        Hiperenlaces
-                    </h3>
-                    <p>La etiqueta &lt;a&gt;</p>
-                    <p>Existen cuatro tipos de url (href)</p>
+                <section id="neutral_blocks">
+                    <header>
+                        <h3>Bloques neutros</h3>
+                    </header>
+                    <p> La etiqueta &lt;div&gt; no tiene ningún valor semántico.
+                    </p>
+                    <p> Unida al uso de las clases CSS es el principal elemento de diseño de la Web.
+                        Nos permite configurar el layout o distribución del espacio.
+                    </p>
+                </section>
+                <section id="new_block_tags">
+                    <header>
+                        <h3>Nuevos bloques de HTML5</h3>
+                    </header>
                     <ul>
-                        <li>Absolutas</li>
-                        <li>Relativas al origen</li>
-                        <li>Relativas al documento</li>
-                        <li>Internas</li>
+                        <li>Adress.</li>
+                        <li>Main.</li>
+                        <li>Figure.</li>
                     </ul>
-                </header>
+                    <p>Según aparece en la Web de <a
+                            href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address">MDN</a> ,
+                        <q cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address">el elemento HTML
+                            <strong>&lt;address&gt;</strong> aporta información de contacto.</q>
+                        Normalmente suele ser colocado dentro del elemento &lt;footer&gt; de la sección.
+                    </p>
+                    <blockquote>
+                        El elemento HTML &lt;main&gt; representa el contenido principal del
+
+                        &lt;body&gt; de un documento o aplicación. El área principal del contenido consiste en el
+                        contenido que está <em>directamente relacionado</em> , o se expande sobre el tema central de un
+                        documento o la funcionalidad central de una aplicación. Este contenido debe ser <em>único</em>
+                        al
+                        documento, excluyendo cualquier contenido que se repita a través de un conjunto de
+                        documentos como barras laterales, enlaces de navegación, información de derechos de
+                        autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función
+                        principal del documento sea un formulario de búsqueda).
+                        <footer>
+                            <cite>
+                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main">Mozilla
+                                    Developer</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
+                    <p>El elemento figure es un contenedor de imágenes del que hablaremos al referirnos a estas</p>
+
+                </section>
+                <section id="other_tags">
+                    <header>
+                        <h3>Otras etiquetas relacionadas con bloques</h3>
+                    </header>
+                    <p>La etiqueta &lt;hr&gt; crea una línea horizontal</p>
+                    <blockquote>
+
+                        El elemento HTML &lt;hr&gt; representa un cambio de tema entre párrafos (por ejemplo, un cambio
+                        de
+                        escena en una historia,
+                        un cambio de tema en una sección). En versiones previas de HTML representaba una línea
+                        horizontal.
+                        Aún puede ser representada como una línea horizontal en los navegadores visuales, pero ahora es
+                        definida en términos semánticos y no tanto en términos representativos, por tanto para dibujar
+                        una
+                        línea horizontal se debería usar el CSS apropiado.
+
+                        <footer>
+                            <cite>
+                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/hr">Mozilla
+                                    Developer</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
+                    <p>El elemento HTML &lt;br&gt; genera un salto de línea.</p>
+                    <blockquote>El elemento HTML line break &lt;br&gt; produce un salto de línea en el texto (retorno de
+                        carro). Es útil
+                        para escribir un poema o una dirección, donde la división de las líneas es significante.
+
+                        No utilices &lt;br&gt; para incrementar el espacio entre líneas de texto; para ello utiliza la
+                        propiedad
+                        margin de CSS o el elemento &lt;p&gt;.
+                        <footer>
+                            <cite>
+                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/br">Mozilla
+                                    Developer</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
+
+                </section>
+                <footer class="back_home">
+                    <nav>
+                        <a href="#home">Volver al inicio</a>
+                    </nav>
+                </footer>
             </section>
-            <section id="neutral_line_elements">
+
+            <section id="text_level">
+
                 <header>
-                    <h3>
-                        Elementos en línea neutros.
-                    </h3>
+                    <h2 lang="en">Text-level semantics</h2>
                 </header>
-                <p>La etiqueta &lt;span&gt; no tiene ningún valor semántico.</p>
-                <p>Por ejemplo, a continuación quiero que la palabra <span class="verde">verde</span> salga de su mismo
-                    color. Para ello debo
-                    delimitar el contenido que quiero modificar dentro de &lt;span&gt; acompañando esta etiqueta de una
-                    clase CSS.</p>
-            </section>
-            <section id="line_semantics">
-                <header>
-                    <h3>
-                        Elementos claramente semánticos.
-                    </h3>
+                <section id="a_tag">
+                    <header>
+                        <h3>
+                            Hiperenlaces
+                        </h3>
+                        <p>La etiqueta &lt;a&gt;</p>
+                        <p>href es el atributo principal de la etiqueta &lt;a&gt;, se utiliza para direccionarnos al
+                            sitio o
+                            documento al que se refiere.</p>
+                        <p>Existen cuatro tipos de url (href)</p>
+                        <ul>
+                            <li>Absolutas</li>
+                            <li>Relativas al origen</li>
+                            <li>Relativas al documento</li>
+                            <li>Internas</li>
+
+                        </ul>
+                        <p>Principales atributos: href,target y rel.</p>
+
+                        <p>target nos permite seleccionar el destino del enlace</p>
+                        <p><a href="https://www.w3schools.com/TAGS/att_a_rel.asp" rel="external">rel</a> nos indica la
+                            relación entre el hiperenlace y el documento actual.</p>
+                    </header>
+                </section>
+                <section id="neutral_line_elements">
+                    <header>
+                        <h3>
+                            Elementos en línea neutros.
+                        </h3>
+                    </header>
+                    <p>La etiqueta &lt;span&gt; no tiene ningún valor semántico.</p>
+                    <p>Por ejemplo, a continuación quiero que la palabra <span class="verde">verde</span> salga de su
+                        mismo
+                        color. Para ello debo
+                        delimitar el contenido que quiero modificar dentro de &lt;span&gt; acompañando esta etiqueta de
+                        una
+                        clase CSS.</p>
+                </section>
+                <section id="line_semantics">
+                    <header>
+                        <h3>
+                            Elementos claramente semánticos.
+                        </h3>
+                        <ul>
+                            <li>strong</li>
+                            <li>em </li>
+                            <li>sub</li>
+                            <li>sup</li>
+                            <li>small</li>
+                        </ul>
+                        <p>&lt;strong&gt; nos permite marcar una palabra o conjunto de ellas como importante.</p>
+                        <p>&lt;em&gt; se utiliza para añadir énfasis linguistico a determinada palabra o frase.</p>
+                        <p>&lt;sup&gt; y &lt;sub&gt; son de utilidad para establecer superíndices y subíndices. Éstos
+                            han de
+                            ser de uso generalizado y reconocibles</p>
+                        <p>Ejemplo del uso de superíndices y subíndices:</p>
+                        <p>H<sub>2</sub>O</p>
+                        <p>E = mc<sup>2</sup></p>
+                        <p> La etiqueta small (&lt;s&gt;) es utilizada para introducir información adicional de carácter
+                            legal o de derechos. Es el equivalente a la llamada letra pequeña de un contrato (ejemplo en
+                            el
+                            adress sitúado en el footer del documento).</p>
+
+                    </header>
+
+                </section>
+                <section id="new_line_semantics">
+                    <header>
+                        <h3>
+                            Elementos con valor semántico nuevo.
+                        </h3>
+                    </header>
                     <ul>
-                        <li>strong</li>
-                        <li>em </li>
-                        <li>sub</li>
-                        <li>sup</li>
-                        <li>small</li>
+                        <li>&lt;b&gt; bold</li>
+                        <li>&lt;i&gt; italics</li>
+                        <li>&lt;u&gt; underline</li>
+                        <li>&lt;s&gt; strike</li>
                     </ul>
-                    <p>&lt;strong&gt; nos permite marcar una palabra o conjunto de ellas como importante.</p>
-                    <p>&lt;em&gt; se utiliza para añadir énfasis linguistico a determinada palabra o frase.</p>
-                    <p>&lt;sup&gt; y &lt;sub&gt; son de utilidad para establecer superíndices y subíndices. Éstos han de
-                        ser de uso generalizado y reconocibles</p>
-                    <p>Ejemplo del uso de superíndices y subíndices:</p>
-                    <p>H<sub>2</sub>O</p>
-                    <p>E = mc<sup>2</sup></p>
-                    <p> La etiqueta small (&lt;s&gt;) es utilizada para introducir información adicional de carácter
-                        legal o de derechos. Es el equivalente a la llamada letra pequeña de un contrato (ejemplo en el
-                        adress sitúado en el footer del documento).</p>
+                    <p>
+                        <b>&lt;b&gt;</b>: destacado con fines utilitarios
+                    </p>
+                    <p>
+                        Fragmento de texto del que se llama la atención con fines utilitarios sin concederle ninguna
+                        importancia extra y sin que implique ningún cambio de tono o de estado de ánimo.
+                        E.g. palabras clave en el resumen de un documento, nombres de producto, palabras procesables en
+                        el software interactivo orientado a texto…
+                    </p>
+                    <p>&lt;i&gt;:</p>
+                    <p>calidad diferente de texto, incluyendo
+                        cambio de tono o de estado de ánimo;
+                        fragmento de texto que implique un cambio de tono o de estado de ánimo, o cualquier otra
+                        desviación de la prosa normal que en cualquier manera indique una calidad diferente de texto.,
+                        E.g. una designación taxonómica, un término técnico, una frase idiomática en otro lenguaje, un
+                        pensamiento o un nombre de barco.
+                    </p>
+                    <p>&lt;u&gt;:</p>
+                    Texto escrito de forma incorrecta voluntariamente; nombres propios chinos.
 
-                </header>
+                    <p>&lt;s&gt;:</p>
+                    <p>Elemento que ya no es correcto o relevante</p>
 
-            </section>
-            <section id="new_line_semantics">
-                <header>
-                    <h3>
-                        Elementos con valor semántico nuevo.
-                    </h3>
-                </header>
-                <ul>
-                    <li>&lt;b&gt; bold</li>
-                    <li>&lt;i&gt; italics</li>
-                    <li>&lt;u&gt; underline</li>
-                    <li>&lt;s&gt; strike</li>
-                </ul>
-                <p>
-                    <b>&lt;b&gt;</b>: destacado con fines utilitarios
-                </p>
-                <p>
-                    Fragmento de texto del que se llama la atención con fines utilitarios sin concederle ninguna
-                    importancia extra y sin que implique ningún cambio de tono o de estado de ánimo.
-                    E.g. palabras clave en el resumen de un documento, nombres de producto, palabras procesables en
-                    el software interactivo orientado a texto…
-                </p>
-                <p>&lt;i&gt;:</p>
-                <p>calidad diferente de texto, incluyendo
-                    cambio de tono o de estado de ánimo;
-                    fragmento de texto que implique un cambio de tono o de estado de ánimo, o cualquier otra
-                    desviación de la prosa normal que en cualquier manera indique una calidad diferente de texto.,
-                    E.g. una designación taxonómica, un término técnico, una frase idiomática en otro lenguaje, un
-                    pensamiento o un nombre de barco.
-                </p>
-                <p>&lt;u&gt;:</p>
-                Texto escrito de forma incorrecta voluntariamente; nombres propios chinos.
-
-                <p>&lt;s&gt;:</p>
-                <p>Elemento que ya no es correcto o relevante</p>
-
-            </section>
-            <section id="tech_tags">
-                <header>
-                    <h3>
-                        Elementos de tipo técnico.
-                    </h3>
-                </header>
-
-                <ul>
-                    <li>samp (sample)</li>
-                    <li>code (code)</li>
-                    <li> kbd (keyboard)</li>
-                    <li> var (variables)</li>
-                    <li> dfn (definition)</li>
-                    <li> abbr (abbr)</li>
-
-                </ul>
-                <p>La eitqueta &lt;abbr&gt; indica abreviaturas o acrónimos</p>
-            </section>
-            <section id="cite_quote">
-                <header>
-                    <h3>
-                        Uso de referencias y citas.
-                    </h3>
+                </section>
+                <section id="tech_tags">
+                    <header>
+                        <h3>
+                            Elementos de tipo técnico.
+                        </h3>
+                    </header>
 
                     <ul>
-                        <li>q (quote)
-                        </li>
-                        <li> cite (cite o referencia)</li>
-                        <p>Ejemplo:
+                        <li>samp (sample)</li>
+                        <li>code (code)</li>
+                        <li> kbd (keyboard)</li>
+                        <li> var (variables)</li>
+                        <li> dfn (definition)</li>
+                        <li> abbr (abbr)</li>
+
+                    </ul>
+                    <p>La eitqueta &lt;abbr&gt; indica abreviaturas o acrónimos</p>
+                </section>
+                <section id="cite_quote">
+                    <header>
+                        <h3>
+                            Uso de referencias y citas.
+                        </h3>
+
+                        <ul>
+                            <li>q (quote)
+                            </li>
+                            <li> cite (cite o referencia)
+                                 <p>Ejemplo de cite:
                         </p>
                         <p>Película: <cite>El Señor de los Anillos</cite>
                         </p>
+                            </li>
+
+                        </ul>
+                       
+                    </header>
+                </section>
+                <section id="other_line_elements">
+                    <header>
+                        <h3>Otras etiquetas semánticas de HTML5</h3>
+                    </header>
+                    <ul>
+                        <li>time, e.g. <time datetime="2019-12-06">día de la constitución de este año</time>
+                        </li>
+                        <li>mark (marcado <mark>interactivo</mark>)</li>
                     </ul>
-                </header>
-            </section>
-            <section id="other_line_elements">
-                <header>
-                    <h3>Otras etiquetas semánticas de HTML5</h3>
-                </header>
-                <ul>
-                    <li>time, e.g. <time datetime="2019-12-06">día de la constitución de este año</time>
-                    </li>
-                    <li>mark (marcado <mark>interactivo</mark>)</li>
-                </ul>
-            </section>
-            <section id="line_edits">
-                <header>
-                    <h3>Edits</h3>
-                </header>
-                <ul>
-                    <li>ins (Inserted)
-                    </li>
-                    <li> del (Deleted)</li>
-                    <p>Muestran el contenido que se ha insertado (Instead) en lugar de otro (Deleted) para sustituir o corregirlo:
+                </section>
+                <section id="line_edits">
+                    <header>
+                        <h3>Edits</h3>
+                    </header>
+                    <ul>
+                        <li>ins (Inserted)
+                        </li>
+                        <li> del (Deleted)</li>
+
+                    </ul>
+                    <p>Muestran el contenido que se ha insertado (Instead) en lugar de otro (Deleted) para sustituir o
+                        corregirlo:
                     </p>
                     <p><del>Esto ya no vale.</del> <br>
-                   <ins>Ahora es así.</ins></p>
-                </ul>
+                        <ins>Ahora es así.</ins></p>
+                </section>
+                <footer class="back_home">
+                    <nav>
+                        <a href="#home">Volver al inicio</a>
+                    </nav>
+                </footer>
             </section>
-
-        </section>
-
+        </main>
+        <aside>
+            <h2>Publicidad</h2>
+            <p>Aquí iría la publicidad</p>
+        </aside>
     </div>
-
-
 
     <footer class="main_footer">
 
@@ -650,7 +718,7 @@
             </p>
 
             <!-- CÓMO LINKAR DIRECCIÓN DE CORREO
- --> <a href="mailto://marcelomaderuelosacido@gmail.com">marcelomaderuelosacido@gmail.com</a>
+ --> <a href="mailto://marcelomaderuelosacido@gmail.com" rel="author">marcelomaderuelosacido@gmail.com</a>
 
         </address>
 
