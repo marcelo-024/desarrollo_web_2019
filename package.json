@@ -21,7 +21,5 @@
     "url": "https://github.com/marcelo-024/desarrollo_web_2019/issues"
   },
   "homepage": "https://github.com/marcelo-024/desarrollo_web_2019#readme",
-  "dependencies": {
-    "bootstrap": "^4.3.1"
-  }
+  "dependencies": {}
 }

@@ -33,44 +33,112 @@
 
     <div class="main_wrapper">
         <main>
-            <h1>Elementos embebidos y multimedia</h1>
-            <p>
-                Entre los elementos embebidos y multimedia veremos como utilizar:</p>
-            <ul>
-                <li> Imágenes
-                    <ul>
-                        <li>jpg</li>
-                        <li> gif</li>
-                        <li>png</li>
-                        <li>(webp)</li>
-                        <li>svg</li>
-                    </ul>
-                </li>
-            
-
-            <li>Video y Audio
-                <ul>
-                    <li>mp4</li>
-                    <li>ogg</li>
-                    <li>webm</li>
-                </ul>
-            </li>
-            <li>Elementos de navegación gráficos
-
-
-            </li>
-            
-            </ul>
-
-
-            - Elementos de navegación gráficos
-
             <section id="mmedia">
-                <header>
-                    <h2>Multimedia</h2>
-                </header>
-            </section>
+                <h2>Elementos embebidos y multimedia</h2>
+                <p>
+                    Entre los elementos embebidos y multimedia veremos como utilizar:</p>
+                <ul id="site_index" class="site_index">
+                    <li> Imágenes
+                        <ul>
+                            <li>jpg</li>
+                            <li> gif</li>
+                            <li>png</li>
+                            <li>(webp)</li>
+                            <li>svg</li>
+                        </ul>
+                    </li>
 
+
+                    <li>Video y Audio
+                        <ul>
+                            <li>mp4</li>
+                            <li>ogg</li>
+                            <li>webm</li>
+                        </ul>
+                    </li>
+                    <li>Elementos gráficos de navegación
+
+
+                    </li>
+
+                </ul>
+
+
+                <section id="images">
+                    <header>
+                        <h3>Imágenes</h3>
+                    </header>
+                    <div class="image_sec">
+                        <img src="./assets/varanococodrilo1.png" alt="Varano Cocodrilo">
+                        <img src="./assets/ardilla.gif" alt="Ardilla">
+                        <img srcset="./assets/3boats.webp" alt="Barcas" src="./assets/3boats.jpg" alt="Barcas JPEG">
+                    </div>
+
+
+
+                    <!-- <img src="./assets/komodo.jpg" alt="Bicho malo."> -->
+
+
+                    <!-- el atributo srcset nos permite utilizar src como backup para utilizar unau otra fuente en funcion del navegador -->
+
+                    <div class="clearfix"></div>
+                    <p>Uso de imágenes responsive en HTML</p>
+
+                    <div class="img_fija_200">
+                        <img srcset="./assets/komodo.300.jpg 300w,
+                        ./assets/komodo.400.jpg 400w,
+                        ./assets/komodo.500.jpg 500w,
+                        ./assets/komodo.jpg 600w" sizes=" 
+                                (max-width:300px) ,
+                                (max-width:400px) ,
+                                (max-width:500px),
+                                (max-width:600px)" src="./assets/komodo.jpg" alt="Bicho malo">
+                    </div>
+
+                    <p>Ejercicio del uso de &lt;picture&gt; y su responsividad</p>
+
+
+
+                    <picture>
+                        
+                        <source srcset="./assets/burial_800w.jpg" media="(min-width: 800px)" type="image/jpg">
+                        <source srcset="./assets/burial_400w.jpg" media="(min-width: 400px)" type="image/jpg">
+                        <!-- <source srcset="./assets/burial_200w.jpg" type="image/jpg"> -->
+                        <img src="./assets/burial_800w.jpg" alt="William Bevan" type="image/jpg">
+
+
+                    </picture>
+                    <!-- <picture>
+                       
+                        <source media="(min-width: 800px)" srcset="./assets/burial_800w.jpg">
+                        <source media="(min-width: 400px)" srcset="./assets/burial_400w.jpg">
+                        <source media="(min-width: 200px)" srcset="./assets/burial_200w.jpg">
+                        <img src="./assets/burial_800w.jpg" alt="William Bevan">
+                    </picture> -->
+
+                    <!-- 
+                             -->
+
+
+
+                    <!--  <div class="clearfix"></div> -->
+                </section>
+
+                <section id="video_audio" class="">
+                    <header>
+                        <h3>Video y Audio</h3>
+                    </header>
+
+
+                </section>
+                <section id="graph_elements">
+                    <header>
+                        <h3>Elementos gráficos de navegación
+
+                        </h3>
+                    </header>
+                </section>
+            </section>
 
 
 
