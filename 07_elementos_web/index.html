@@ -7,6 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio - Elementos de la Web</title>
 
+
+
+    <!--     INTRODUCCION DE FUENTES
+ -->
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+
+    <!-- INTRODUCCION DE FUENTES DE ICONOS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -16,7 +28,7 @@
 
     <header class="main_header" id="home">
 
-        <h1>Etiquetas HTML</h1>
+        <h1>Etiquetas HTML <i class="fab fa-html5"></i></h1>
         <p> Clasificación y usos de las etiquetas según el estandar HTML 5.2</p>
 
         <nav>
@@ -26,6 +38,8 @@
                 <li><a href="#grouping" lang="en">Grouping</a></li>
                 <li><a href="#text_level" lang="en">Text-Level Semantics</a></li>
                 <li><a href="./mmedia.html" target="_blank">Multimedia</a></li>
+                <li><a href="./datos.html#tablas">Tablas</a></li>
+                <li><a href="./datos.html#form">Formularios</a><li>
 
             </ul>
         </nav>
@@ -255,25 +269,25 @@
                     </div>
                 </div> -->
                 <figure class="image_wrapper">
-                    
-                    <!-- USO DE IMAGENES CON ENLACES --> 
 
-                <a href="https://www.w3.org/TR/html52/sections.html#sections" target="_blank" rel="noreferrer">
-                    <img src="./assets/html5demo1.jpg" alt="HTML5 Semantics Scheme"> </a>
+                    <!-- USO DE IMAGENES CON ENLACES -->
 
-                <figcaption>
-                    <p> HTML5 Semantics Scheme</p>
-                    <footer>Tomado de
+                    <a href="https://www.w3.org/TR/html52/sections.html#sections" target="_blank" rel="noreferrer">
+                        <img src="./assets/html5demo1.jpg" alt="HTML5 Semantics Scheme"> </a>
 
-                        <a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">CodePen</a>
-                    </footer>
+                    <figcaption>
+                        <p> HTML5 Semantics Scheme</p>
+                        <footer>Tomado de
 
-                </figcaption>
+                            <a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">CodePen</a>
+                        </footer>
+
+                    </figcaption>
 
                 </figure>
                 <footer class="back_home">
                     <nav>
-                        <a href="#home">Volver al inicio</a>
+                        <a href="#home"><i class="fas fa-home"></i> Volver al inicio</a>
                     </nav>
                 </footer>
             </section>
@@ -309,37 +323,9 @@
                 </pre>
 
                     <div>
-                        <p>La etiqueta blockquote se utiliza para crear citas literales en bloque, tal como hemos hecho
-                            anteriormente</p>
-                        <pre id="blockquote_example">
-          &lt; section id="tag_nav" &gt;
-                  &lt; header &gt;
-                            
-                     &lt;h3&gt;Etiqueta nav&lt;/h3&gt;
-                     &lt;/header &gt;
-                  &lt;blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav"
-                                            title="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav"&gt;
-                   &lt;p&gt;
-                          La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org).
-                      &lt;/p&gt;
-                  &lt;p&gt;El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es proporcionar
-                          enlaces de navegación, ya sea dentro del documento actual o a otros documentos.
-                          Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.
-                     &lt;/p&gt;
-                          &lt;footer&gt;
-                               &lt;cite&gt;
-                                  &lt;a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav"&gt;Mozilla
-                                     Developer&lt;/a&gt;
-                        
-                    
-                              &lt;/cite&gt;
-                          &lt;/footer&gt;
-                        
-                        
-                      &lt;/blockquote&gt;
-                        
-                 &lt;/section&gt;
-                        </pre>
+                        <p>La etiqueta blockquote se utiliza para crear citas literales en bloque, tal como hemos hecho <a href="./index.html#tag_header">anteriormente</a>
+                            </p>
+      
                     </div>
 
                 </section>
@@ -351,25 +337,26 @@
                         Existen 3 tipos de listas
                     </p>
                     <dl>
-                        <dt class="dt"> - Desordenadas: </dt>
-                        <dd class="dd">
-                            <p>&lt;ul&gt;</p>
+                        <dt class="dt">&lt;ul&gt;</dt>
+                        <dd class="dd"> - Desordenadas:
+                            
                         </dd>
-                        <dt class="dt"> - Ordenadas: </dt>
-                        <dd class="dd">
-                            <p>&lt;ol&gt;</p>
+                        <dt class="dt">&lt;ol&gt;</dt>
+                        <dd class="dd"> - Ordenadas: 
+                            
                         </dd>
-                        <dt class="dt">- Listas de definiciones: </dt>
-                        <dd class="dd">
-                            <p> &lt;dl&gt;</p>
-                            <p>Dentro de una lista de definiciones podemos encontrar dos tipos de items: &lt;dt&gt; y
+                        <dt class="dt">&lt;dl&gt;</dt>
+                        <dd class="dd">- Listas de definiciones: 
+                            
+                            
+
+
+                        </dd>
+ </dl>
+                    <div class="clearfix"></div> 
+                                      <p>Dentro de una lista de definiciones podemos encontrar dos tipos de items: &lt;dt&gt; y
                                 &lt;dd&gt;</p>
 
-
-                        </dd>
-
-                    </dl>
-                    <div class="clearfix"></div>
 
 
 
@@ -527,7 +514,7 @@
                 </section>
                 <footer class="back_home">
                     <nav>
-                        <a href="#home">Volver al inicio</a>
+                        <a href="#home"><i class="fas fa-home"></i> Volver al inicio</a>
                     </nav>
                 </footer>
             </section>
@@ -705,7 +692,7 @@
                 </section>
                 <footer class="back_home">
                     <nav>
-                        <a href="#home">Volver al inicio</a>
+                        <a href="#home"><i class="fas fa-home"></i> Volver al inicio</a>
                     </nav>
                 </footer>
             </section>
@@ -716,22 +703,10 @@
         </aside>
     </div>
 
-    <footer class="main_footer">
-
-        <address>
-            <!-- <p> 
-            </p> -->
-            <p>
-                <small>© Marcelo Maderuelo Sacido</small>
-            </p>
-
-            <!-- CÓMO LINKAR DIRECCIÓN DE CORREO
- --> <a href="mailto://marcelomaderuelosacido@gmail.com" rel="author">marcelomaderuelosacido@gmail.com</a>
-
-        </address>
+    <iframe class="iframe_footer" src="./_footer.html"></iframe>
 
 
-    </footer>
+    
 
 </body>
 

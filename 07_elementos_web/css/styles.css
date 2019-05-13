@@ -1,4 +1,16 @@
+/* BODY*/
+ 
+ 
+ body {
+    /* font-family: Helvetica, sans-serif */;
+    /*     margin: 0;
+ */
+    /*    margin-left: 1rem; */
+    /* background-color:  */
+    background-image: linear-gradient( #DDD8C4, rgba(80, 128, 142, 0.600));
+    font-family: 'Josefin Sans', sans-serif;
 
+}
 
 /* MAIN FOOTER  */
 
@@ -7,6 +19,22 @@
     color: #A3C9A8;
     text-align: center;
     padding: 1rem, 0rem, 2rem, 0rem;
+
+}
+.main_footer aside ul {
+ list-style-type: none;
+ margin-left: -3rem;
+
+    /* padding-bottom: 0.5rem; */
+}
+.main_footer aside a {
+    padding: 3rem 0.5rem 0.5rem 0.5rem;
+   color:  rgb(92, 81, 40)
+}
+.main_footer aside li{
+    display: inline-block;
+   
+font-size: xx-large;
 
 }
 /* MAIN HEADER  */
@@ -20,6 +48,7 @@
     font-weight: bolder;
     font-size: 20px;
     font-style: italic;
+    font-family: 'Archivo Black', sans-serif;
     /*  margin: 10px */
 }
 
@@ -54,11 +83,7 @@
     display: inline-block;
 }
 
-/* MAIN WRAPPER */
 
-.main_wrapper {
-    margin-left: 1rem
-}
 
 /* MAIN FOOTER */
 
@@ -72,6 +97,14 @@
     margin: 0;
 }
 
+
+ 
+/* MAIN WRAPPER */
+
+.main_wrapper {
+    margin-left: 1rem
+}
+
 /* BACK HOME */
 
 .back_home a {
@@ -79,9 +112,8 @@
 }
 
 .back_home {
-    padding: 1rem 0rem 0.5rem 0rem;
+    padding: 1rem 0rem 0.5rem 0rem
 }
-
 /* h */
 
 h3 {
@@ -148,14 +180,6 @@ margin-left: -0.25rem;*/
 
 /* OTHER TAGS */
 
-body {
-    font-family: Helvetica, sans-serif;
-    /*     margin: 0;
- */
-    /*    margin-left: 1rem; */
-    /* background-color:  */
-    background-image: linear-gradient( #DDD8C4, rgba(80, 128, 142, 0.600))
-}
 
 em {
     font-weight: bold;
@@ -170,11 +194,17 @@ figcaption {
 
 pre {
     /* font-family: inherit; */
-    width: fit-content
+    width: fit-content;
+    max-width: 100%;
 }
 
 .pre_mod {
     font-family: inherit
+}
+.pre_mod2{
+display: block;
+    max-width: 100%;
+    margin-left: -5rem;
 }
 
 /* BLOCKQUOTE */
@@ -199,11 +229,10 @@ blockquote footer {
     width: fit-content;
 }
 
-}
 
 /* LISTA ORDENADA */
 
-. .dt {
+.dt {
     float: left;
     clear: left;
     font-weight: bold
@@ -300,4 +329,22 @@ abbr {
 .graph_elements embed {
 
     text-align: center;
+}
+
+
+.pic_cont picture {
+
+
+    max-width: 100%;
+}
+
+
+.iframe_footer {
+
+max-width: auto;
+    width: 100%;
+    height: 12vh;
+    margin-bottom: -5;
+    border: none;
+    background-image: linear-gradient( #DDD8C4, rgba(80, 128, 142, 0.600));
 }

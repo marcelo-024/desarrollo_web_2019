@@ -7,17 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multimedia - Elementos de la Web</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+ <link rel="stylesheet" href="css/styles.css">
 </head>
 
 
 <body>
 
     <header class="main_header" id="home">
-
-        <h1>Multimedia</h1>
-        <p> Incorporación de elementos multimedia embedidos</p>
+          
+        <h1>Etiquetas HTML <i class="fab fa-html5"></i></h1>
+            <p> Clasificación de etiquetas según el estándar HTML 5.2</p>
+    
 
         <nav>
             <ul>
@@ -26,6 +29,8 @@
                 <li><a href="./index.html#grouping" lang="en" target="_blank">Grouping</a></li>
                 <li><a href="./index.html#text_level" lang="en" target="_blank">Text-Level Semantics</a></li>
                 <li><a href="#">Multimedia</a></li>
+                <li><a href="./datos.html#tablas">Tablas</a></li>
+                <li><a href="./datos.html#form">Formularios</a></li>
 
             </ul>
         </nav>
@@ -89,10 +94,10 @@
                         ./assets/komodo.400.jpg 400w,
                         ./assets/komodo.500.jpg 500w,
                         ./assets/komodo.jpg 600w" sizes=" 
-                                (max-width:300px) ,
-                                (max-width:400px) ,
-                                (max-width:500px),
-                                (max-width:600px)" src="./assets/komodo.jpg" alt="Bicho malo">
+                                (max-width:300px) 300px,
+                                (max-width:400px) 400px,
+                                (max-width:500px) 500px,
+                                (max-width:600px) 600px" src="./assets/komodo.jpg" alt="Bicho malo">
                     </div>
 
                     <p>Ejercicio del uso de &lt;picture&gt; y su responsividad</p>
@@ -164,14 +169,15 @@
 
                     <p>Otra opción es reproducir videos de nuestro servidor</p>
 
-                    <video srcset="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm"
-                        src="./assets/Ghost_in_the_Shell_Opening.mp4" " controls>
-<!-- type=" video/mp4 -->
+                    <video controls poster="./assets/burial_400w.jpg">
+                        <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+                            <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
+<!-- type="4 -->
                     </video>
                      
                     <p>Elementos de audio embedidos.</p>
 
-                    <audio src="./assets/Volor Flex - Venus .mp3" controls></audio>
+                    <audio src="./assets/Volor_Flex_Venus.mp3" controls></audio>
 
                 </section>
 
@@ -204,9 +210,9 @@
 
                 <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
                 <p>Object</p>
-                <object data="https://www.tajamar.es/" type=""></object>
+                <object data="https://www.tajamar.es/" type="text/html"></object>
                 <p>Embed</p>
-                <embed src="https://www.tajamar.es/" type="">
+                <embed src="https://www.tajamar.es/" type="text/html">
 
             </aside>
 
@@ -223,24 +229,9 @@
     </div>
 
 
+<iframe class="iframe_footer" src="./_footer.html"></iframe>
 
-
-    <footer class="main_footer">
-
-        <address>
-            <!-- <p> 
-        </p> -->
-            <p>
-                <small>© Marcelo Maderuelo Sacido</small>
-            </p>
-
-            <!-- CÓMO LINKAR DIRECCIÓN DE CORREO
---> <a href="mailto://marcelomaderuelosacido@gmail.com" rel="author">marcelomaderuelosacido@gmail.com</a>
-
-        </address>
-
-
-    </footer>
+    
 
 </body>
 
