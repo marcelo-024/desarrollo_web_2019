@@ -238,5 +238,66 @@ abbr {
     text-decoration: none;
 }
 
+/* VIDEO EMBEDER */
 
+.embed_container {
 
+    position: relative;
+   
+    padding-bottom: 56.25%;
+   
+    height: 0;
+   
+    overflow: hidden;
+   
+   }
+/*    .embed-container {
+
+    position: relative;
+   
+    padding-bottom: 56.25%;
+   
+    height: 0;
+   
+    overflow: hidden;
+   
+   } */
+   
+   .embed_container iframe {
+   
+    position: absolute;
+   
+    top:0;
+   
+    left: 0;
+   
+    width: 100%;
+   
+    height: 100%;
+   
+   }
+   
+   video, embed, .pic_cont {
+   
+    max-width: 100%;
+   
+   }
+   .web_externa {
+
+    width: 100%;
+   
+   height: 60vh
+   
+   }
+
+   audio {
+
+    display: block;
+   }
+
+   
+
+.graph_elements embed {
+
+    text-align: center;
+}

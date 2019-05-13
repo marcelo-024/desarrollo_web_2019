@@ -71,7 +71,7 @@
                     <div class="image_sec">
                         <img src="./assets/varanococodrilo1.png" alt="Varano Cocodrilo">
                         <img src="./assets/ardilla.gif" alt="Ardilla">
-                        <img srcset="./assets/3boats.webp" alt="Barcas" src="./assets/3boats.jpg" alt="Barcas JPEG">
+                        <img srcset="./assets/3boats.webp" alt="Barcas" src="./assets/3boats.jpg">
                     </div>
 
 
@@ -100,14 +100,15 @@
 
 
                     <picture>
-                        
+
                         <source srcset="./assets/burial_800w.jpg" media="(min-width: 800px)" type="image/jpg">
                         <source srcset="./assets/burial_400w.jpg" media="(min-width: 400px)" type="image/jpg">
                         <!-- <source srcset="./assets/burial_200w.jpg" type="image/jpg"> -->
-                        <img src="./assets/burial_800w.jpg" alt="William Bevan" type="image/jpg">
+                        <img src="./assets/burial_800w.jpg" alt="William Bevan">
 
-
+                        <!-- type="image/jpg" -->
                     </picture>
+
                     <!-- <picture>
                        
                         <source media="(min-width: 800px)" srcset="./assets/burial_800w.jpg">
@@ -115,11 +116,34 @@
                         <source media="(min-width: 200px)" srcset="./assets/burial_200w.jpg">
                         <img src="./assets/burial_800w.jpg" alt="William Bevan">
                     </picture> -->
+                    <div class="pic_cont">
+                        <p>La etiqueta picture y los formatos alternativos de imágenes </p>
 
-                    <!-- 
-                             -->
+                        <picture>
 
+                            <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
 
+                            <img src="./assets/tropical-sunrise.jpg" alt="Amanecer tropical">
+
+                        </picture>
+
+                        <picture>
+
+                            <source srcset="./assets/logo.svg" type="image/svg+xml">
+
+                            <img src="./assets/logo.gif" alt="logo">
+
+                        </picture>
+                    </div>
+                    <p>Etiqueta figure</p>
+
+                    <figure>
+
+                        <img src="./assets/burial_800w.jpg" alt="">
+
+                        <figcaption>William Bevan</figcaption>
+
+                    </figure>
 
                     <!--  <div class="clearfix"></div> -->
                 </section>
@@ -128,17 +152,63 @@
                     <header>
                         <h3>Video y Audio</h3>
                     </header>
+                    <p>Es posible incluir un video desde una fuente externa mediante la etiqueta &lt;iframe&gt;</p>
+                    <div class="embed_container">
 
+                        <iframe src="https://www.youtube.com/embed/vpn8UUkfj6A"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                     
+
+                    <p>Otra opción es reproducir videos de nuestro servidor</p>
+
+                    <video srcset="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm"
+                        src="./assets/Ghost_in_the_Shell_Opening.mp4" " controls>
+<!-- type=" video/mp4 -->
+                    </video>
+                     
+                    <p>Elementos de audio embedidos.</p>
+
+                    <audio src="./assets/Volor Flex - Venus .mp3" controls></audio>
 
                 </section>
-                <section id="graph_elements">
-                    <header>
-                        <h3>Elementos gráficos de navegación
 
-                        </h3>
-                    </header>
-                </section>
+
+
             </section>
+            <section id="graph_elements">
+                <header>
+                    <h3>Elementos gráficos de navegación
+
+                    </h3>
+                </header>
+
+                <p>En anteriores versiones de HTML se utilizaba la etiqueta &lt;map&gt; para definir un hotspot (maba de
+                    bits al que se asocian acciones de usuario).</p>
+                <p> El principal inconveniente surgía al introducir escalado en las imágenes afectadas por &lt;map&gt;
+                    ya que el mapa de píxeles definido por la etiqueta no seguía las nuevas proporciones modificadas de
+                    la imagen.</p>
+                    <p>En HTML5 se puede conseguir esta funcionalidad utilizando .svg</p>
+                    <embed src="./assets/logo.svg" type="image/svg+xml">
+
+                        <p>Otro elemento relacionado con la navegación gráfica es el uso de iconos en los menús (fuentes de iconos).</p>
+            </section>
+            <aside>
+                 
+
+                <h3>Elementos embebidos no multimedia</h3>
+
+                <p>La etiqueta iframe permite acceder a otra web desde la nuestra</p>
+
+                <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
+                <p>Object</p>
+                <object data="https://www.tajamar.es/" type=""></object>
+                <p>Embed</p>
+                <embed src="https://www.tajamar.es/" type="">
+
+            </aside>
 
 
 
