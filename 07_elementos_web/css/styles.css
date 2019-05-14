@@ -348,3 +348,51 @@ max-width: auto;
     border: none;
     background-image: linear-gradient( #DDD8C4, rgba(80, 128, 142, 0.600));
 }
+.main_table th,td{
+
+    border: 1px solid green;
+}
+
+.main_table 
+.i_table{
+
+    width: 100%;
+    text-align: center;
+}
+
+
+.i_table {
+width: 100%;
+text-align: center;
+
+/* border: 5px;
+border-color: #50808E
+background-color: lightcoral;
+width: 50%;
+height: 50%; */
+
+
+}
+
+.i_table  th{
+
+    border: 1px solid green;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem
+}
+
+
+.i_table tr:nth-of-type(even) td {
+    background-color: rgb(102, 109, 202)
+}
+.i_table tr:nth-of-type(odd) td {
+    background-color: rgb(216, 188, 77)
+
+}
+
+form input{
+    display: block;
+}
+form button {
+    display: block;
+}

@@ -47,88 +47,137 @@
                     <h2>Tablas</h2>
                 </header>
                 <p>Ejemplo de tabla del uso de los navegadores</p>
-                
-               
-               <table border="1px">
-                   <tr>
-                       <th><!-- blank --></th>
-                       <th>2017</th>
-                       <th>2018</th>
-                       <th>2019</th>
-                   </tr>
-                   <tr>
-                       <th>Google Chrome</th>
-                       <td></td>
-                       <td>61,55 %</td>
-                       <td></td>
-                   </tr>
-                   <tr>
-                       <th>Safari</th>
-                       <td></td>
-                       <td>15,13 %</td>
-                       <td></td>
-                   </tr>
-                   <tr>
-                       <th> UC Browser</th>
-                       <td></td>
-                       <td>4,41 %</td>
-                       <td></td>
-                   </tr>
-                   <tr>
-                       <th>Mozilla Firefox</th>
-                       <td></td>
-                       <td>5,02 %</td>
-                       <td></td>
-                   </tr>
-                   <tr>
-                       <th>Internet Explorer</th>
-                       <td></td>
-                       <td>2,88 %</td>
-                       <td></td>
-                   </tr>
-                   <tr>
-                       <th>Opera</th>
-                       <td></td>
-                       <td>3,16 %</td>
-                       <td></td>
-                   </tr>
-                   <tr>
-                       <th>Otros</th>
-                       <td></td>
-                       <td>7,85 %</td>
-                       <td></td>
-                   </tr>
-               </table>
-               
-               8filas x 4 columnas
-               
 
 
-               2017
-               2018
-             
-                Google Chrome (61,55 %)
-                Safari (15,13 %)
-                UC Browser (4,41 %)
-                Mozilla Firefox (5,02 %)
-                Internet Explorer (2,88 %)
-                Opera (3,16 %)
-                Otros (7,85 %)
+                <table class="main_table">
+                    <caption>% de uso de los navegadores Web en distintos años</caption>
+                    <tr>
+                        <th>
+                            <!-- blank -->
+                        </th>
+                        <th scope="col">2017</th>
+                        <th scope="col">2018</th>
+                        <th scope="col">2019</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Google Chrome</th>
+                        <td></td>
+                        <td>61,55 %</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>C 67 - </td>
+                                    <td>32,59%</td>
+                                </tr>
+                                <tr>
+                                    <td>C 66</td>
+                                    <td>2,44%</td>
+                                </tr>
+                                <tr>
+                                    <td>C 59</td>
+                                    <td>2,30%</td>
+                                </tr>
+                                <tr>
+                                    <td>C 49</td>
+                                    <td>2,18%</td>
+                                </tr>
+                                <tr>
+                                    <td>C 64</td>
+                                    <td>1,91%</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Safari</th>
+                        <td></td>
+                        <td>15,13 %</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>S 11</td>
+                                    <td>10,79%</td>
+                                </tr>
+                                <tr>
+                                    <td>S 10</td>
+                                    <td>1,74%</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> UC Browser</th>
+                        <td></td>
+                        <td>4,41 %</td>
+                        <td>6,16%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mozilla Firefox</th>
+                        <td></td>
+                        <td>5,02 %</td>
+                        <td>2,65%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Internet Explorer</th>
+                        <td></td>
+                        <td>2,88 %</td>
+                        <td>2,44%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Opera</th>
+                        <td></td>
+                        <td>3,16 %</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Otros</th>
+                        <td></td>
+                        <td>7,85 %</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p>Ejemplo de tabla asimétrica</p>
 
-                2019
-                     Chrome 67 - 32,59%
-                     Safari 11 - 10,79%
-                     UC Browser 12 - 6,16%
-                     Firefox 61 - 2,65%
-                     IE 11 - 2,44%
-                    Chrome 66 - 2,44%
-                     Chrome 59 - 2,30%
-                    Chrome 49 - 2,18%
-                     Chrome 64 - 1,91%
-                    Safari 10 - 1,74%
+                <table class="i_table">
+
+                    <tr>
+                        <th rowspan="2" colspan="2">Preferencias de viajes</th>
+                        <th colspan="3" scope="colgroup">Destinos</th>
+
+                    </tr>
+                    <tr>
+                        <th scope="col">Caribe</th>
+                        <th scope="col">Europa</th>
+                        <th scope="col">Oriente</th>
+
+                    </tr>
+                    <tr>
+
+                        <th rowspan="3">Rangos de edad</th>
+                        <th scope="row">Menos de 18 años</th>
+                        <td>38</td>
+                        <td>25</td>
+                        <td>37</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Entre 18 y 30</th>
+                        <td>31</td>
+                        <td>32</td>
+                        <td>37</td>
 
 
+                    </tr>
+                    <tr>
+                        <th scope="row">Mayores de 30</th>
+                        <td>30</td>
+                        <td>38</td>
+                        <td>32</td>
 
+
+                    </tr>
+
+                </table>
 
             </section>
             <section id="form">
@@ -137,15 +186,46 @@
                         Formularios
                     </h2>
                 </header>
+                <p>Los formularios se incluyen dentro de la etiqueta &lt;form&gt;.</p>
+                <p>En ellos se utilizan los siguientes controles. El formulario es un interfaz que nos permite
+                    interactuar con el usuario.</p>
+                <ul>
+                    <li>input - text
+                    </li>
+                    <li>text area</li>
+                    <li>checkbox</li>
+                    <li>radio butons</li>
+                    <li>select / options</li>
+                    <li>botones</li>
+                </ul>
+                <p>La etiqueta form tiene dos atributos  importantes</p>
+                <p>Estos definen como funciona nuestro formulario, son:</p>
+                <ul>
+                    <li>Action</li>
+                    <li>Method</li>
+                </ul>
+
+                <form action="https://jsonplaceholder.typicode.com/users" method="POST">
+                    <input type="text" name="userName" placeholder="Usuario">
+                    <input type="password" name="userPass" placeholder="Contraseña" >
+                    <button type="submit">Enviar</button>
+                    
+
+
+                </form>
             </section>
+
+
+
+
         </main>
         <aside>
-        <h2>Publicidad</h2>
-        <p>Aquí iría la publicidad</p>
+            <h2>Publicidad</h2>
+            <p>Aquí iría la publicidad</p>
         </aside>
     </div>
     <aside>
-            <iframe class="iframe_footer" src="./_footer.html"></iframe>
+        <iframe class="iframe_footer" src="./_footer.html"></iframe>
     </aside>/
 </body>
 
