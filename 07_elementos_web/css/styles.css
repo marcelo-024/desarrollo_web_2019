@@ -102,9 +102,15 @@ font-size: xx-large;
 /* MAIN WRAPPER */
 
 .main_wrapper {
-    margin-left: 1rem
+    margin-left: 3rem;
+   margin-right: 3rem;
+   margin: 1rem 20%;
 }
-
+/* @media screen and (min-width: 700px) {
+    .main_wrapper{
+        margin: 1rem 20%; ;
+    }
+  } */
 /* BACK HOME */
 
 .back_home a {
@@ -352,7 +358,10 @@ max-width: auto;
 
     border: 1px solid green;
 }
+.table_sub td{
 
+    border: none;
+}
 .main_table 
 .i_table{
 
@@ -390,9 +399,95 @@ height: 50%; */
 
 }
 
-form input{
-    display: block;
+/* form input{
+    
 }
 form button {
     display: block;
+} */
+
+fieldset {
+    /* width: fit-content; */
+    border: 2px solid grey;
+  /*   width: fit-content */
+
+  margin-right: 1rem;
+
 }
+
+
+
+.f_control {
+    
+display: block;
+width: 100%;
+font-family: 'Josefin Sans', sans-serif;
+border: none;
+border-bottom: 4px solid rgba(104, 163, 163, 0.801);
+padding-top:  1rem;
+padding-bottom: 0.5rem;
+margin-bottom: 1rem;
+/* max-width: 100%; */
+
+
+/* margin-block-end: 0rem 30rem 1rem 0rem; */
+}
+ /* input {
+  padding: 1rem;
+} */
+
+.f_label {
+
+display: block;
+
+    margin-top: 1rem;
+
+}
+
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(172, 145, 72);
+    opacity: 1; /* Firefox */
+  }
+  
+  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(172, 145, 72);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(172, 145, 72);
+  }
+
+
+  .cond_ {
+
+    margin-top: 2rem;
+  }
+
+
+  .placeho {
+
+    color: rgb(172, 145, 72);}
+
+
+    .radio_wrapper {
+        border-bottom: 2px groove #69A200;
+        padding-top:  1rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+
+    }
+
+    .course_data {
+
+        margin-top: 2rem;
+
+    }
+
+
+    .form_list dt, dd {
+
+padding: 1rem 0rem 0rem 1rem;
+
+    }
