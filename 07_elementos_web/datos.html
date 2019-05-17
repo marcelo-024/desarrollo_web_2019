@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Multimedia - Elementos de la Web</title>
+    <title>Datos - Elementos de la Web</title>
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
@@ -238,9 +238,12 @@
 
                         <label for="userName" class="f_label">NAME</label> <input id="userName" class="f_control"
                             type="text" name="userName" placeholder="USUARIO">
-                        <label for="userPass" class="f_label">PASS</label>
-                        <input lang="es" id="userPass"  class="f_control" type="password" name="userPass"
-                            placeholder="CONTRASEÑA" required minlength="8" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})">
+                        <label for="userPass" class="f_label">PASS (at least 1 upper case character, 1 lower
+                            case character, 1 numerical character and 1 special character)</label>
+                        <input lang="es" id="userPass" class="f_control" type="password" name="userPass"
+                            placeholder="CONTRASEÑA" required minlength="8" maxlength="16" pattern="(?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*
+
+                            ">
                         <label for="email" class="f_label">MAIL</label>
                         <input id="email" class="f_control" type="email" name="email"
                             placeholder="Escribe una dirección de correo válida" value="" required>
@@ -271,7 +274,7 @@
                         <label for="curso" class="f_label">Curso</label>
                         <select name="curso" id="curso" class="f_control" multiple size="8" required>
                             <optgroup label="Front Programming">
-<option value="">Elige los cursos que prefieras</option>
+                                <option value="">Elige los cursos que prefieras</option>
                                 <option value="html01">HTML5</option>
                                 <!-- SIN VALUE EL VALOR REGISTRADO ES EL DEL CONTENIDO -->
                                 <option value="CSS02">CSS3</option>
@@ -323,9 +326,10 @@
                     <dt class="dt">
                         Input search
                     </dt>
-                    <dd class="dd"> <input type="search" > </dd> <dt class="dt">
+                    <dd class="dd"> <input type="search"> </dd>
+                    <dt class="dt">
                         Input tel
-                        </dt>
+                    </dt>
                     <dd class="dd"> <input type="tel"> </dd>
                     <dt class="dt">
                         Input URL
