@@ -102,8 +102,8 @@ font-size: xx-large;
 /* MAIN WRAPPER */
 
 .main_wrapper {
-    margin-left: 3rem;
-   margin-right: 3rem;
+    margin-left: 1rem;
+   margin-right: 1rem;
    margin: 1rem 20%;
 }
 /* @media screen and (min-width: 700px) {
@@ -490,4 +490,23 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 padding: 1rem 0rem 0rem 1rem;
 
+    }
+
+
+    .det_sum summary {
+
+font-size: larger;
+
+
+    }
+
+
+    .canvas {
+
+        width: 500px;
+        height: 500px;
+        background-color: white;
+        border: 3px solid #69A200;
+        max-width: 100%;
+        max-height: 100%;
     }

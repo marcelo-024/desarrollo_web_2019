@@ -21,5 +21,7 @@
     "url": "https://github.com/marcelo-024/desarrollo_web_2019/issues"
   },
   "homepage": "https://github.com/marcelo-024/desarrollo_web_2019#readme",
-  "dependencies": {}
+  "dependencies": {
+    "dialog-polyfill": "^0.5.0"
+  }
 }

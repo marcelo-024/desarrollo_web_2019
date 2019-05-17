@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../node_modules/dialog-polyfill/dist/dialog-polyfill.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="./JS/app.js" type="module"></script>
 </head>
 
 
@@ -30,6 +32,7 @@
                 <li><a href="./mmedia.html" target="_blank">Multimedia</a></li>
                 <li><a href="#tablas">Tablas</a></li>
                 <li><a href="#form">Formularios</a></li>
+                <li><a href="#interactive">Interactivos</a></li>
 
             </ul>
         </nav>
@@ -37,11 +40,7 @@
 
     <div class="main_wrapper">
         <main>
-            <h2>Datos</h2>
-            <ul>
-                <li>Tablas</li>
-                <li>Formularios</li>
-            </ul>
+
             <section id="tablas">
                 <header>
                     <h2>Tablas</h2>
@@ -178,7 +177,11 @@
                     </tr>
 
                 </table>
-
+                <footer class="back_home">
+                    <nav>
+                        <a href="#home"><i class="fas fa-home"></i> Volver al inicio</a>
+                    </nav>
+                </footer>
             </section>
             <section id="form">
                 <header>
@@ -338,16 +341,110 @@
 
                 </dl>
                 <div class="clearfix"></div>
-
+                <footer class="back_home">
+                    <nav>
+                        <a href="#home"><i class="fas fa-home"></i> Volver al inicio</a>
+                    </nav>
+                </footer>
             </section>
 
+            <section id="interactive">
+                <header>
+                    <h2>Elementos Interactivos</h2>
+                </header>
+                <p>Son elementos novedosos incluidos en las modificaciones de HTML5</p>
 
+                <ul>
+                    <li>
+                        details - HTML 5.1
+                    </li>
+                    <li>dialog - html 5.2</li>
+                </ul>
+
+                <section class="det_sum" id="details">
+                    <header>
+                        <h3>Etiqueta details</h3>
+                    </header>
+                    <p>Permite crear un bloque con información que se muestra opcionalmente</p>
+                    <header>
+                        <h4>Novedades en HTML 5.1</h4>
+                    </header>
+                    <blockquote cite="https://www.imaginanet.com/html5-novedades.html"> <details>
+                        <summary>Definir múltiples imágenes para el diseño responsive</summary>
+                        <p>Esta versión nos ofrece la posibilidad de utilizar el tag picture, junto con el atributo
+                            srcset para poder definir múltiples imágenes para el diseño responsivo. Podríamos definir
+                            este tag como un contenedor de imágenes donde los diseñadores podrán declarar varias, que se
+                            utilizarán dependiendo del tamaño de pantalla, píxeles u otros parámetros. Por sí solo este
+                            tag no muestra nada, y para que funcione deberíamos establecer una imagen por defecto
+                            utilizando la etiqueta img habitual. Las imágenes alternativas se ubicarían
+                            dentro de los atributos srcset de los elementos img y source. Este código nos mostrará
+                            la imagen por defecto mientras que el tamaño de la pantalla sea superior a los 960 px.
+                            Cuando sea menor, se mostrará large.jpg, y si es inferior a 360 px se verá "mobile.jpg".</p>
+
+                    </details>
+                    <details>
+                        <summary>Mostrar o esconder información extra</summary>
+                        <p>En este caso utilizaremos las nuevas etiquetas details y summary. Mediante su uso podemos añadir información extra a cualquier contenido. Su principal característica es que la información no se muestra por defecto, pero si el usuario está interesado tendrá la opción de consultarla. Para utilizarla debes colocar el tag summary dentro de details. En el interior de summary será donde pondremos la información visible, que tendrá un icono a su izquierda para mostrar la información oculta.</p>
+                    </details>
+                    <details>
+                        <summary>Añadir funciones al menú contextual del navegador</summary>
+                        <p>Esta versión de HTML 5 permite añadir nuevas funciones al menú contextual del navegador.</p>
+                        <p>Para ello hay que utilizar el tag menuitem y su atributo type=context. Para 
+                                su uso hay que asignar esa etiqueta como elemento hijo del tag menu, al que habrá que definir el atributo id, que tendrá así el mismo valor que el atributo contextmenu del elemento que queremos añadir al menú contextual. El tag menuitem puede ser de tres tipos diferentes: checkbox, command y radio. Si se ejecuta el código anterior, aparecerá un botón. Si sobre él se pulsa con el botón derecho, aparece la nueva opción en el menú.</p>
+                    </details>
+                    <details>
+                        <summary>Anidar headers y footers</summary>
+                        <p>HTML 5.1 ofrece la posibilidad de anidar varios headers y footers, siempre y cuando cada nivel esté dentro del contenido de la sección. Útil para crear cabeceras elaboradas.</p>
+                    </details>
+                    <details>
+                        <summary>Utilizar imágenes con un ancho de 0 píxeles</summary>
+                        <p>Otra de las novedades que incluye esta nueva versión es la posibilidad de utilizar imágenes que tengan un valor de 0 píxeles de ancho. Esto es muy útil a la hora de incluir fotografías que no queremos que sean vistas por los usuarios, como pueden ser archivos de trackeo. Lo que sí se recomienda es que se utilice el atributo alt vacío.</p>
+                    </details>
+                    <details>
+                        <summary> Crear opciones vacías</summary>
+                        <p>Otra de las cosas que no se podía utilizar hasta la fecha era crear un elemento option vacío. Este elemento suele ser utilizado conjuntamente con otras etiquetas como select, optgroup o datalist. Puede ser útil en aquellos casos en los que no queremos sugerir qué opción deben seleccionar los usuarios.
+                            </p>
+                       
+                    </details>
+                <footer>
+                    <cite>
+                        <a href="https://www.imaginanet.com/html5-novedades.html" rel="external" target="_blank">Imaginanet | Últimas novedades en lenguaje HTML 5.1  </a>
+                    </cite>
+                </footer>
+                </blockquote>
+                   
+                </section>
+                <section class="" id="dialog">
+                    <header>
+                        <h3>Etiqueta dialog</h3>
+                        <p>&lt;dialog&gt; novedad de HTML 5.2 corresponde a lo que se conoce como una ventana modal o simplemente modal (pop up/ ventana emergente)</p>
+                        <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dialog" title="Developer Mozilla | Elemento Dialogue">El atributo open indica que el diálogo está activo y disponible para interactuar.Cuando el atributo open no está asignado, no debe mostrarse al usuario.</blockquote> 
+                    </header>
+                <dialog id="_dial">
+                    Información que se mostrará en la ventana modal
+<audio src="./assets/Volor_Flex_Venus.mp3" controls></audio>      
+<button type="button" id="close_info">Cerrar</button>              
+                </dialog>
+                <button type="button" id="open_info">Mostrar Info</button>
+                </section>
+                <footer class="back_home">
+                    <nav>
+                        <a href="#home"><i class="fas fa-home"></i> Volver al inicio</a>
+                    </nav>
+                </footer>
+            </section>
 
 
         </main>
         <aside>
             <h2>Publicidad</h2>
             <p>Aquí iría la publicidad</p>
+            
+
+            <template id="publicidad_extra">
+                <p>En un template podemos incluir cualquier etiqueta HTML</p>
+            </template>
+            <canvas id="cnv_01" class="canvas"></canvas>
         </aside>
     </div>
     <aside>
