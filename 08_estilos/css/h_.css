@@ -1,0 +1,16 @@
+header {
+    font-family: 'Paytone One', sans-serif;
+
+
+    color:  rgb(250, 223, 166);
+    background-color: rgb(248, 134, 195);
+    margin-top: -4rem;
+    padding-bottom: 0rem;
+    margin-bottom: -5rem
+}
+
+header h1 {
+
+font-size: 8rem
+
+}

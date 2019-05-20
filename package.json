@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/marcelo-024/desarrollo_web_2019#readme",
   "dependencies": {
-    "dialog-polyfill": "^0.5.0"
+    "dialog-polyfill": "^0.5.0",
+    "normalize.css": "^8.0.1"
   }
 }

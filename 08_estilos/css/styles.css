@@ -1,0 +1,60 @@
+
+/*
+
+EJEMPLO DE IMPORT ASOCIADO A UNA MEDIA QUERY
+@import url(./h_.css);  screen and (max-device-width: 500px); */
+
+
+/* EJEMPLO DE IMPORTS SIN CONDICIONES
+@import url(./h_.css);
+@import url(./f_.css); */
+
+/* OTRAS DIRECTIVAS SON 
+@font-face;
+@keyframes
+@namespace
+@page
+@supports
+@document
+
+; */
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: rgb(250, 100, 180);
+    background-color: rgb(250, 223, 166)
+}
+
+
+/* FORMA MÁS HABITUAL DE USAR MEDIA QUERIES */
+
+@media screen and (max-device-width: 500px) {
+
+/* TIPOS DE SELECTORES POR ORDEN DE EXCLUSIVIDAD */
+
+
+/* SELECTOR DE ETIQUETA   */  
+body {
+
+    background-color: cadetblue;
+}
+
+}
+/* SELECTOR DE CLASE */
+.sample_blue {
+    color: rgb(44, 84, 117);
+}
+
+
+
+  
+
+
+
+/* SELECTOR DE ID : NO SE USA POR BUENAS PRÁCTICAS */
+
+#verde {
+
+  color: green;
+
+}
