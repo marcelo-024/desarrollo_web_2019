@@ -17,38 +17,55 @@ EJEMPLO DE IMPORT ASOCIADO A UNA MEDIA QUERY
 @supports
 @document
 
-; */
 
+/**********************
+**********************  
+TIPOS DE SELECTORES
+*********************
+***********************
+************************/
+
+
+/* SELECTOR DE ETIQUETA   */ 
 body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: rgb(250, 100, 180);
-    background-color: rgb(250, 223, 166)
+    background-color: rgb(250, 223, 166);
 }
-
-
 /* FORMA MÁS HABITUAL DE USAR MEDIA QUERIES */
 
 @media screen and (max-device-width: 500px) {
 
-/* TIPOS DE SELECTORES POR ORDEN DE EXCLUSIVIDAD */
 
 
-/* SELECTOR DE ETIQUETA   */  
-body {
+
+ 
+ body {
 
     background-color: cadetblue;
 }
 
-}
-/* SELECTOR DE CLASE */
-.sample_blue {
-    color: rgb(44, 84, 117);
+
+
 }
 
 
 
   
+/* EJEMPLO DE SELECTORES AGRUPADOS 
+ */
 
+ p,blockquote,#verde {
+
+    font-style: italic
+}
+/* TIPOS DE SELECTORES POR ORDEN DE EXCLUSIVIDAD */
+
+
+/* SELECTOR DE CLASE */
+.sample_blue {
+    color: rgb(44, 84, 117);
+}
 
 
 /* SELECTOR DE ID : NO SE USA POR BUENAS PRÁCTICAS */
@@ -58,3 +75,6 @@ body {
   color: green;
 
 }
+
+
+

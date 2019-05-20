@@ -1,0 +1,163 @@
+/***********************
+            HEADER
+  ********************/
+
+
+.main_header {
+padding-top: 2rem;
+padding-left: 1rem;
+padding-bottom: 3rem;
+background-color: #e1ffc8;
+margin: 0.5rem;
+text-align: center;
+}
+.main_header h1 {
+    font-family: 'Paytone One', sans-serif;
+font-style: italic;
+
+margin-left: 0.5rem;
+margin-top: 1rem;
+padding-bottom: 2rem;
+
+}
+
+.main_header p {
+padding-bottom: 0rem;
+    font-size: 2rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin-left: 0.5rem;
+}
+
+
+/***********************
+           BODY
+  ********************/
+
+p {
+
+    margin: 0.5rem;
+    padding-top: 0.2rem 0rem 0.2rem 0rem; 
+}
+
+
+h2 {
+margin-left: 1.5rem;
+padding-bottom: 1rem;
+}
+
+
+
+
+
+/*********************
+ SELECTORES COMBINADOS 
+ ********************/
+
+
+/* SELECTOR DE Descendientes (DESCENDANT)- Su símbolo es el "espacio */
+
+.combinadores p {
+
+    background-color: coral
+    
+    
+ }   
+    /* SELECTOR DE Hijos (CHILD) " - Su símbolo es > */
+
+    .combinadores>p {
+
+        background-color: blueviolet
+        
+        
+     }  
+/* SELECTOR de Hermanos (siblings) - Su símbolo es ~ (virgulilla) */
+
+     .combinadores div~p{ background-color: goldenrod;
+        
+     }
+/* SELECTOR de Hermanos Adyacentes - Su símbolo es + */
+
+.combinadores div+p {
+ background-image: linear-gradient(#ecc674 , #bfc6dd );
+   
+}
+
+
+
+/* SELECTOR DE ATRIBUTO - símbolo [] */
+
+
+[title] {
+
+    color: crimson;
+}
+
+
+/**********
+Atributo = a  
+***********/
+[title="Extra"]{
+
+    color: blue
+}
+
+
+/**********
+Atributo empieza x  
+***********/
+[title^="Parrafo"] {
+
+    color: darkgreen
+}
+/**********  
+Atributo contiene 
+**********/
+[title*="rraf"]
+{
+    color: darkmagenta
+}
+
+
+/* Atributo termina por */
+
+[title$="1"]
+{
+    color:gold
+}
+
+
+
+
+
+/***********************
+        FOOTER
+  ********************/
+
+  footer {
+
+    padding-top: 1rem;
+padding-left: 1rem;
+padding-bottom: 2rem;
+background-color: #e1ffc8;
+margin: 0.5rem;
+text-align: center;
+  }
+
+
+
+
+
+  footer address {
+
+
+    font-style: normal;
+  }
+
+
+  footer p {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+
+ 
