@@ -356,13 +356,23 @@ max-width: auto;
 }
 .main_table th,td{
 
-    border: 1px solid green;
+    border: none;
+}
+
+
+.main_table>tbody>tr:nth-of-type(even){
+background-color: #e08a8a;
+}
+.main_table>tbody>tr:nth-of-type(odd){
+    background-color: #DDD8C4
 }
 .table_sub td{
 
     border: none;
-}
-.main_table 
+
+/*****************
+ TABLA IRREGULAR 
+******************/
 .i_table{
 
     width: 100%;
