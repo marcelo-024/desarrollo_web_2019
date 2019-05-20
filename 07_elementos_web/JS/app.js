@@ -21,7 +21,7 @@ function main2() {
     
     dialogPolyfill.registerDialog(modal);
     // Now dialog acts like a native <dialog>.
-    modal.showModal();
+   
 
     document.querySelector('#open_info').addEventListener('click', onClick)
     document.querySelector('#close_info').addEventListener('click', onClick)
