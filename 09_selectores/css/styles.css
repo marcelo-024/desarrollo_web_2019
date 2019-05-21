@@ -1,3 +1,15 @@
+
+
+/******** 
+Ejemplo de herencia del borde
+********* {
+    border: inherit;
+}
+
+body {
+    border: 1px solid blue;
+} */
+
 /***********************
             HEADER
   ********************/
@@ -11,11 +23,11 @@ background-color: #e1ffc8;
 margin: 0.5rem;
 text-align: center;
 }
-.main_header h1 {
+h1 {
     font-family: 'Paytone One', sans-serif;
 font-style: italic;
 
-margin-left: 0.5rem;
+
 margin-top: 1rem;
 padding-bottom: 2rem;
 
@@ -25,14 +37,17 @@ padding-bottom: 2rem;
 padding-bottom: 0rem;
     font-size: 2rem;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    margin-left: 0.5rem;
+   
 }
 
 
 /***********************
            BODY
   ********************/
-
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    counter-reset: parrafos;
+}
 p {
 
     margin: 0.5rem;
@@ -41,10 +56,28 @@ p {
 
 
 h2 {
+   
+    margin-top: 1.5rem;
+    margin-bottom: -1rem;
 margin-left: 1.5rem;
 padding-bottom: 1rem;
 }
 
+.banda {
+    
+    display: block; 
+ 
+ background-color: aliceblue;
+
+ margin-left: 2.5rem;
+ margin-right: 2.5rem;
+ padding: 2rem;
+ margin-top: 0.5rem;
+}
+/* blockquote.medio {
+    margin-bottom: 0.5rem;
+}
+ */
 
 
 
@@ -82,7 +115,11 @@ padding-bottom: 1rem;
    
 }
 
+/***********
+Estilos de la sección 
 
+atributos
+*********/
 
 /* SELECTOR DE ATRIBUTO - símbolo [] */
 
@@ -125,7 +162,65 @@ Atributo contiene
     color:gold
 }
 
+/**************  
+ESTILOS DE LAS SECCIONES .pseudo Y .numerados (Introducción a pseudoelementos)
+**************/
+.pseudo p::first-letter {
+font-size: 1.5rem;
+color: blue;
 
+}
+.pseudo p::first-line {
+font-weight: bold;
+    
+}
+.pseudo .medio
+ {
+
+    color: brown;
+
+
+}
+
+.pseudo .medio::after,
+.pseudo .medio::before
+{
+
+    content: url(../../favicon.ico) url(../../favicon.ico) url(../../favicon.ico) "FANTASEEA" url(../../favicon.ico) url(../../favicon.ico) url(../../favicon.ico) ;
+   
+   display: block; 
+
+background-color: aliceblue;
+color: blue;
+padding: 1.5rem;
+margin-top: 0.5rem;
+text-align: center;
+} 
+
+
+
+.numerados p::before {
+counter-increment: parrafos;
+    content: counter(parrafos,upper-roman) "-";
+
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.comillas{
+
+    quotes: "\00BB" "\00AB";
+
+}
+
+.comillas p::before{
+  
+   content: open-quote; 
+}
+.comillas p::after{
+  
+content: close-quote;
+}
 
 
 
@@ -157,6 +252,9 @@ text-align: center;
   footer p {
       margin-top: 0;
       margin-bottom: 0;
+      padding-top: 0.5rem;
+
+      
   }
 
 
