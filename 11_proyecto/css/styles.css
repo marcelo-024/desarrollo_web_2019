@@ -13,10 +13,13 @@
 
 --color_block:  aliceblue;
 
+--color_box:  rgba(202, 202, 202, 0.397);
+
+
 --font_h1:'Paytone One', sans-serif;
 --font_body: 'M PLUS Rounded 1c', sans-serif;
 /* --size_h1: 3rem; */
---size_h1:calc(var(--size_small)*8);
+--size_h1:calc(var(--size_small)*6);
 /* --size_h2: 2rem; */
 --size_h2:calc(var(--size_h1)/2);
 --size_main: calc(24rem/16);
@@ -34,6 +37,8 @@
 
 
 *{
+    box-sizing: border-box;
+
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -49,6 +54,8 @@
 /* .main_header */
 
 body>.header {
+
+    box-sizing: border-box;
     padding-top: 2rem;
     padding-left: 1rem;
     padding-bottom: 3rem;
@@ -57,6 +64,7 @@ body>.header {
   margin: 0.5rem 4rem;
   margin-right: 4rem;
     text-align: center;
+    background-size: 100%;
 /* box-sizing: border-box; */
 }
 
@@ -144,7 +152,7 @@ main h2 {
     margin-top: calc(var(--margin_vert)*3);
     margin-bottom: -1rem;
     margin-left: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     font-size: var(--size_h2);}
 
 
@@ -155,20 +163,110 @@ main h2 {
         padding: 0.2rem 0rem 0.2rem 1rem;
     }
 
-/*************************************
-    ESTILOS DE LAS SECCIONES DEL MAIN
-**************************************/
-main section {
+/************************************
 
-display: inline-block;
-box-sizing: border-box;
-width: 50%;
-/* background-color: coral; */
-vertical-align: top;
-padding:8rem;
+    Estilos de las secciones
+*********************************************/
+section {
+
+    margin-right: var(--margin_hor);
+    margin-top: var(--margin_p);
+    margin-bottom: var(--margin_vert);
+    margin-left: var(--margin_hor)
+}
+section article {
+    width: 50%;
+    padding: 1rem;
+  background-color: var(--color_box);
+  margin:0;
+  border: 4px solid var(--color_block)
+}
+
+
+/*************************************
+    ESTILOS DE LA SECCION .inline_block
+**************************************/
+.inline_block {
+
+    margin-right: 3rem;
 
 
 }
+
+/* section.inline_block article{
+
+    margin-left:- var(--margin_hor) 
+} */
+section.inline_block article {
+
+
+display: inline-block;
+
+
+vertical-align: top;
+
+
+
+}
+/* padding:8rem; */
+/* padding-left: 3rem; */
+
+/* background-color: coral; */
+
+section.inline_block article:nth-of-type(2){
+
+
+    margin-left:-0.45rem;
+}
+
+/********************************************
+Estilos de la sección float
+
+**********************************************/
+section._float {
+
+
+
+}
+section._float article {
+padding: 3rem;
+    float: left;
+}
+section._float::after{
+
+    content:"";
+    display:block;
+    clear: both;
+
+}
+/********************************************
+Estilos de la sección ._table
+
+**********************************************/
+._table{
+  display: table  ;
+ 
+}
+
+
+._table article {
+
+    display: table-cell;
+}
+
+/********************************************
+Estilos de la sección ._flex
+
+**********************************************/
+
+
+._flex {
+
+display: flex;
+align-items: stretch;
+}
+
+/*  */
 
 
 

@@ -1,4 +1,4 @@
-# " Introducción a JS " #
+#  Introducción a JS  #
 
 
 
@@ -50,12 +50,55 @@ undefined //tipo Undefined//
 ```
 ## Tipos complejos o referenciados ##
 
+Object :
 Contenedores de series de propiedades.
 
 
-`{nombre: 'Pepe', edad: 27} //Tipo objeto`
+`{nombre: 'Pepe', edad: 27} //Tipo object`
 
 
 Un objeto es una lista de **propiedades**. Objetos internos tb tienen tipos.
 
 Un array es una **lista indexada** (cada item es referenciado por su posicion empezando x 0)
+
+
+# Funciones
+
+
+Declarar una variable.
+
+`console.log(greet)`
+
+Declarar una variable e inicializarla (darle valor) al mismo tiempo es lo más recomendable:
+
+`let user = 'Pepe'
+`
+
+Es una mala práctica inicializar una variable sin antes declararla: 
+
+`curso='JavaScript'`
+
+
+## Function
+
+Nos permite crear el cuerpo o declaración de una función.
+
+Declaración de la función:
+```
+function saludar () {
+    
+    let saludo='Hola'
+
+    console.log(saludo)
+}
+```
+Invocación de la función:
+
+```
+saludar ()
+```
+
+En el ejemplo anterior la variable **_saludo_** es local a la función **_saludar_**
+
+Podemos declarar variables dentro de los paréntesis utilizados al declarar la función. Estas condiciones se conocen como parámetros. A los parámetros es posible darles valor desde fuera.
+
