@@ -51,7 +51,7 @@ undefined //tipo Undefined//
 ## Tipos complejos o referenciados ##
 
 Object :
-Contenedores de series de propiedades.
+Contenedores de series de propiedades. Son siempre dinámicos
 
 
 `{nombre: 'Pepe', edad: 27} //Tipo object`
@@ -102,3 +102,61 @@ En el ejemplo anterior la variable **_saludo_** es local a la función **_saluda
 
 Podemos declarar variables dentro de los paréntesis utilizados al declarar la función. Estas condiciones se conocen como parámetros. A los parámetros es posible darles valor desde fuera.
 
+
+# Scope #
+
+Variable de ámbito (scope) Global:
+
+```
+var antes = 2
+let a = 2
+```
+
+Variable de ámbito (scope) local a la función:
+
+```
+function preba () {
+    
+    var int = 3
+    let y = 6
+    console.log (a)
+}
+```
+
+Variable de ámbito local al bloque if
+
+```
+function prueba() {
+    var int = 3
+    let y = 6
+    let b = 9 
+
+    if (true) {
+
+        let w = 23 
+        console.log('Es Verdad')
+        console.log(a) 
+    }
+
+    console.log(a) // 2
+    console.log(b) // 9
+
+}
+
+```
+
+En ECMA script 6 al sustituir var por let se introduce una mejora del SCOPE:
+
+Var declara para el ámbito local de las funciones.
+
+Let nos permite ser más precisos respecto al scope.
+
+
+
+
+# CONSTANTES
+
+Tienen el mismo 
+
+
+Al aplicar **const** sobre un objeto implica que siempre ha de ser de tipo objeto. No evita añadir o modificar propiedades.
