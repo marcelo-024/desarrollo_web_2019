@@ -13,18 +13,30 @@
     --font_h1: 'Paytone One', sans-serif;
     --font_body: 'M PLUS Rounded 1c', sans-serif;
     /* --size_h1: 3rem; */
+    --size_h1: -webkit-calc(var(--size_small)*4.5);
+    --size_h1: -moz-calc(var(--size_small)*4.5);
     --size_h1: calc(var(--size_small)*4.5);
     /* --size_h2: 2rem; */
+    --size_h2: -webkit-calc(var(--size_h1)/2);
+    --size_h2: -moz-calc(var(--size_h1)/2);
     --size_h2: calc(var(--size_h1)/2);
     --size_h3: 2rem;
+    --size_main: -webkit-calc(20rem/16);
+    --size_main: -moz-calc(20rem/16);
     --size_main: calc(20rem/16);
+    --size_small: -webkit-calc(14rem/16);
+    --size_small: -moz-calc(14rem/16);
     --size_small: calc(14rem/16);
     --margin_vert: 0.5rem;
-    --margin_hor: 3 rem;
+    --margin_hor: 3rem;
+    --margin_p: -webkit-calc(var(--margin_vert)*2.5);
+    --margin_p: -moz-calc(var(--margin_vert)*2.5);
     --margin_p: calc(var(--margin_vert)*2.5)
 }
 
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -41,6 +53,8 @@
 /* .main_header */
 
 body>.header {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 2rem;
     padding-left: 1rem;
@@ -50,6 +64,7 @@ body>.header {
     margin: 0.5rem 4rem;
     margin-right: 4rem;
     text-align: center;
+    -webkit-background-size: 100% 100%;
     background-size: 100%;
     /* box-sizing: border-box; */
 }
@@ -112,6 +127,8 @@ main {
 
 main h2 {
     /* margin-top: 1.5rem; */
+    margin-top: -webkit-calc(var(--margin_vert)*3);
+    margin-top: -moz-calc(var(--margin_vert)*3);
     margin-top: calc(var(--margin_vert)*3);
     margin-bottom: -1rem;
     margin-left: 2rem;
@@ -229,7 +246,17 @@ Estilos de la sección ._flex
 
 
 section ._flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column
     /* align-items: stretch; */
 }
@@ -239,6 +266,12 @@ width: 100%;
 }
 @media screen and (min-width: 700px) {
      section ._flex {
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         -webkit-flex-direction: row;
+         -moz-box-orient: horizontal;
+         -moz-box-direction: normal;
+         -ms-flex-direction: row;
          flex-direction: row;
          /* align-items: stretch; */
      }
