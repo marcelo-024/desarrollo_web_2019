@@ -1,59 +1,197 @@
+/********************
+F U E N T E S 
+*************************/
 
 @font-face {
     font-family: 'archivoregular';
     src: url('../assets/fonts/archivo/archivo-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'archivobold_italic';
-    src: url('../assets/fonts/archivo/archivo-bolditalic-webfont.woff2') format('woff2');
+    src: url('../assets/fonts/archivo/archivo-italic-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'roboto_slabbold';
+    src: url('../assets/fonts/roboto-slab/robotoslab-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**********************************************************************
+V A R I A B L E S
+*******************************************************************/
+
+:root {
+    --font_main: 'archivoregular', serif;
+    --font_h: 'roboto_slabbold', sans-serif;
+    --font_italic: 'archivobold_italic', sans-serif;
+    --size_main: calc(20rem/16);
+    --size_small: calc(14rem/16);
+    --size_h1: calc(var(--size_small)*4.5);
+    --size_h2: calc(var(--size_h1)/2);
+    --size_h3: 2rem;
+    --color_font: #3d5fce;
+    --color_back: rgb(248, 248, 248);
+    --color_border: rgb(100, 149, 237);
+    --color_block: aliceblue;
+    --color_box: rgba(202, 202, 202, 0.397);
+    --margin_vert: 0.5rem;
+    --margin_hor: 4rem;
+    --margin_p: calc(var(--margin_vert)*2.5);
+    --border: solid 3px var(--color_border)
 }
 
 /************************************************************
-  
+  B O D Y
 *************************************************************/
+
 body {
+    font-family: var(--font_main);
+    /* background-image: radial-gradient(#4d95be, #ffffff); */
+}
 
-    font-family: 'archivoregular';
+/************************************************************
+  H E A D E R
+*************************************************************/
+
+.main_h {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+    background-color: var(--color_back);
+    margin: 0.5rem 4rem;
+    margin-right: 4rem;
+    
+    text-align: center;
+    background-size: 100%;
+    border: var(--border);
+    border-radius: 20rem;
+}
+
+.main_h h1 {
+    font-family: var(--font_italic);
+    font-style: italic;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+    
+    font-size: var(--size_h1);
+    color: var(--color_font);
+}
+
+.main_h p {
+    font-family: var(--font_h);
+    font-size: var(--size_h3);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
 }
 
 
+/************************************************************
+  c o n t e n t  w r a p p e r
+*************************************************************/
+.content_wrapper{
+
+    font-size: 2em;
+}
+
+
+/************************************************************
+  M A I N
+*************************************************************/
+
+main {
+
+    font-family: var(--font_main);
+    margin: var(--margin_vert) var(--margin_hor);
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    /* border: var(--border); */
+   /*  text-align: center; */
+    
+}
+
+main p {
+    display: inline-block;
+    line-height: 1em;
+    font-family: var(--font_italic);
+    /* font-size: var(--size_h3); */
+     border: var(--border);
+    padding: 1em;
+    margin: (var(--margin_p));
+    margin-top: 1em;
+
+    
+}
+main section {
+width: 85.3%;
+
+margin-left: auto;
+margin-right: auto;
+   
+  
+}
+main section p:nth-of-type(3){
+
+    margin-right: 3em;
+}
+main section + section p:nth-of-type(3){
+
+
+    margin-left: 3em;
+}
+
+
+/************************************************************
+  F O O T E R
+*************************************************************/
+
+footer {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    background-color: var(--color_back);
+    font-size: var(--size_small);
+    /* margin-right: -1rem; */
+    text-align: center;
+    color: var(--color_font);
+    font-family: var(--font_italic);
+    line-height: 1rem;
+
+    border: var(--border);
+    border-radius: 15rem;
+}
+
+footer address span.email {
+    color: var(--color_font);
+    /* margin-top: 4rem; */
+    padding-top: 1rem;
+}
 
 /************************************************************
   
 *************************************************************/
 
 
-
-
-
-
 /************************************************************
   
 *************************************************************/
 
 
-
-
-
-
-
-
 /************************************************************
   
 *************************************************************/
-
-
-
-
-
-
-
 
 
 

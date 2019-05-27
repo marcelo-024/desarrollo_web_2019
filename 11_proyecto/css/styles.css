@@ -5,19 +5,19 @@
  *********************/
 
 :root {
+    --font_h1: 'Paytone One', sans-serif;
+    --font_body: 'M PLUS Rounded 1c', sans-serif;
     --color_font: #3b5823;
     --color_back: #e1ffc8;
     --color_gradient: linear-gradient(#f2ffe8, #ffeabe);
     --color_block: aliceblue;
     --color_box: rgba(202, 202, 202, 0.397);
-    --font_h1: 'Paytone One', sans-serif;
-    --font_body: 'M PLUS Rounded 1c', sans-serif;
     /* --size_h1: 3rem; */
-    --size_h1: calc(var(--size_small)*4.5);
     /* --size_h2: 2rem; */
+    --size_main: calc(20rem/16);
+    --size_h1: calc(var(--size_small)*4.5);
     --size_h2: calc(var(--size_h1)/2);
     --size_h3: 2rem;
-    --size_main: calc(20rem/16);
     --size_small: calc(14rem/16);
     --margin_vert: 0.5rem;
     --margin_hor: 3 rem;
@@ -86,8 +86,6 @@ body {
     counter-reset: parrafos;
     line-height: 1;
 }
-
-
 
 .banda {
     display: block;
@@ -226,27 +224,26 @@ Estilos de la sección ._flex
 
 **********************************************/
 
-
-
 section ._flex {
     display: flex;
     flex-direction: column
     /* align-items: stretch; */
 }
-section ._flex article {
-width: 100%;
 
+section ._flex article {
+    width: 100%;
 }
+
 @media screen and (min-width: 700px) {
-     section ._flex {
-         flex-direction: row;
-         /* align-items: stretch; */
-     }
+    section ._flex {
+        flex-direction: row;
+        /* align-items: stretch; */
+    }
     /*  section ._flex article {
         width: 50%;
  
      } */
- }
+}
 
 /*  */
 
