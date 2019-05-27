@@ -156,7 +156,7 @@ Let nos permite ser más precisos respecto al scope.
 
 # CONSTANTES
 
-Tienen el mismo 
+Al igual que las variables LET están estrictamente relacionadas con el ámbito en que se definen.
 
 
 Al aplicar **const** sobre un objeto implica que siempre ha de ser de tipo objeto. No evita añadir o modificar propiedades.
