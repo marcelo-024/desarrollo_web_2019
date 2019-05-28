@@ -37,14 +37,15 @@ V A R I A B L E S
     --size_h2: calc(var(--size_h1)/2);
     --size_h3: 2rem;
     --color_font: #3d5fce;
-    --color_back: rgb(248, 248, 248);
+    --color_back: rgb(245, 245, 245);
     --color_border: rgb(100, 149, 237);
     --color_block: aliceblue;
     --color_box: rgba(202, 202, 202, 0.397);
     --margin_vert: 0.5rem;
     --margin_hor: 4rem;
     --margin_p: calc(var(--margin_vert)*2.5);
-    --border: solid 3px var(--color_border)
+    --border: solid 3px var(--color_border);
+   
 }
 
 /************************************************************
@@ -54,6 +55,8 @@ V A R I A B L E S
 body {
     font-family: var(--font_main);
     /* background-image: radial-gradient(#4d95be, #ffffff); */
+    padding: 0;
+    margin: 0;
 }
 
 /************************************************************
@@ -67,7 +70,6 @@ body {
     background-color: var(--color_back);
     margin: 0.5rem 4rem;
     margin-right: 4rem;
-    
     text-align: center;
     background-size: 100%;
     border: var(--border);
@@ -79,7 +81,6 @@ body {
     font-style: italic;
     margin-top: 1rem;
     padding-bottom: 3rem;
-    
     font-size: var(--size_h1);
     color: var(--color_font);
 }
@@ -89,32 +90,30 @@ body {
     font-size: var(--size_h3);
     padding-left: 1rem;
     padding-right: 1rem;
-    
 }
-
 
 /************************************************************
   c o n t e n t  w r a p p e r
 *************************************************************/
-.content_wrapper{
 
-    font-size: 2em;
+.content_wrapper {
+    font-size: 1.2em;
 }
-
 
 /************************************************************
   M A I N
 *************************************************************/
 
 main {
-
     font-family: var(--font_main);
     margin: var(--margin_vert) var(--margin_hor);
     margin-top: 1.8em;
     margin-bottom: 1em;
     /* border: var(--border); */
-   /*  text-align: center; */
-    
+    /*  text-align: center; */
+    box-shadow: 10px 1px 1px 0px rgb(218, 224, 228);
+    border: var(--border);
+
 }
 
 main p {
@@ -122,32 +121,123 @@ main p {
     line-height: 1em;
     font-family: var(--font_italic);
     /* font-size: var(--size_h3); */
-     border: var(--border);
+    border: var(--border);
     padding: 1em;
     margin: (var(--margin_p));
     margin-top: 1em;
+}
 
+main>section {
+    width: 85.3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/************************************************************
+   .space
+*************************************************************/
+
+section.space {
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    margin-top: 1rem;
+    background-color: var(--color_back);
+    padding-bottom: 0.5em;
+}
+
+section.space h2 {
+    border: var(--border);
+    border-color: var(--color_border);
+    padding: 1rem;
+    /* display: block; */
+}
+
+section.space p {
+    /* display: inline-block; */
+   /*  float: right;
+    width: 30%;
+    margin-right: 2.5%; */
+    padding: 1rem;
+    background-color: var(--color_block);
+    vertical-align: top;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+
+/************************************************************
+   .flex
+*************************************************************/
+
+section.flex {
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    margin-top: 1rem;
+    background-color: var(--color_back);
+    padding-bottom: 0.5em;
+    
     
 }
-main section {
-width: 85.3%;
 
-margin-left: auto;
-margin-right: auto;
+section.flex h2 {
+     border: var(--border);
+    border-color: var(--color_border);
+    padding: 1.3rem;
+    
+}
+
+
+
+
+
+
+section.flex .flex_wrapper p {
+    /* display: inline-block; */
    
-  
-}
-main section p:nth-of-type(3){
-
-    margin-right: 3em;
-}
-main section + section p:nth-of-type(3){
-
-
-    margin-left: 3em;
+    padding: 1rem;
+    background-color: var(--color_block);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    
 }
 
 
+
+@media screen and (min-width: 690px) {
+    section.space p {
+        float: right;
+    width: 30%;
+    margin-right: 2.5%;
+    }
+
+    section.space::after {
+        content: "";
+        display: block;
+        clear: both;
+        float: none;
+    }
+    section.space p:not(:last-of-type) {
+
+        margin-left: 0;
+    }
+
+
+    section.flex .flex_wrapper{
+
+        display: flex;
+     }
+     section.flex .flex_wrapper p  {/* width: 30%; */
+     margin-left: 2.5%;} 
+     
+     section.flex .flex_wrapper p:last-of-type {
+        margin-right: 2.5%;
+       }
+       section.flex .flex_wrapper p:not(:last-of-type){
+
+        margin-right:0;
+       }
+}
 /************************************************************
   F O O T E R
 *************************************************************/
@@ -168,7 +258,6 @@ footer {
     color: var(--color_font);
     font-family: var(--font_italic);
     line-height: 1rem;
-
     border: var(--border);
     border-radius: 15rem;
 }
@@ -183,17 +272,9 @@ footer address span.email {
   
 *************************************************************/
 
-
 /************************************************************
   
 *************************************************************/
-
-
-/************************************************************
-  
-*************************************************************/
-
-
 
 /************************************************************
   
