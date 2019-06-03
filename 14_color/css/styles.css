@@ -1,0 +1,179 @@
+/**************************************************
+FONTS
+***************************************************/
+
+@font-face {
+    font-family: 'archivoregular';
+    src: url('../assets/fonts/archivo/archivo-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'archivobold_italic';
+    src: url('../assets/fonts/archivo/archivo-italic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_slabbold';
+    src: url('../assets/fonts/roboto-slab/robotoslab-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**************************************************
+V A R I A B L E S 
+***************************************************/
+
+:root {
+    --font_main: 'archivoregular', serif;
+    --font_h: 'roboto_slabbold', sans-serif;
+    --font_italic: 'archivobold_italic', sans-serif;
+    --size_main: calc(20rem/16);
+    --size_small: calc(14rem/16);
+    --size_h1: calc(var(--size_small)*4.5);
+    --size_h2: calc(var(--size_h1)/2);
+    --size_h3: 2rem;
+    /* --color_font: #3d5fce;
+    --color_back: rgb(245, 245, 245);
+    --color_border: rgb(100, 149, 237);
+    --color_block: aliceblue;
+    --color_box: rgba(202, 202, 202, 0.397); */
+    --margin_vert: 0.5rem;
+    --margin_hor: 4rem;
+    --margin_p: calc(var(--margin_vert)*2.5);
+    --border: solid 3px var(--color_border);
+}
+
+* {
+    box-sizing: border-box;
+}
+/**************************************************
+. M A I N  H E A D E R
+***************************************************/
+
+.main_h {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+    /* background-color: var(--color_back); */
+    margin: 0.5rem 4rem;
+    margin-right: 4rem;
+    text-align: center;
+    background-size: 100%;
+    border: var(--border);
+    border-radius: 20rem;
+}
+
+.main_h h1 {
+    font-family: var(--font_italic);
+    font-style: italic;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+    font-size: var(--size_h1);
+    /* color: var(--color_font); */
+}
+
+.main_h p {
+    
+    font-family: var(--font_h);
+    font-size: var(--size_h3);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* display: none; */
+    visibility: hidden;
+}
+.main_h:hover p {
+   /*  display: initial; */
+visibility: visible;
+}
+/**************************************************
+                     BODY
+***************************************************/
+
+body {
+    font-family: var(--font_main);
+    /* background-image: radial-gradient(#4d95be, #ffffff); */
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding-top: 1rem;
+    padding-left: 1em;
+}
+
+/**************************************************
+                    MAIN        
+***************************************************/
+.main_wrapper {
+    font-size: 1.2em;
+}
+
+main {
+    font-family: var(--font_main);
+    margin: var(--margin_vert) var(--margin_hor);
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    /* border: var(--border); */
+    /*  text-align: center; */
+    /*  box-shadow: 10px 1px 1px 0px rgb(218, 224, 228); */
+    border: var(--border);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************
+                F O O T E R
+***************************************************/
+
+footer {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    background-color: var(--color_back);
+    font-size: var(--size_small);
+    /* margin-right: -1rem; */
+    text-align: center;
+    color: var(--color_font);
+    font-family: var(--font_italic);
+    line-height: 1.5rem;
+    border: var(--border);
+    border-radius: 15rem;
+}
+
+footer address a {
+    color: var(--color_font);
+    /* margin-top: 4rem; */
+    padding-top: 1rem;
+    text-decoration: underline;
+}
