@@ -1,0 +1,36 @@
+    
+body {
+    margin: 0;
+}
+header, footer {
+    background-color: brown;
+    color: bisque;
+}
+
+
+main {
+
+    min-height: 60vh;
+    background-color: bisque;
+}
+
+.column_wrapper{
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+margin: 1rem auto;
+
+
+}
+.columnas{ 
+
+
+    column-count: 5;
+   /*  column-width: 45%; */
+    column-gap: 2rem;
+    column-rule: 10px solid salmon;
+}
+
+.columnas p:nth-of-type(1){
+    margin-top: 0;
+}
