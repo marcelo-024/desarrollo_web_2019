@@ -90,3 +90,7 @@ function isEntero( n = 0) {
         }
    
    probar()
+
+
+
+   module.exports = esPar;

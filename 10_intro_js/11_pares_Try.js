@@ -121,4 +121,4 @@ try {
 console.log('x vale',x) */
 
 
-
+module.exports = esPar;
