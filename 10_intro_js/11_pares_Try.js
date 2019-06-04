@@ -41,10 +41,19 @@ function esPar(n) {
     let r = true
     if (!isValidNumber(n)) {
         // Excepción: n no es un número
-        throw 1                  //3 //antes -2
+        /* throw new Error(`El número ${n} no es un número`)    */          //3 //antes -2
+   const error = new Error(`El número ${n} no es un número`)
+   error.numero = 1
+   throw error 
     } else if (!isEntero(n)) {
         // Excepción: n no es entero
-        throw 0                  //2 //antes -1
+       /*  throw new Error(`El número ${n} no es entero`)  */                //2 //antes -1
+   const error = new Error(`El número ${n} no es entero`)
+
+   error.numero = 0
+   throw error
+   
+   
     } else if (n % 2) {
         r = false
     }
@@ -74,11 +83,12 @@ function mostrar(n) {
     try {
         
         let i = Number(esPar(n)) // return (0, 1) throw(-2 ,-1 ) 
-        output = mensajes[i]
+            output = mensajes[i]
     } catch (error) {
 
      /*  i = error  // i = -error + 1 // -1 -> 2 // -2 -> 3 */
- output = excepciones [error]
+        /* output = excepciones [error.numero] */
+        output = error.message
 
     }
     console.log(output)
@@ -86,7 +96,8 @@ function mostrar(n) {
 
 
 
-
+mostrar('pepe')
+mostrar ('2.8')
 
 
 
@@ -121,4 +132,6 @@ try {
 console.log('x vale',x) */
 
 
-module.exports = esPar;
+exports.esPar = esPar;
+exports.mostrar = mostrar;
+

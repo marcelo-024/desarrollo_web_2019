@@ -34,7 +34,7 @@ function isEntero( n = 0) {
   * @description Función que calcula si un número es par
   *     Puede devolver: -2, -1, true, false
   * @param {number}: n
-  * @returns {*}
+  * @returns { number | boolean}
   * 
   */
   function esPar(n) {
@@ -92,5 +92,6 @@ function isEntero( n = 0) {
    probar()
 
 
-
-   module.exports = esPar;
+exports.esPar = esPar;
+exports.isEntero = isEntero;
+exports.mostrar = mostrar;
