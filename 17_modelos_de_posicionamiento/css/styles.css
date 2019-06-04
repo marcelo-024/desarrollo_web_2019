@@ -1,7 +1,4 @@
 *{
-
-
-    
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -16,6 +13,9 @@ h1 {
     font-size: 3rem;
 }
 .main_header,footer {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
 
     background-color: rgb(247, 255, 223);
     color: rgb(150, 138, 149);
@@ -27,11 +27,12 @@ h1 {
 
 
 main {
+    font-family: Helvetica, sans-serif;
     width: 90%;
     margin: 1rem auto;
     min-height:30vh;
     
-
+margin-bottom: 6rem;
 }
 
 section p{
@@ -77,3 +78,29 @@ section p{
     bottom: 0;
 }
 
+.overflow {
+
+
+    height: 50vh;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+/* width */
+.overflow::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .overflow::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  .overflow::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .overflow::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
