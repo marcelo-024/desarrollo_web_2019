@@ -69,13 +69,14 @@ h1 {
     /* padding-left: 2rem; */
 }
 
+
 /**********************************
     C O N T E N T W R A P P E R
 ***********************************/
 
 .content-wrapper {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     color: rgb(202, 202, 202);
 }
 
@@ -91,9 +92,12 @@ footer {
 /********************************************
      D I S E Ñ O  R E S P O N S I V E
 ********************************************/
-
+.horizontal {
+    display: none;
+}
 
 @media screen and (min-width: 1000px) {
+
 
 
 /*************************  
@@ -108,8 +112,8 @@ li {
 nav {
     position: absolute;
  
-    top: 8%;
-    left: 28%; 
+    top: 2.8%;
+    left: 6%; 
       z-index: 30;
     /*
     
@@ -118,7 +122,7 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0;
     margin: 0;
 }
@@ -131,8 +135,8 @@ nav>ul>li {
 }
 
 nav a {
-    color: inherit;
-    text-decoration: none;
+    /* color: inherit;
+    text-decoration: none; */
     display: block; /* ////PARA PODER OTORGAR PADDING VERTICAL */
     margin: 0.25em;
     padding: 0.5em;
@@ -181,17 +185,29 @@ li ul li ul {
 
 }
 
-nav.horizontal{
 
 
-    display: none;
+
+
+@media screen and (min-width:500px){
+    .content-wrapper{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }
 
+@media screen and (min-width: 650px){
 
 
+   
 
+    nav.mobile_nav,
+    nav.burger {
 
-
+        display: none;
+    }
+    nav.horizontal{ display: block;}
+}
 /**********************************************
         F O O T E R  N A V
 **********************************************/
@@ -207,11 +223,13 @@ z-index: 40;
 
 }
 
-.mobile_nav {
+nav.mobile_nav  {
 
 border: 2px solid lavenderblush;
+background-color: thistle;
 
-
+margin-left: 2.5rem;
+margin-right: 2.5rem;
 }
 
 /* width: 50%;
@@ -228,3 +246,13 @@ max-width: 50px;
 min-width: 30px;
 
 } */
+
+
+
+
+
+/*******************************
+
+
+
+*****************************/

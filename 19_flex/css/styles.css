@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'neue';
+    src: url('../assets/fonts/helvetica-neue-5-cufonfonts-webfont/HelveticaNeue-HeavyItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din bold';
+    src: url('../assets/fonts/d-din/D-DIN-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*  */
+
+body {
+    font-family: neue;
+    background-color: rgb(114, 0, 108);
+    color: rgb(248, 248, 248);
+}
+
+h1 {
+    font-family: din bold;
+    font-size: 4rem;
+    margin-left: 1rem;
+    /* width: 100%; */
+}
+
+header {
+    background-color: rgb(207, 157, 205);
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/***********************
+_________________________
+        F L E X
+_________________________
+
+***********************/
+
+section.flex {
+    min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Convierte en principal el eje X */
+   
+    /* flex-direction: row-reverse; *//* Invierte la dirección del eje X */
+    
+    /* flex-direction: column; */ /* Convierte en principal el eje Y */
+   
+    /* flex-direction: column-reverse; *//* Invierte la dirección del eje Y */
+    
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+
+
+
+  
+    /* 
+ */
+    /* align-items: stretch;
+align-items: flex-end;
+align-items: flex-start; */
+    align-items: center;
+    /* align-items: baseline; */
+    
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: stretch;
+    align-content: space-around;
+    align-content: space-between;
+}
+
+section.flex div {
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: rgb(220, 150, 0)
+}
+
+/* section.flex div:nth-of-type(3){
+
+
+    font-size: xx-large;
+
+} */
