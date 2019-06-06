@@ -12,23 +12,29 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     font-family: din bold;
-    
 }
 
+.border {
+    border: 2px solid black;
+}
+
+/*--------------------* 
+       H E A D E R
+
+*---------------------*/
 
 header.main_header {
     position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-   
-   /* justify-content: flex-start;  
-   align-items: stretch; */
-  
 }
 
 header.main_header::after {
@@ -44,88 +50,274 @@ header.main_header::after {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 10;
-}
-.border {
-    border: 2px solid black;
-    /* width: 100%; */
-
+    z-index: 5;
 }
 
+/*--------------------* 
+    
+    S U P E R I O R
 
+*---------------------*/
 
-
-
-div.superior{
-    flex: 1 1  auto;
-background-color: rgb(252, 250, 228);
-display: flex;
-justify-content: space-between;
-
+div.superior {
+    flex: 1 1 auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    border: 1px solid black;
 }
 
-
-
-
-
-
-div.menu_wrapper {
-    /* flex:8 1  auto; */
-display: flex;
-justify-content: flex-start;
-align-items: center;
-justify-content: 
+div.superior img {
+    fill: darkorange;
+    width: 55px;
 }
 
-nav a {
-    color: inherit;
-    text-decoration: none;
+nav.main_nav {
+    display: none;
 }
 
-nav ul {
-
-    list-style-type: none;
-}
-
-nav.icon {
-     
-    font-size: 3.2rem;
-}
-
-
-
-
-
-div.logo_wrapper{
-    /* flex: 1 5  auto; */
+/* div.logo_wrapper{
+    
   display: flex;
   justify-content: center;
   align-items: center;
 
-}
-div.logo_wrapper img {
+} */
 
-    min-width: 10%;
-    max-width: 62px;
-}
+/* min-width: 5%;
+    max-width: 55px; */
 
-div.inferior{
-background-color: rgb(231, 170, 182);
-    flex: 15 1  auto;
+/* div.logo_wrapper */
 
+/*--------------------* 
+
+ D I V   I N F E R I O R
+
+*---------------------*/
+
+div.inferior {
+    z-index: 10;
+    flex: 15 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: rgb(240, 240, 227); */
+   
 }
-
-
-
-
 
 h1 {
     font-family: din bold;
     font-size: 4rem;
-    margin-left: 1rem;
+    margin: 0;
+    padding-left: 2rem;
     /* width: 100%; */
 }
 
+/*-------------------------* 
+
+
+C O N T E N T W R A P P E R
+
+*---------------------------*/
+
+.content-wrapper {
+    margin-top: 1rem;
+    margin-left: 3.5rem;
+    margin-right: 2.5rem;
+    color: rgb(202, 202, 202);
+}
+
+/*--------------------* 
+        m e n ú
+
+*---------------------*/
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    /*  padding-left: 1rem; */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav.icon {
+    font-size: 1.5rem;
+}
+
+nav.mobile_nav {
+    border: 2px solid lavenderblush;
+    background-color: thistle;
+    padding-left: 0.5rem;
+    margin: 1rem auto;
+    width: 65%;
+}
+
+nav.mobile_nav>ul>li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav.mobile_nav>ul>li>ul>li {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/*----------------------------------* 
+
+M E D I A Q U E R Y {5 0 0}  
+*------------------------------*/
+
+@media screen and (min-width:500px) {
+    .content-wrapper {
+        margin-top: 1rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        border: 2px solid blue;
+    }
+}
+
+/*----------------------------------* 
+
+M E D I A Q U E R Y {6 5 0}  
+*------------------------------*/
+
+@media screen and (min-width: 650px) {
+    nav.icon, nav.mobile_nav {
+        display: none;
+    } 
+    .content-wrapper {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        border: 5px solid green;
+    }
+   
+    nav.main_nav {
+        display: flex;
+    }
+    nav li {
+        position:relative;
+
+    }
+    nav ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(65, 105, 225, 0.164);
+        border-radius:0.5em
+    }
+    nav.main_nav>ul>li>a {
+        padding:0.5rem;
+    }
+
+    nav a {
+        display: block; 
+   
+    padding:0.3em  0.7em;
+    text-align: center;
+
+    }
+    nav.main_nav>ul>li{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    nav.main_nav>ul>li:not(:nth-of-type(4))::after {
+
+        content: '|'
+    }
+
+    
+    /*======================*
+    *                       *
+    *   S u b m e n ú s     *
+    *=======================*/
+    li ul {
+        display: none;
+        
+    }
+    
+   nav>ul> li:hover>ul {
+        display: block;
+        position: absolute;
+       padding: 0;
+        top: 2.2rem;
+        /* 
+      left: -2.5rem;; */
+     /*  background-color: rgba(65, 105, 225, 0.164); */
+        
+    }
+/*==========================* 
+*
+*   S U B M E N Ú S 
+*   s e g u n d o s
+*===========================*/
+   nav>ul>li>ul>li:hover > ul{
+
+display: initial;
+position: absolute;
+top: 0rem;
+left: 10.5rem;
+
+   }
+
+   nav>ul>li:nth-of-type(2)>ul>li:hover > ul{
+
+    display: initial;
+    position: absolute;
+    top: 0rem;
+    left: 8rem;
+   }
+
+li ul li ul {
+        position: absolute;
+     
+    }
+    
+}
+
+/*----------------------------------* 
+
+M E D I A Q U E R Y {8 0 0}  
+*------------------------------*/
+
+@media screen and (min-width: 800px) {
+    .content-wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        border: none;
+    }
+    section {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        width: 50%;
+    }
+
+    nav a {
+
+        padding:0.3em 2em;
+    }
+
+   
+}
+
+/*---------------------*
+        
+            F O O T E R
+
+        *----------------------*/
+
+footer {
+    min-height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
