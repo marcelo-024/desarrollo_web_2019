@@ -1,0 +1,104 @@
+
+@font-face {
+
+    font-family: 'neue';
+    src: url(../../20_fondos_flex/assets/fonts/helvetica-neue-5-cufonfonts-webfont/HelveticaNeue-HeavyItalic.woff)
+
+}
+
+
+body {
+color: rgb(255, 254, 219);
+    background-color: rgb(80, 80, 80);
+
+    font-family: neue;
+    kerning: 0.5rem;
+}
+
+
+section {
+
+margin-left: 4rem;
+
+}
+div {
+
+    background-color: rgb(0, 200, 150);
+color:whitesmoke;
+width: 5rem;
+height:5rem;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*=================*
+*                  *
+*     Transit      *
+*                  *
+*==================*/
+
+div.transit {
+
+
+
+
+transition-property: all;
+transition-duration: 2s;
+transition-delay: 0.5;
+transition-timing-function: cubic-bezier(.94,-0.02,.17,1.87)
+
+}
+
+p.trigger:hover + div.transit {
+
+background-color: whitesmoke;
+color:  rgb(0, 200, 150);
+
+width: 7rem;
+height: 7rem;
+}
+
+/*================*
+*                 *
+*   Transform     *
+*                 *
+*=================*/
+
+
+div.transform {
+
+
+
+
+    transition-property: all;
+    transition-duration: 0.8s;
+
+    transition-timing-function: linear
+    
+    }
+
+p.trigger_scale:hover + div.transform {
+
+transform: scale(1.15)
+
+}
+
+p.trigger_rotate:hover + div.transform {
+
+
+    transform: rotate(5deg)
+}
+
+p.trigger_skew:hover + div.transform {
+
+transform: skew(5deg,8deg)
+}
+
+p.trigger_translate:hover + div.transform {
+
+
+transform: translateX(2rem);
+
+}

@@ -109,11 +109,15 @@ div.inferior {
 }
 
 h1 {
-    font-family: din bold;
+    width: fit-content;
+    font-family: 'din bold';
     font-size: 4rem;
     margin: 0;
     padding-left: 2rem;
     /* width: 100%; */
+    font-size: 0.2rem;
+    transform: scale(80);
+    transition: all 4s linear;
 }
 
 /*-------------------------* 
@@ -221,8 +225,18 @@ M E D I A Q U E R Y {6 5 0}
    
     padding:0.3em  0.7em;
     text-align: center;
+    transition: all 0.8s ease-in;
 
     }
+
+    nav>ul a:hover, 
+nav>ul a:focus {
+color: yellow;
+border-color: whitesmoke;
+background-color: rgb(85, 125, 247)
+
+
+}
     nav.main_nav>ul>li{
         display: flex;
         flex-wrap: wrap;
@@ -247,7 +261,7 @@ M E D I A Q U E R Y {6 5 0}
         display: block;
         position: absolute;
        padding: 0;
-        top: 2.2rem;
+        top: 2.15rem;
         /* 
       left: -2.5rem;; */
      /*  background-color: rgba(65, 105, 225, 0.164); */
@@ -272,7 +286,7 @@ left: 10.5rem;
     display: initial;
     position: absolute;
     top: 0rem;
-    left: 8rem;
+    left: 8.05rem;
    }
 
 li ul li ul {
