@@ -73,7 +73,7 @@ div.transform {
 
 
     transition-property: all;
-    transition-duration: 0.8s;
+    transition-duration: 8s;
 
     transition-timing-function: linear
     
@@ -88,7 +88,9 @@ transform: scale(1.15)
 p.trigger_rotate:hover + div.transform {
 
 
-    transform: rotate(5deg)
+    transform: rotate(2880deg);
+    transform-origin: left;
+   
 }
 
 p.trigger_skew:hover + div.transform {
@@ -99,7 +101,7 @@ transform: skew(5deg,8deg)
 p.trigger_translate:hover + div.transform {
 
 
-transform: translateX(2rem);
+transform: translateX(-20rem);
 
 }
 
@@ -122,5 +124,44 @@ transform: translateX(2rem);
 .difer p:hover ~ div{
 
 background-color: green;
+
+}
+
+
+
+
+
+
+/*=================*   
+*                  *
+*     3 D          *    
+*                  *
+*                  *
+*==================*/
+
+div._3d {
+
+    background-color: bisque;
+    width: 6rem;
+    height: 3rem;
+    transition: transform 2s;
+}
+
+section._3d {
+
+perspective: 500px;
+
+}
+
+
+
+
+
+p.trigger_3d:hover + div._3d {
+
+    transform: translate3d(3rem,3rem,-5rem);
+
+   /*  transform: translateZ(-5rem); */
+
 
 }

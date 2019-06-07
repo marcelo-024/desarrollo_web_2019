@@ -19,6 +19,7 @@
 body {
     margin: 0;
     font-family: din bold;
+   
 }
 
 .border {
@@ -67,7 +68,7 @@ div.superior {
     justify-content: space-between;
     align-items: center;
     z-index: 20;
-    border: 1px solid black;
+  /*   border: 1px solid black; */
 }
 
 div.superior img {
@@ -115,9 +116,12 @@ h1 {
     margin: 0;
     padding-left: 2rem;
     /* width: 100%; */
-    font-size: 2rem;
-    /* transform: scale(80); */
-    /* transition: all 4s linear; */
+    font-size:2rem;
+    position: relative;
+    left: -40rem;
+    transform: translateX(40rem);
+   
+    transition: transform 0.8s linear;
 }
 
 /*-------------------------* 
@@ -153,14 +157,23 @@ nav.icon {
     font-size: 1.5rem;
 }
 
+
 nav.mobile_nav {
     border: 2px solid lavenderblush;
     background-color: thistle;
     padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin: 1rem auto;
     width: 65%;
-}
+    
+    transition: all 2s linear;
 
+}
+nav.mobile_nav>ul {
+
+  margin: 0;
+  padding: 0;
+}
 nav.mobile_nav>ul>li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -171,6 +184,22 @@ nav.mobile_nav>ul>li {
 nav.mobile_nav>ul>li>ul>li {
     font-size: 1rem;
     font-weight: normal;
+}
+.nav_wrapper{
+position:absolute;
+top: 6rem;
+left: -100vw;
+margin-left: 3.5vw;
+width: 90vw;
+bottom: 0;
+transition: transform 2.5s linear;
+background-color: rgb(185, 185, 185);
+
+}
+nav.icon:hover  .nav_wrapper {
+
+
+    transform:translateX(100vw) ;
 }
 
 /*----------------------------------* 
@@ -324,6 +353,60 @@ M E D I A Q U E R Y {8 0 0}
 
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====================*
+*
+*        PARALLAX
+*
+*======================*/
+
+/* .parallax_wrapper {
+
+    perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.parallax {
+
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    
+}
+
+.content_wrapper {
+
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+
+} */
+
 
 /*---------------------*
         

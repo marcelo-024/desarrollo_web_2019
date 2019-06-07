@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'neue';
+    src: url('../assets/fonts/helvetica-neue-5-cufonfonts-webfont/HelveticaNeue-HeavyItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din bold';
+    src: url('../assets/fonts/d-din/D-DIN-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*  */
+
+body {
+    font-family: neue;
+    background-color: rgb(114, 0, 108);
+    color: rgb(248, 248, 248);
+}
+
+h1 {
+    font-family: din bold;
+    font-size: 4rem;
+    margin-left: 1rem;
+    /* width: 100%; */
+}
+
+header {
+    background-color: rgb(207, 157, 205);
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/*=========================*
+_________________________
+        Grid
+_________________________
+
+*===========================*/
+
+section.grid {
+min-height: 70vh;
+display: grid;
+}
+
+section.grid div {
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: rgb(220, 150, 0)
+}
+
