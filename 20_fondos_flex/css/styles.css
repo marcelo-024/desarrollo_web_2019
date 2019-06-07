@@ -115,9 +115,9 @@ h1 {
     margin: 0;
     padding-left: 2rem;
     /* width: 100%; */
-    font-size: 0.2rem;
-    transform: scale(80);
-    transition: all 4s linear;
+    font-size: 2rem;
+    /* transform: scale(80); */
+    /* transition: all 4s linear; */
 }
 
 /*-------------------------* 
@@ -204,6 +204,7 @@ M E D I A Q U E R Y {6 5 0}
    
     nav.main_nav {
         display: flex;
+        margin-left: 0.5rem;
     }
     nav li {
         position:relative;
@@ -215,6 +216,7 @@ M E D I A Q U E R Y {6 5 0}
         margin: 0;
         background-color: rgba(65, 105, 225, 0.164);
         border-radius:0.5em
+        
     }
     nav.main_nav>ul>li>a {
         padding:0.5rem;
@@ -225,14 +227,14 @@ M E D I A Q U E R Y {6 5 0}
    
     padding:0.3em  0.7em;
     text-align: center;
-    transition: all 0.8s ease-in;
+    transition: background-color 0.8s ease-in, color 0.8s ease-in;
 
     }
 
     nav>ul a:hover, 
 nav>ul a:focus {
 color: yellow;
-border-color: whitesmoke;
+/* border-color: whitesmoke; */
 background-color: rgb(85, 125, 247)
 
 

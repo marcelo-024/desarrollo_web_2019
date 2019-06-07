@@ -102,3 +102,25 @@ p.trigger_translate:hover + div.transform {
 transform: translateX(2rem);
 
 }
+
+
+
+
+/*=================* 
+*                  *
+*      Difer       *
+*==================*/
+
+.color {
+    background-color: firebrick;
+    width: 3rem;
+    height: 4rem;
+    transition: all 2s ease-out;
+    margin-bottom: 1rem;
+}
+
+.difer p:hover ~ div{
+
+background-color: green;
+
+}
