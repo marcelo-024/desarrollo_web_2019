@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+
+.main_header {
+  background-color: blueviolet;
+  color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  margin: 2rem;
+}
+section header {
+  background-color: beige;
+  color: burlywood;
+}
+
+/*# sourceMappingURL=styles.css.map */
