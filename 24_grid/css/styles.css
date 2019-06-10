@@ -16,14 +16,14 @@
 
 body {
     font-family: neue;
-    background-color: rgb(114, 0, 108);
-    color: rgb(248, 248, 248);
+    background-color: rgb(247, 242, 246);
+    color: rgb(52, 18, 75);
 }
 
 h1 {
     font-family: din bold;
     font-size: 4rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     /* width: 100%; */
 }
 
@@ -44,14 +44,117 @@ _________________________
 *===========================*/
 
 section.grid {
-min-height: 70vh;
+/* min-height: 70vh; */
+
+margin: 0.5rem;
 display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+/* grid-template-rows:  2fr repeat(3, 1fr); */
+grid-template-rows: 2fr 2fr;
+column-gap: 1rem;
+row-gap: 0.5rem; 
+grid-auto-rows: 0.5fr;
+
+
+
 }
 
 section.grid div {
     font-size: 4rem;
     padding: 1rem;
-    margin: 0.5rem;
-    background-color: rgb(220, 150, 0)
+    /* */
+    background-color: rgb(201, 178, 130);
+    text-align: center;
 }
 
+
+section.grid div:nth-of-type(1) {
+
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2;
+
+
+
+
+}
+
+
+section.grid div:nth-of-type(2) {
+
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4
+}
+
+
+section.grid div:nth-of-type(9) {
+
+grid-column-start:1 ;
+grid-column-end:3 ;
+grid-row-start: 4 ;
+grid-row-end: 7;
+
+}
+
+section.grid div:nth-of-type(10){
+
+/*   grid-column-start:3 ;
+grid-column-end:4 ; */
+
+grid-column: 3/4;
+/* grid-row-start: 3 ;
+grid-row-end: 7; */  
+grid-row: 3/8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====================*
+*
+*   F O O T E R
+*======================*/
+
+footer {
+   background-color: rgb(207, 157, 205);
+min-height: 5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0; 
+}
