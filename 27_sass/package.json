@@ -1,0 +1,13 @@
+{
+  "name": "27_sass",
+  "version": "1.0.0",
+  "description": "Ejemplos del uso de SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm -v",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass sass/:css/ --watch --no-source-map -c"
+  },
+  "author": "Megansito el Guapo",
+  "license": "ISC"
+}

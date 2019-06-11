@@ -1,29 +1,152 @@
+/* Esto es un comentario CSS */
 
+//Esto es un comentario SASS
+//No será compilado a CSS
+
+
+
+
+/* Variables */
+
+$color_back:  rgb(250,200,250);
+$color_font:rgb(5, 146, 64);
+$margin_base: 1rem;
+
+/* Mix In */
+
+@mixin margin_reset { 
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    
+}
+
+@mixin inv_color ($oscuro:20, $claro:20) {
+
+    background-color: darken($color: $color_back, $amount: $oscuro) ;
+    color: lighten($color: $color_font, $amount: $claro);
+    
+}
 body{
  
-   
-    margin: 0;
+   margin: ($margin_base + $margin_base)/2 -$margin_base;
+   /*  margin: 0; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.25fr auto auto 1fr;
+ 
    
 } 
-    .main_header{
-            background-color: blueviolet;
-            color: beige;
+   
+/* Selectores */
+
+.main_color {
+
+    background-color: $color_back;
+    color: $color_font;
     display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+}
+
+.main_header{
+    @extend .main_color;
+             background-color: $color_back;
+             color: $color_font;
+             display: flex;
+             justify-content: left;
+             align-items: center;
+             flex-direction: row;
+             @include margin_reset();
+             /* margin-left:1rem ;
+             margin-right: 1rem;
+             margin-top: 0.5rem; */
+             
 
         
         }
             h1{
                 margin: 0;
-                }
+                padding-left: 0.5rem;
+               /*  padding-top: 2rem;
+                padding-bottom: 2rem; */
+               
+     }
 
-
-                
-    section  {
-        margin: 2rem;
-        header{ background-color: beige;
-        color: burlywood;}
+ul {
+    list-style-type: none;
+}
     
+
+main {
+
+ min-height: 60vh;
+
+}
+
+
+    section.intro  {
+         margin: 2rem;
+         
+        
+                header{ 
+
+                        @include inv_color();
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+
+                         h2{
+                             padding-left: 0.5rem;
+                         }
+                     
+                         ul{
+                            
+                            display: flex;
+                            flex-direction: column;
+                        align-items: stretch;
+                        }     
+                    }
+       
+               
+                 }
+@import './_parrafo.scss';     
+
+
+section.samples {
+
+
+    header{ 
+        @include inv_color(50,50 );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            padding-left: 0.5rem;}
+        }
+}
+
+aside {
+    margin: 2rem;
+}
+
+    .main_footer {
+        @extend .main_color;
+        
+            justify-content:center;
+            align-items:center;
+            min-height:10vh;
+            /*  background-color: $color_back;
+            color:complement($color: $color_back) ;
+            display: flex; */
+            
+        address {
+
+
+        }
     }
+
+
+.border {
+    border: 2px solid rgb(240, 160, 20)
+}

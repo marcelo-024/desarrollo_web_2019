@@ -1,26 +1,100 @@
+/* Esto es un comentario CSS */
+/* Variables */
+/* Mix In */
 body {
-  margin: 0;
+  margin: 0rem;
+  /*  margin: 0; */
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 0.25fr auto auto 1fr;
+}
+
+/* Selectores */
+.main_color, .main_footer, .main_header {
+  background-color: #fac8fa;
+  color: #059240;
+  display: flex;
 }
 
 .main_header {
-  background-color: blueviolet;
-  color: beige;
+  background-color: #fac8fa;
+  color: #059240;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-direction: row;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  /* margin-left:1rem ;
+  margin-right: 1rem;
+  margin-top: 0.5rem; */
 }
 
 h1 {
   margin: 0;
+  padding-left: 0.5rem;
+  /*  padding-top: 2rem;
+   padding-bottom: 2rem; */
 }
 
-section {
+ul {
+  list-style-type: none;
+}
+
+main {
+  min-height: 60vh;
+}
+
+section.intro {
   margin: 2rem;
 }
-section header {
-  background-color: beige;
-  color: burlywood;
+section.intro header {
+  background-color: #f26bf2;
+  color: #08f56b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.intro header h2 {
+  padding-left: 0.5rem;
+}
+section.intro header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-/*# sourceMappingURL=styles.css.map */
+p {
+  border: 3px solid chocolate;
+  border-radius: 50px;
+  padding: 2rem;
+}
+
+section.samples header {
+  background-color: #b310b3;
+  color: #9afcc3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.samples header h2 {
+  padding-left: 0.5rem;
+}
+
+aside {
+  margin: 2rem;
+}
+
+.main_footer {
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  /*  background-color: $color_back;
+  color:complement($color: $color_back) ;
+  display: flex; */
+}
+.border {
+  border: 2px solid #f0a014;
+}
