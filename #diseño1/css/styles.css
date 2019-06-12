@@ -11,8 +11,22 @@
     font-weight: normal;
     font-style: normal;
 }
+/*===============*
+*
+* R E S E T
+*
+******************/
+strong {
+
+    font-weight: normal;
+}
 
 
+/*=================* 
+*
+* BODY AND MAIN
+*
+*================*/
 body {
 
     margin: 0;
@@ -118,6 +132,12 @@ margin-bottom: 0;
     overflow: scroll;
     overflow-x: hidden;
 }
+
+div.secure section {
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 .content_wrapper p {
 
     font-size: 1.2em;
@@ -134,12 +154,21 @@ float: right;
 vertical-align: bottom;
     max-width: 100%;
 }
+.image_wrapper::after {
+clear: both;
 
+}
+div.image_wrapper:nth-of-type(2) {
+
+    width:35%;
+    float: left;
+    }
 div.image_wrapper:nth-of-type(3) {
 
 width:35%;
 float: left;
 }
+
 
 /*--------------------*
 *
