@@ -1,0 +1,15 @@
+
+$font-family-base: 'Archivo', sans-serif,;
+
+$theme-colors: (
+
+"fondo": #af87af,
+"fuente": #dcf3f3
+);
+
+.min-vh-10 {
+    min-height: 10vh;
+   
+   }
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";    
