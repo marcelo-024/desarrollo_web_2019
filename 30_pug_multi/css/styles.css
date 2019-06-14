@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main_header{
+
+    min-height: 10vh;
+    background-color:#ffde17 ;
+    color: #222222;
+    margin-bottom: 1.5rem;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+
+text-decoration: none;
+color: inherit;
+display: block;
+padding: 1rem;
+}
+
+main {
+min-height:60vh;
+
+color: #222222;
+ margin: 0;
+
+}
+
+.grid{
+    /* display: grid;
+    grid-column-gap: 2rem;
+    grid-template-rows: 1fr 0.25fr ;
+    grid-template-columns: auto auto ;
+    grid-template-areas: "uno" "dos"
+                         "form" "form" */
+
+}
+.form{
+    grid-area: form
+}
+.uno{
+
+    grid-area: uno
+}
+dos {
+    grid-area: dos
+}
+
+.main_footer{
+   
+
+    min-height: 10vh;
+    background-color:	#21409a ;
+    color: #ffde17;
+
+
+    margin-top: 1.5rem;
+}
+
+
+.form_group {
+    padding: 1rem;
+}
+
+.form_group label,
+.form_group input,
+.form_group textarea {
+
+    display: block;
+    width: 35%;
+}
+
+.form_group input,
+.form_group textarea{
+
+    border: none;
+    border-bottom: 1px solid  #be1e2d;
+}
+
+

@@ -1,0 +1,14 @@
+header.main_header#main_header
+                //- -if (page==1){
+                //-    h1= titulo
+                //-    -} else {
+                //-    h1 #{titulo} - Continuación
+                //-    -}
+                if (page == 1)    
+                    h1= titulo  
+                else
+                    h1 #{titulo} - Continuación
+                nav.main_menu
+                    ul
+                        each item in aMenu
+                            +menuSelector(item)

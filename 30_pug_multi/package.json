@@ -1,0 +1,15 @@
+{
+  "name": "30_pug_multi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug -w -P -p ./pug/partials -O ./pug/options.json ./pug/templates -o ./ ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}
