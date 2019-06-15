@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'neue medium';
+    src: url('../assets/fonts/helvetica-neue-5-cufonfonts-webfont/HelveticaNeueMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neue italic';
+    src: url('../assets/fonts/helvetica-neue-5-cufonfonts-webfont/HelveticaNeueItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+
+--blue: #21409a;
+--yellow: #ffde17;
+--red: #be1e2d;
+
+
+
+}
+*{
+
+    box-sizing: border-box;
+}
+body{
+    
+}
+
+
+
+.form_wrapper {
+
+
+    min-height: 86vh;
+
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+/*--------------------*
+*
+*        FORMULARIO
+*
+*---------------------*/
+form fieldset {
+
+    border-top: 2px solid var(--red);
+    border-bottom: 2px solid var(--yellow);
+    border-left: 2px solid var(--blue);
+    border-right: 2px solid var(--blue);
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    
+}
+form input {
+
+    display: block;
+    width: 100%;
+   margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 2rem;
+}
+.form {
+    font-family: 'neue italic';
+    font-size: 1.3rem;
+    /* grid-area: form; */
+    /* padding-right:0.5rem; */ 
+    /* display: flex; */
+    
+   
+}
+
+
+header{
+
+    height: 10vh;
+}
+
+.home {
+
+
+
+font-family: 'neue medium';
+display: flex;
+justify-content: flex-start;
+
+}
+
+.home a {
+
+
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    font-size: 3rem;
+
+    transition: color 150ms linear;
+   
+
+
+}
+
+
+
+.home a:hover {
+
+    color: rgb(119, 119, 119);
+    text-decoration: underline;
+    text-decoration-color: var(--red);
+
+}
