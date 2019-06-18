@@ -42,6 +42,7 @@ display: flex;
 
 flex-direction: row;
 min-height: 92vh;
+display:block;
 /* min-height: 40vh; */
 
 }
@@ -202,6 +203,8 @@ float: left;
     height: 0;
    
     overflow: hidden;
+   min-width: 50%;
+   min-height: 50%;
 }
 
 .embed_container iframe {
@@ -239,6 +242,22 @@ form input {
     padding-right:0.5rem; 
 }
 
+/*================* 
+*
+*MEDIA QUERY
+*
+*=================*/
+
+@media screen and (min-width:900px) {
+.main_wrapper{
+    display: flex;
+
+flex-direction: row;
+min-height: 92vh;}
+    
+}
+
+
 
 /*--------------------*
 *
@@ -256,11 +275,13 @@ footer {
     margin-bottom: 0.5rem;
     margin-left:1rem ;
     margin-right: 1rem;
+   
 }
 
 footer address div {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 0.5rem; 
+    max-width: 100%;
 }
