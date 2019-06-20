@@ -1,5 +1,5 @@
 @import "./css/form.css";
-
+@import "./var.css";
 
 @font-face {
     font-family: 'neue medium';
@@ -41,7 +41,7 @@ body {
 display: flex;
 
 flex-direction: row;
-min-height: 92vh;
+/* min-height: 91vh; */
 display:block;
 /* min-height: 40vh; */
 
@@ -54,7 +54,7 @@ footer:hover {
 }
 .main_wrapper div {
 
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 /*--------------------*
@@ -62,7 +62,7 @@ footer:hover {
 *        MENÚ
 *
 *---------------------*/
-.menu {
+div.menu {
 
    /*  font-family: din bold; */
    font-family: 'neue medium';
@@ -75,14 +75,17 @@ footer:hover {
 /* flex: 8 0 auto; */
 }
 
-.menu nav {
+/* .menu nav {
     
 padding: 1rem;
 margin-right: 3rem;
 margin-top: 3rem;
 
 
-}
+} */
+.menu nav {
+        
+    margin-top: 2rem;padding: 1rem;  margin-right: 2rem; }
 
 .menu ul {
    
@@ -140,12 +143,12 @@ margin-bottom: 0;
     flex-direction: column;
    
 }
-
 div.secure section {
 
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 
 div.secure section::after{
 
@@ -155,9 +158,11 @@ div.secure section::after{
     width: 100%;
     margin: 0.5rem 0.5rem;
 }
-.content_wrapper .secure blockquote {
+.content_wrapper .secure blockquote, .content_wrapper .secure p {
 
     font-size: 1.2em;
+    padding-top:0.5rem ;
+    padding-bottom:0.5rem ;
     margin: 0;
 
 }
@@ -172,6 +177,7 @@ float: right;
 
 vertical-align: bottom;
     max-width: 100%;
+    min-width: 150px;
 }
 .image_wrapper::after {
 clear: both;
@@ -181,12 +187,18 @@ div.image_wrapper:nth-of-type(2) {
 
     width:45%;
     float: left;
+    
     }
 div.image_wrapper:nth-of-type(3) {
 
 width:45%;
 float: left;
+
 }
+.cultura div.image_wrapper:nth-last-of-type(){
+    float: left;
+}
+
 /*--------------------*
 *
 *        IFRAME
@@ -205,6 +217,8 @@ float: left;
     overflow: hidden;
    min-width: 50%;
    min-height: 50%;
+   max-width: 100%;
+   max-height: 100%
 }
 
 .embed_container iframe {
@@ -222,6 +236,71 @@ float: left;
     border: 0;
    
    }
+
+/*==================*
+*
+*   V I D E O
+*
+*===================*/
+
+video {
+
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+
+/*================*
+*
+*
+*   T A B L A 
+*
+* 
+*=================*/
+.table_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-top: 5px solid var(--blue);
+    border-bottom: 5px solid var(--blue);
+    border-left: 2px solid var(--red);
+    border-right: 2px solid var(--yellow);
+  
+    
+}
+ 
+  td, th{
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
+   /*  margin-right: 1.5rem; */
+  }
+th {
+    text-align: initial;
+}
+tr:nth-of-type(1) th:nth-of-type(1){
+
+    text-align: center;
+}
+
+tr td:nth-of-type(2), th + td{
+
+    text-align: start;
+    
+}
+  
+tr:nth-of-type(1) {
+    
+    border-bottom: 3px solid var(--blue);
+    padding-right: 0;
+    
+  }
+
 /*--------------------*
 *
 *        FORMULARIO
@@ -248,17 +327,60 @@ form input {
 *
 *=================*/
 
-@media screen and (min-width:900px) {
-.main_wrapper{
-    display: flex;
 
-flex-direction: row;
-min-height: 92vh;}
+
+
+ @media screen and (min-width:900px) {
+    .main_wrapper{
+        display: flex;
     
-}
+    flex-direction: row;
+    min-height: 90.5vh;}
 
+    
 
+    div.secure section {
 
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    address {
+
+        padding-left: 3rem;
+    }
+    } 
+    
+    @media screen and (min-width:400px){
+    
+        div div.menu nav {
+            
+       margin-top: 0.5rem;
+       margin-right: 1rem;
+       padding-top: 0.5rem; 
+       padding-bottom: 0.5rem; 
+        }
+      
+     
+        }
+    @media screen and (min-width:200px){
+
+        .menu {
+    
+            font-size: 2.5rem;
+            
+    
+        }
+        .menu nav{
+    
+            margin: 0;
+        }
+        address {
+
+            padding-left: 0;
+        }
+       }
+        
+      
 /*--------------------*
 *
 *        FOOTER
@@ -267,7 +389,7 @@ min-height: 92vh;}
 
 footer {
     display: flex;
-    font-family: 'neue italic';
+    font-family: neue italic;
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
@@ -278,10 +400,18 @@ footer {
    
 }
 
+
 footer address div {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0.5rem; 
+    justify-content: space-around;
+    padding: 0.5rem;
     max-width: 100%;
+}
+
+footer address>div div,
+footer address>div a {
+
+
+    padding-left: 1rem;
 }
