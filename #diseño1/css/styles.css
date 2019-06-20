@@ -23,7 +23,10 @@ strong {
 
     font-weight: normal;
 }
-
+ ul {
+     margin: 0;
+     padding: 0;
+ }
 
 /*=================* 
 *
@@ -41,8 +44,9 @@ body {
 display: flex;
 
 flex-direction: row;
-/* min-height: 91vh; */
-display:block;
+
+min-height: 90.5vh;
+
 /* min-height: 40vh; */
 
 }
@@ -50,7 +54,7 @@ display:block;
 .main_wrapper>div:nth-of-type(1),
 footer:hover {
 
-    border: 2px solid blue;
+    border: 2px solid var(--blue);
 }
 .main_wrapper div {
 
@@ -67,12 +71,13 @@ div.menu {
    /*  font-family: din bold; */
    font-family: 'neue medium';
     font-size: 4rem;
-    /* display: flex;
+   /*  display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center; */
     margin: 1rem;
     
-/* flex: 8 0 auto; */
+flex: 4 0 auto;
 }
 
 /* .menu nav {
@@ -84,21 +89,29 @@ margin-top: 3rem;
 
 } */
 .menu nav {
+        display: flex;
         
-    margin-top: 2rem;padding: 1rem;  margin-right: 2rem; }
+        justify-content: center;
+        align-items: center;
+   /*  margin-top: 2rem; */
+    padding: 1rem; 
+  /*   margin-right: 2rem; */ }
 
 .menu ul {
    
-margin-top: 0;
+margin-top: 8rem;
 margin-bottom: 0;
-    list-style-type: none;
+list-style-type: none;
 }
 
 .menu a {
-
+   
     color: inherit;
     text-decoration: none;
     transition: color 200ms linear;
+}
+.menu ul li {
+    padding-bottom: 1rem;
 }
 .menu a:hover {
 
@@ -127,7 +140,7 @@ margin-bottom: 0;
     
    
 
-   /*  flex: 1 0 auto; */
+    flex: 0 1 auto;
 }
 
 
@@ -135,8 +148,8 @@ margin-bottom: 0;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     height: 60vh;
-    margin-left: 2rem;
-    margin-right: 2rem; 
+    margin-left: 1rem;
+    margin-right: 1rem; 
     overflow: scroll;
     overflow-x: hidden;
     display: flex;
@@ -178,7 +191,7 @@ border: 2px solid var(--red);
 
 vertical-align: bottom;
     max-width: 100%;
-    min-width: 150px;
+    min-width: 130px;
 }
 .image_wrapper::after {
 clear: both;
@@ -216,7 +229,7 @@ float: left;
     height: 0;
    
     overflow: hidden;
-   min-width: 50%;
+   min-width: 30%;
    min-height: 50%;
    max-width: 100%;
    max-height: 100%;
@@ -333,11 +346,11 @@ form input {
 
 
 
- @media screen and (min-width:900px) {
+ @media screen and (max-width:1200px) {
     .main_wrapper{
-        display: flex;
-    
-    flex-direction: row;
+        display: block;
+        
+        
     min-height: 90.5vh;}
 
     
@@ -351,9 +364,28 @@ form input {
 
         padding-left: 3rem;
     }
+
+    div div.menu nav {
+            
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+        padding-top: 0.5rem; 
+        padding-bottom: 0.5rem; 
+         }
+         .menu ul {
+   
+            margin-top: 0;
+            
+            }
     } 
     
-    @media screen and (min-width:400px){
+    @media screen and (max-width:900px){
+
+        .main_wrapper{
+            display: block;
+            
+            
+        min-height: 90.5vh;}
     
         div div.menu nav {
             
@@ -362,16 +394,21 @@ form input {
        padding-top: 0.5rem; 
        padding-bottom: 0.5rem; 
         }
-      
-     
-        }
-    @media screen and (min-width:200px){
-
         .menu {
     
             font-size: 2.5rem;
             
     
+        }
+        .menu {
+    
+            font-size: 1.8rem;
+           
+    
+        }
+        .content_wrapper{
+            margin-top: 2rem;
+            margin: auto;
         }
         .menu nav{
     
@@ -381,7 +418,46 @@ form input {
 
             padding-left: 0;
         }
-       }
+
+        .menu ul {
+   
+            margin-top: 0;
+            
+            }
+        }
+        @media screen and (max-width:550px) {
+
+            div.menu{
+                font-size: 2.5rem;
+            }
+
+        }
+   /*  @media screen and (min-width:200px){
+
+        .menu {
+    
+            font-size: 1.8rem;
+           
+    
+        }
+        .content_wrapper{
+            margin-top: 2rem;
+        }
+        .menu nav{
+    
+            margin: 0;
+        }
+        address {
+
+            padding-left: 0;
+        }
+
+        .menu ul {
+   
+            margin-top: 0;
+            
+            }
+       } */
         
       
 /*--------------------*

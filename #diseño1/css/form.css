@@ -1,3 +1,6 @@
+@import "./var.css";
+
+
 @font-face {
     font-family: 'neue medium';
     src: url('../assets/fonts/helvetica-neue-5-cufonfonts-webfont/HelveticaNeueMedium.woff') format('woff');
@@ -52,7 +55,7 @@ form fieldset {
     padding-bottom: 2rem;
     
 }
-form input {
+form input, .form select {
 
     display: block;
     width: 100%;
@@ -70,8 +73,24 @@ form input {
     
    
 }
+.radio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 0.8rem;
+}
+.radio input{
+    display: inline-block;
+    width: 5%;
+    margin: 0;
+    font-size: 0.5rem;
+    padding-left: 2rem;
+    border: 0;
+}
 
 
+/* BACK HOME */
 header{
 
     height: 10vh;
