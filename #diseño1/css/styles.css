@@ -171,6 +171,7 @@ div.secure section::after{
 
 width: 45%;
 float: right;
+border: 2px solid var(--red);
 }
 
 .image_wrapper img {
@@ -218,7 +219,8 @@ float: left;
    min-width: 50%;
    min-height: 50%;
    max-width: 100%;
-   max-height: 100%
+   max-height: 100%;
+   border: 2px solid var(--yellow)
 }
 
 .embed_container iframe {
@@ -246,7 +248,8 @@ float: left;
 video {
 
     max-width: 100%;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--yellow);
 }
 
 
