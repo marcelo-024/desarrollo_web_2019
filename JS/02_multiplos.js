@@ -1,6 +1,6 @@
 //Ejemplo de ITERACIÓN combinada con CONDICIÓN
 
-let limite = 10
+/* let limite = 10
 let acumulador = 0
 let maximo = 100 
 let counter = 0
@@ -11,13 +11,17 @@ for (let i = 0; i < limite;i++) //i++ === i=i+1
         break
     }
     
-    acumulador += + (i*i)
+    acumulador +=  (i*i)
 }
    
 console.log(acumulador,counter)
+ */
 
+/*==============* 
+*
+* EXTRAER LOS MÚLTIPLOS DE N DE UN ARRAY
 
-
+*===============*/
 /* let aDatos = [0,1,2,3,4,5,6,7,8,9,10]
 
 n% 3 == 0
@@ -46,38 +50,17 @@ for (let i = 0; i < h.length; i++) {
  */
 
  function isMultiplo (m=0,n=0) {
+    if(isNaN(m) || isNaN(n)) {
+        throw new Error('Parametros no numericos')
+    }
     let r = true
 
-    if (n%m){   // n%m !=0
+    if (m%n){   // m%n !=0
         r = false
         
     }
     return r
  }
-
-
- //espectativas
- console.log('isMultiplo(2,20) debe dar TRUE')
- //isMultiplo (2,20) -->TRUE
-isMultiplo(2,20)
-console.log(isMultiplo(2,20))
- //espectativas
- console.log('isMultiplo(2,21) debe dar FALSE')
- //isMultiplo(2,21)
- //isMultiplo(2,21) -->FALSE
- console.log(isMultiplo(2,21))
-  //espectativas
-  console.log('isMultiplo(3,20) debe dar FALSE')
-  //isMultiplo (3,20) -->FALSE
- isMultiplo(3,20)
- console.log(isMultiplo(3,20))
-  //espectativas
-  console.log('isMultiplo(3,21) debe dar TRUE')
-  //isMultiplo(3,21)
-  //isMultiplo(3,21) -->TRUE
-  console.log(isMultiplo(3,21))
-
-
 
   /**
    * @function extraer()
@@ -91,6 +74,36 @@ console.log(isMultiplo(2,20))
 
    function extraerMultiplos(n, aDatos) {
         let r = []
-        
+        for (let i = 0; i < aDatos.length; i++) {
+            const item = aDatos[i];
+            if (isMultiplo(item, n)) {
+                // r[r.length] = item
+                r.push(item)
+            }
+        }    
         return r
    }
+
+
+   /** funcion mostrarMultiplos
+ * @description Muestra un array con los multiplos de n
+ * @param {number} n 
+ * @param {Array} aDatos 
+ * @returns {void}
+ */
+function mostrarMultiplos(n, aDatos) {
+    console.clear()
+    console.log(`Los multiplos de ${n}`)
+    console.log(`en el array ${aDatos} son:`)
+    console.log(extraerMultiplos(n, aDatos))
+}
+
+
+module.exports = {};
+module.exports.isMultiplo = isMultiplo
+module.exports.extraerMultiplos = extraerMultiplos
+
+{
+    let misDatos = [1,2,3,4,5,6,7,8,9]
+    mostrarMultiplos(2, misDatos)
+}
