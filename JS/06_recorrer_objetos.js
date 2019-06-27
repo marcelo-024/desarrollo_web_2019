@@ -54,6 +54,6 @@ let p1 = {  name: 'Juan' ,
             isAlumno: true,
             gender: 'male'}
 
-cadena = objectToString(p1)
+ cadena = objectToString(p1)
 
 console.log(cadena)

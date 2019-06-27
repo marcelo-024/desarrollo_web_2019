@@ -19,7 +19,7 @@ Datos
             -RegExp
             -Math
             -JSON
-            9-Function
+            -Function
             
 */
 
