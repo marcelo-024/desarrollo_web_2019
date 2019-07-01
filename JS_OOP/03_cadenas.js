@@ -23,6 +23,35 @@ for (let i = 0; i < cadena.length; i++) {
 let x = cadena.split(' ').join('//').toUpperCase()
 console.log(x)
 
+/* cadena.slice()
+cadena.substr()
+cadena.substring()
+
+
+cadena.match()
+cadena.search()
+cadena.replace()
+
+cadena.indexOf(clave)
+cadena.lastIndexOf(clave)
+
+cadena.charAt(posicion)
+cadena.charCodeAt(posicion)
+
+String.fromCharCode(num) */
+
+
+
+
+
+let numero = 23.64984658
+
+console.log(numero)
+
+console.log(numero.toString())
+console.log(numero.toFixed(2))
+console.log(numero.toPrecision(4))
+console.log(numero.toExponential())
 
 
 
