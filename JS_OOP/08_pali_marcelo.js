@@ -13,20 +13,21 @@ function isPal(pal='') {
    aB.reverse()
    console.log(aA)
    console.log(aB)
-   if (aA === aB) {
+   /* if (aA === aB) {
        return true
    } else 
-   {return false}
-   
+   {return false} */
+   return aA.toString() === aB.toString()
 } 
 
 
 function isPal2 (pal= '') {
 
     let aPal = pal.split('')
-    let aLap = aPal.reverse()
+    let aLap = aPal.slice()
+    aLap.reverse()
 
-    if (aLap === aPal) {
+    if (aLap.toString() === aPal.toString() ) {
         console.log('WIN')
     }
 }
@@ -34,7 +35,7 @@ function isPal2 (pal= '') {
 
 console.log(isPal('calor'))
 console.log(isPal('otto'))
-
+console.log(isPal('La tele letal'))
 
  isPal2('otto')
  isPal2('calor')
