@@ -4,7 +4,8 @@
  * @param {string} pal
  * 
  * 
- * @return boolean
+ * @returns {boolean}
+ * 
  */
 
 function isPal(pal='') {
