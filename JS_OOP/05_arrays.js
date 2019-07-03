@@ -3,9 +3,9 @@ let ob = {}//new Object()
 //Los arrays son objetos que guardan datos de manera indexada
 let aDatos = [2, 8, 6, 4,] // new Array() //Esta forma no se utiliza, preferimos generar objetos de manera LITERAL
 
-aDatos[aDatos.length] = 87  //Accede a la primera posicion vacia
-aDatos[aDatos.length] = [5,65]
-
+//aDatos[aDatos.length] = 87  //Accede a la primera posicion vacia
+//aDatos[aDatos.length] = [5,65]
+aDatos.push(87,56,5)
 aDatos[101] = 9
 
 /* console.log(aDatos, aDatos[80]) */

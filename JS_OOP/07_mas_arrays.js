@@ -18,6 +18,47 @@
     console.log(aNumbersOg.reverse())
     aNumbers.push(5)
     console.log(aNumbers)
-    aNumbers.
 
+
+    //fraccionar Arrays: 
+    //1.De forma INMUTABLE 
+    let aNombres = ['Luisa','Rafa','Jesús','Laura','Enrique']
+    console.log(aNombres.slice(1,3))
+    console.log(aNombres)
+    //2.De forma MUTABLE
+    console.log(aNombres)
+    let eliminados = aNombres.splice(1,3,'Pedro','Ernesto')//clona la seccion elegida en la variable eliminados y sustituye estas posiciones por los nombres especificados como parametros
+
+    console.log(aNombres)
+    console.log(eliminados)
+    //SPLICE PARA AÑADIR
+
+let paises = ['francia','italia','alemania','austria']
+
+paises.splice(2,0,'Estonia')
+
+console.log(paises)
+
+//Pilas y Colas
+
+//PILA -> stack FILO(First In Last Out)
+//Para generar este proceso existen 2 métodos (PUSH y POP)
+
+paises.push('Portugal','Brasil')
+paises.pop()
+console.log(paises)
+
+
+//COLA -> heap FIFO (First In First Out)
+//Para generar este proceso existen 2 métodos (UNSHIFT y SHIFT)
+paises.unshift('croacia')
+//paises.shift()
+console.log(paises)
 }
+
+
+
+
+
+
+
