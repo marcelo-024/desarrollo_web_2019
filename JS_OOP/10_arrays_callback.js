@@ -37,10 +37,10 @@ console.log(aUsuarios.map(item => item.toUpperCase()))  //HACER FUNCION DE CAPIT
 return aDatos.filter(item => !(item%2))
 
 } */
-const pares = aDatos => aDatos.filter(item=> item*item) //version condensada de la funcion anterior
+const pares = aDatos => aDatos.filter(item=> !(item%2)) //version condensada de la funcion anterior
 pares(aDatos)
 console.log(pares(aDatos))
-
+console.log('--------------')
 
 //.reduce REDUCIR UN ARRAY
 
