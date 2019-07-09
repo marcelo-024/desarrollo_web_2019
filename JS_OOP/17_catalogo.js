@@ -17,13 +17,13 @@ Libro.prototype.calcularIVA = function () {
 }
 
 Libro.prototype.mostrar = function () {
-    const importe = this.calcularIVA()
+    const {iva,total} = this.calcularIVA()
     const cadena = `
     Descripción: ${this.description}
     Código: ${this.code}
     Precio: ${this.price}
-    IVA: ${importe.iva}
-    Precio Total: ${importe.total}`
+    IVA: ${iva}
+    Precio Total: ${total}`
     console.log(cadena)
 }
 
