@@ -1,79 +1,62 @@
-//4 fotmas de ejecutar una función
-//patrones de invocación
-//cambian el significado de this
+// 4 formas de ejecutar un funcion
+// patrone de invocación
+// cambian el significado de this
 
-function algo() {
+function algo () {
     console.log(this)
 }
 
-//Función
+// Funcion
 
-algo() //this es process () o window(Browser)
+algo() // this es global (Node) o window (Browser)
 
-//Método
+// Método
+const o = { nombre: 'Pepe', edad: 23}
+o.algo = algo  
 
-const o = {nombre:'Pepe', edad:23}
+o.algo() // this es el objeto al que pertenece el metodo
 
-o.saludar = function () {
+// Constructora
 
-    console.log(this.algo)
-}
-o.algo = algo
+const nuevo = new algo() // this es el nuevo objeto construido
 
-o.algo()
-o.saludar()
-
-//Constructora // this es el nuevo objeto construido
-
-const nuevo = new algo();
-
-
-//Indirectamente  ()
+// Indirectamente (apply o call)
 
 const otro = {
     tipo: 'perro',
     nombre: 'Rufo'
 }
 
-//algo.call()
-algo.apply(otro) //this el objeto que "toma prestada" la funcion 
+// algo.call()
+algo.apply(otro) // this el objeto que "toma prestada" la función
 
 
+console.log('------------------------------')
 
-
-
-
-console.log('--------------------------------')
-
-
-const persona = {nombre:'Pepe'}
-
-persona.saludar = function () {
+const persona = {nombre: 'Pepe'}
+persona.saludar = function() {
     console.log(`Hola soy ${this.nombre}`)
-
-
-    
 }
-
 persona.saludar()
-//global.setTimeout(persona.saludar , 1000)
-//global.setTimeout(persona.saludar.bind(persona),2000)
+setTimeout(persona.saludar, 1000)
+setTimeout(persona.saludar.bind(persona), 2000)
 
+console.log('------------------------------')
 
-console.log('--------------------------------')
+// En las funciones arrow this es consistente:
+// SIEMPRE es la propia funcion
 
-persona.saludarArrow = ()  => //En las funciones arrow this es consistente: 
-//SIEMPRE ES LA PROPIA FUNCION
+persona.saludarArrow = () => {
     console.log(`Hola soy ${this.nombre}`)
-
-
-    
-
+}
 
 persona.saludarArrow()
 
-algoArrow = () => { console.log(this)}
+algoArrow =  () => {
+    console.log(this)
+}
 
 algoArrow()
-global.setTimeout(persona.saludarArrow , 1000)
-global.setTimeout(algoArrow,2000)
+
+setTimeout(persona.saludarArrow, 1000)
+setTimeout(algoArrow, 2000)
