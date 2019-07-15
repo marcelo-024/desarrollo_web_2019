@@ -29,5 +29,6 @@
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.15.0"
-  }
+  },
+  "devDependencies": {}
 }
