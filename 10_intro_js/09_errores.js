@@ -96,3 +96,5 @@ e = 5 */
  probar()
 
 
+module.exports = {}
+module.exports.isValidNumber = isValidNumber
