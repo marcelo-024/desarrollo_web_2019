@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web JS</title>
+
+    <link rel="image/x-icon" href="../icono.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <header class="main_header">
+        <h1>JavaScript en la Web</h1>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h2>Elementos de la Web desde JS</h2>
+            </header>
+            <ul>
+                <li>Eventos</li>
+                <li>Document Object Model (DOM)</li>
+                <ul>
+                    <li>Botones</li>
+                    <li>Inputs</li>
+                </ul>
+            </ul>
+        </section>
+        <section>
+            <header>
+                <h2>Ejemplo</h2>
+            </header>
+
+            <div class="container">
+                <div class="btn">
+                    <button id="btn_normie" class="btn">Saludar</button>
+                </div>
+                <div>
+                    <button id="btn_super" class=" btn btn_super">Haz click, si te atreves...</button>
+                </div>
+            </div>
+            <div class="inputContainer">
+                <label for="inName">Introduce tus datos</label>
+                <input type="text" name="name" id="inName">
+            </div>
+            <div class="outContainer">
+                <output id="out1">
+
+                </output>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>Double Binding</h2>
+            </header>
+            <div class="inputContainer"> 
+                    <label for="inName2">Introduce tus datos</label>
+                    <input type="text" name="name" id="inName2">
+            </div>
+            <div class="outContainer">
+                    <output id="out2" class="out2">
+                        
+                    </output>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <address>Marcelo Maderuelo Sacido</address>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
