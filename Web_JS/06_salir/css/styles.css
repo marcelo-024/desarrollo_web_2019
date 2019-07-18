@@ -1,0 +1,65 @@
+:root {
+
+    --main_color: #2e2e2e;
+    --back_color:  #4cb1c0;
+}
+
+/*  */
+
+main {
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+body {
+   
+    
+    font-family:  'Lucida Sans Unicode';
+    color: var(--main_color)
+}
+/*  */
+
+
+dialog {
+    border: 10px solid var(--back_color) ;
+    border-radius: 20%;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+dialog div {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/*  */
+
+
+/*  */
+header {
+    margin:0;
+    background-color: var(--back_color);
+    font-style: italic;
+}
+
+
+
+
+
+
+/*  */
+footer {
+   
+    display: flex;
+    justify-content: center;
+}
