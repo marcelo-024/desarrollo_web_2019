@@ -1,41 +1,43 @@
-console.log('Hola, estoy aquí')
-/* console.dir('Buscando nodos')
-console.error('Esto es un error')
-console.info('Dame datos')
-console.table(['Hey esto ser tabla','Esto tambien','Esto tambien']) */
+export function app() {
+    console.log('Cargada app')
+    console.log(document)
+    console.dir(document)
+
+    // Nodos del DOM
+    const btnNormal = document.querySelector('#btn-normal')
+    const btnSuper = document.querySelector('#btn-super')
+    const inNombre = document.querySelector('#in-nombre')
+    const outSaludo = document.querySelector('#out-saludo')
+
+    const inNombre2 = document.querySelector('#in-nombre2')
+    const outSaludo2 = document.querySelector('#out-saludo2')
 
 
+    /* Otra opción seria
+    const nodos = {
+        btnNormal : document.querySelector('#btn-normal'),
+        btnSuper : document.querySelector('#btn-super'),
+        inNombre : document.querySelector('#in-nombre'),
+        outSaludo : document.querySelector('#out-saludo')    
+    } */
 
+    // Manejadores de eventos
+    btnNormal.addEventListener('click', saludar)
+    btnSuper.addEventListener('click', protestar)
 
-//Nodos del DOM
-const nodos = { 
+    inNombre2.addEventListener('input', escribirContinuo)
 
-    btnSuper : document.querySelector('#btn_super'),
-    btnNormal : document.querySelector('#btn_normie'),
-    inName : document.querySelector('#inName'),
-    out1 : document.querySelector('#out1'),
-    inName2 : document.querySelector('#inName2'),
-    out2 : document.querySelector('#out2'),
-}
+    function saludar() {
+        outSaludo.textContent =
+            `Hola ${inNombre.value}`
+    }
 
+    function protestar() {
+        outSaludo.value = 
+            'Te he dicho que no tocaras'
+    }
 
-//Manejadores de eventos
-nodos.btnSuper.addEventListener('click',protesta)
-nodos.btnNormal.addEventListener('click',saludar)
-inName2.addEventListener('input', escribirContinuo)
-//btnSuper.onclick = protesta
-//btnNormal.onclick = saludar
-
-//Funciones
-function saludar  ()  {
-    nodos.out1.textContent = `Hola ${nodos.inName.value}.`
-  
-}
-function protesta()  {
-nodos.out1.value = `Ay! No vuelvas a tocarme ${nodos.inName.value}.`
-}
-
-function escribirContinuo () {
-
-    nodos.out2.value = nodos.inName2.value
+    function escribirContinuo() {
+        outSaludo2.value = inNombre2.value
+    }
 }

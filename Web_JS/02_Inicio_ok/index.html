@@ -1,77 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web JS</title>
-
-    <link rel="image/x-icon" href="../icono.ico">
+    <title>JS en la Web</title>
     <link rel="stylesheet" href="./css/styles.css">
-
+    <link rel="stylesheet" href="../icono.ico">
+    <script src="./js/bootstrap.js" type="module"></script>
 </head>
-
 <body>
-    <header class="main_header">
-        <h1>JavaScript en la Web</h1>
+    <header>
+        <h1>JS en la Web</h1>
     </header>
     <main>
         <section>
-            <header>
-                <h2>Elementos de la Web desde JS</h2>
-            </header>
+            <h2>Elementos de la Wed desde JS</h2>
+            <p>Los más importantes son</p>
             <ul>
                 <li>Eventos</li>
-                <li>Document Object Model (DOM)</li>
-                <ul>
-                    <li>Botones</li>
-                    <li>Inputs</li>
-                </ul>
+                <li>Document Object Model (DOM)
+                    <ul>
+                        <li>botones</li>
+                        <li>inputs</li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <section>
-            <header>
-                <h2>Ejemplo</h2>
-            </header>
-
+            <h2>Ejemplo</h2>        
             <div class="container">
-                <div class="btn">
-                    <button id="btn_normie" class="btn">Saludar</button>
+                <div>
+                    <button id="btn-normal" class="btn">Saludar</button>
                 </div>
                 <div>
-                    <button id="btn_super" class=" btn btn_super">Haz click, si te atreves...</button>
+                    <div id="btn-super" class='btn btn-super'>No tocar</div>
                 </div>
             </div>
-            <div class="inputContainer">
-                <label for="inName">Introduce tus datos</label>
-                <input type="text" name="name" id="inName">
+            <div>
+                <label for="in-nombre">Tu nombre</label>
+                <input type="text" name="nombre" id="in-nombre">
             </div>
-            <div class="outContainer">
-                <output id="out1">
-
-                </output>
+            <div class="output">
+                <output id='out-saludo'></output>
             </div>
         </section>
         <section>
-            <header>
-                <h2>Double Binding</h2>
-            </header>
-            <div class="inputContainer"> 
-                    <label for="inName2">Introduce tus datos</label>
-                    <input type="text" name="name" id="inName2">
+            <h2>Data binding</h2>
+            <div class="container">
+                <label for="in-nombre2">Tu nombre</label>
+                <input type="text" name="nombre" id="in-nombre2">                
             </div>
-            <div class="outContainer">
-                    <output id="out2" class="out2">
-                        
-                    </output>
-                </div>
+            <div class="output">
+                <p>Hola <output id='out-saludo2'></output></p>
+                
+            </div>
         </section>
     </main>
     <footer>
-        <address>Marcelo Maderuelo Sacido</address>
+        <address>
+            Alejandro Cerezo
+        </address>
     </footer>
-    <script src="./js/app.js"></script>
 </body>
-
 </html>
