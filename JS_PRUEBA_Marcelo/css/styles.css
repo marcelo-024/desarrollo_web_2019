@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+body{}
+
+
+
+main{
+    
+    background-color: burlywood;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    display: inline-block;
+    margin-top: 3rem;
+    width: 5rem;
+    /* border: 20px solid thistle;
+    background-color: thistle; */
+}
+.btn:hover {
+    cursor: pointer;
+}
