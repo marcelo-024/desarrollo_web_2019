@@ -14,7 +14,8 @@ console.table(['Hey esto ser tabla','Esto tambien','Esto tambien']) */
     let btnCancel= document.querySelector('#cancel') 
     let diaCancel = document.querySelector('#diaCancel')
     let counter = document.querySelector('#counter')
-    let handler 
+    let handler
+    let interHandler 
 
 
     btnLeave.addEventListener('click', onClick)
@@ -28,7 +29,7 @@ console.table(['Hey esto ser tabla','Esto tambien','Esto tambien']) */
             location.assign(url)
             },5000)
             let i = 6
-        setInterval(()=> {
+        interHandler = setInterval(()=> {
             counter.textContent = --i
             },1000)
 
@@ -42,6 +43,7 @@ console.table(['Hey esto ser tabla','Esto tambien','Esto tambien']) */
     function onCancel(){
 
         clearTimeout(handler)
+        clearInterval(interHandler)
         diaCancel.close()
     }
 }
