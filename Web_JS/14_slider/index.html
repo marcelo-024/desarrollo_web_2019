@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/bootstrap.js" type="module"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Javascript en la Web</h1>
+    </header>
+    <main>
+        <form name="full-post" method="POST" action="https://jsonplaceholder.typicode.com/users">
+            <fieldset id="personal_data">
+                <legend>Datos Personales</legend>
+
+                <label for="userName" class="f_label">NAME</label> <input id="userName" class="f_control formData"
+                    type="text" name="userName" placeholder="USUARIO" minlength="3" maxlength="36">
+                <label for="userPass" class="f_label">PASS (at least 1 upper case character, 1 lower
+                    case character, 1 numerical character and 1 special character)</label>
+                <input lang="es" id="userPass" class="f_control formData" type="password" name="userPass"
+                    placeholder="CONTRASEÑA" required>
+                <label for="email" class="f_label">MAIL</label>
+                <input id="email" class="f_control formData" type="email" name="email"
+                    placeholder="Escribe una dirección de correo válida" value="" required>
+                <!--  -->
+                <label for="cv" class="f_label"></label>
+                <input type="text" name="cv" id="cv" class="f_control formData"
+                    placeholder="Selecciona o indica tu formación" list="cv_opt">
+                <datalist id="cv_opt">
+                    <option>Graduado</option>
+                    <option>Licenciado</option>
+                    <option>Doctor</option>
+                </datalist>
+                <label for="birthDate" class="f_label">Fecha de nacimiento</label>
+                <input type="date" name="birthDate" id="birthDate" class="f_control formData">
+                <label for="info" class="f_label">Información extra</label>
+                <textarea class="f_control formData" name="info" id="info" rows="6" placeholder="+ info"></textarea>
+            </fieldset>
+            <fieldset id="conditions" class="cond_">
+                <legend>Condiciones</legend>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam numquam debitis nemo neque
+                    blanditiis ullam rerum at voluptas asperiores iure repudiandae architecto sint ducimus fuga
+                    quaerat, eum, quasi dolore nisi.</p>
+                <input type="checkbox" name="isOk" id="isOk" required>
+                <label for="isOk">Vale loco, no me canses xfi</label>
+            </fieldset>
+            <fieldset id="course_data" class="course_data">
+                <legend>Datos del Curso</legend>
+                <label for="curso" class="f_label">Curso</label>
+                <select name="curso" id="curso" class="f_control " multiple size="8" required>
+                    <optgroup label="Front Programming">
+                        <option value="">Elige los cursos que prefieras</option>
+                        <option value="html01">HTML5</option>
+                        <!-- SIN VALUE EL VALOR REGISTRADO ES EL DEL CONTENIDO -->
+                        <option value="CSS02">CSS3</option>
+                        <!-- -->
+                        <option value="js03">JavaScript</option>
+                    </optgroup>
+                    <optgroup label="Back Programming">
+                        <option value="node04">Node JS</option>
+                        <option value="php05">PHP</option>
+                        <option value="c#06">C#</option>
+                    </optgroup>
+
+                </select>
+                <label class="f_label">Elige tu ciudad de preferencia</label>
+                <div class="radio_wrapper">
+                    <input type="radio" name="sitio" id="madrid01" value="madrid01" required>
+                    <label for="madrid01">Madrid</label>
+                    <input type="radio" name="sitio" id="bcn02" value="bcn02">
+                    <label for="bcn02">Barcelona</label>
+                    <input type="radio" name="sitio" id="sev03" value="sev03">
+                    <label for="sev03">Sevilla</label>
+                </div>
+            </fieldset>
+            <button type="submit">Enviar <i class="far fa-paper-plane"></i></button>
+
+            <button id="reset" type="reset">Borrar <i class="fas fa-trash-alt"></i></button>
+            
+
+        </form>
+        <dialog id="confirm" class>
+                <h3>¿Deseas enviar tus datos?</h3>
+                <ul></ul>
+                <div class="btns-conf">
+                    <button>Si</button>
+                    <button>No</button></div>
+
+            </dialog>
+    </main>
+</body>
+
+</html>
