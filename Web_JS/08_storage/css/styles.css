@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Cambria, serif;
+    margin: 0rem 1rem;
+
+}
+header {
+    display:flex;
+    justify-content: center;
+}
+
+
+main {
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.btn {
+    font-family: monospace;
+    background-color: rgb(165, 189, 189);
+    padding: 0.2rem;
+    display: inline;
+    border-radius: 16%;
+    
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+
+output {
+    color: chartreuse;
+    margin-left: 1rem;
+    padding: 1rem 3rem;
+    background-color: rgb(80, 85, 83)
+}
+
+
+
+
+footer {
+    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+}
