@@ -22,7 +22,7 @@ export function app() {
         userName: 'Nombre de Usuario',
         userPasswd: 'Contraseña',
         email: 'Correo electrónico',
-        dni: 'DNI'
+        dni: 'DNI',
         cv: 'Formación',
         birthDate: 'Fecha de nacimiento',
         info: 'Más información',

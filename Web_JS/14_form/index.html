@@ -21,7 +21,7 @@
                 <legend>Datos Personales</legend>
 
                 <label for="userName" class="f_label">NAME</label> <input id="userName" class="f_control formData"
-                    type="text" name="userName" placeholder="USUARIO" minlength="3" maxlength="36">
+                    type="text" name="userName" placeholder="USUARIO" minlength="3" maxlength="36" required>
                 <label for="userPass" class="f_label">PASS (at least 1 upper case character, 1 lower
                     case character, 1 numerical character and 1 special character)</label>
                 <input lang="es" id="userPass" class="f_control formData" type="password" name="userPass"
@@ -32,7 +32,7 @@
                 <!--  -->
                 <div>
                    <label for="dni"  class="f_label">DNI</label>
-                <input id="dni" class="f_control formData" type="dni" name="dni" placeholder="Escribe tu DNI, incluyendo la letra" required> 
+                <input id="dni" class="f_control formData" type="dni" name="dni" placeholder="Escribe tu DNI, incluyendo la letra" maxlength="9" required> 
                 </div>
                 
                 <label for="cv" class="f_label">Formación</label>
@@ -85,7 +85,7 @@
                     <label for="sev03">Sevilla</label>
                 </div>
             </fieldset>
-            <button type="submit">Enviar <i class="far fa-paper-plane"></i></button>
+            <button id="submit" type="submit">Enviar <i class="far fa-paper-plane"></i></button>
 
             <button id="reset" type="reset">Borrar <i class="fas fa-trash-alt"></i></button>
             

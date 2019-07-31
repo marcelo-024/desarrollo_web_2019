@@ -1,3 +1,5 @@
+import {checkDNI} from "./helper.js"
+
 export function validacion() {
 
     let userName = document.querySelector('#userName')
@@ -21,16 +23,26 @@ export function validacionFinal(nodos) {
     console.dir(nodos)
     let r = false
     nodos.some(nodo => {
-        if( !nodo.checkValidity()) {
-            nodo.parentNode.nextElementSibling.innerHTML = 
-                nodo.validationMessage
-            nodo.parentNode.nextElementSibling.hidden = false
-            r = false  
-            return true  
-        } else {
-            r = true
-            nodo.parentNode.nextElementSibling.hidden = true
+        if(nodo.name === 'dni'){
+
+            nodo.setCustomValidity('')
+        if (!nodo.value &&(checkDNI(nodo.value)) ) {
+            
+         nodo.setCustomValidity('Letra Incorrecta')
+                
+              } 
         }
+        
+        if( !nodo.checkValidity()) {
+        nodo.parentNode.nextElementSibling.innerHTML = 
+            nodo.validationMessage
+        nodo.parentNode.nextElementSibling.hidden = false
+        r = false  
+        return true  
+    } else {
+        r = true
+        nodo.parentNode.nextElementSibling.hidden = true
+    }
     });
 
     return r

@@ -1,3 +1,5 @@
+import {checkDNI} from "./helper.js"
+
 export function app() {
     console.log('Cargada app') 
 
@@ -12,6 +14,7 @@ export function app() {
 
  
     let btnReset = document.querySelector('#reset')
+    let btnSubmit = document.querySelector('#submit')
 
     let oDatos = {
         userName: '',
@@ -41,14 +44,17 @@ export function app() {
       }
       
     // Definir manejadores
+
+    btnSubmit.addEventListener('click',onClickSubmit)
     form.addEventListener('submit', onSubmit)
     btnReset.addEventListener('click',onReset)
+    
     aBtns.forEach(btn => btn.addEventListener('click', onDlg));
 
 
     //CUSTOM VALIDATION
     
-    aFormData[3].setCustomValidity('Letra Incorrecta')
+    
 
     // Funciones manejadoras de eventos
     function onSubmit(ev) {
@@ -64,6 +70,17 @@ export function app() {
         //aRadioSitio.
         oDatos.sitio = getRadio(aRadioSitio)
         renderModal()
+        
+    }
+
+    function onClickSubmit() {
+        aFormData[3].setCustomValidity('')
+        if (!aFormData[3].value &&(checkDNI(aFormData[3].value)) ) {
+            
+         aFormData[3].setCustomValidity('Letra Incorrecta')
+                
+              } 
+      
         
     }
 
