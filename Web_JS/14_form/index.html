@@ -30,7 +30,12 @@
                 <input id="email" class="f_control formData" type="email" name="email"
                     placeholder="Escribe una dirección de correo válida" value="" required>
                 <!--  -->
-                <label for="cv" class="f_label"></label>
+                <div>
+                   <label for="dni"  class="f_label">DNI</label>
+                <input id="dni" class="f_control formData" type="dni" name="dni" placeholder="Escribe tu DNI, incluyendo la letra" required> 
+                </div>
+                
+                <label for="cv" class="f_label">Formación</label>
                 <input type="text" name="cv" id="cv" class="f_control formData"
                     placeholder="Selecciona o indica tu formación" list="cv_opt">
                 <datalist id="cv_opt">

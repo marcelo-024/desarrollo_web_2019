@@ -17,18 +17,21 @@ export function app() {
         userName: '',
         userPass: '',
         email: '',
+        dni: '',
         cv: '',
         birthDate: '',
         info: '',
         isOk: '',
         curso: '',
-        sitio: ''
+        sitio: '',
+        
       
       }
       let oDatosPretty = {
         userName: 'Nombre de usuario',
         userPass: 'Contraseña',
         email: 'E-Mail',
+        dni: 'D.N.I.',
         cv: 'Formación',
         birthDate: 'Fecha de nacimiento',
         info: 'Información extra',
@@ -43,7 +46,9 @@ export function app() {
     aBtns.forEach(btn => btn.addEventListener('click', onDlg));
 
 
-
+    //CUSTOM VALIDATION
+    
+    aFormData[3].setCustomValidity('Letra Incorrecta')
 
     // Funciones manejadoras de eventos
     function onSubmit(ev) {
