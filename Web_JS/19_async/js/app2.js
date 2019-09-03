@@ -48,19 +48,30 @@ export function app() {
 
   function stateChange(http) {
   
-    if (http.readyState == 4 && http.status == 200) {
-      let data = JSON.parse(http.responseText)
-      console.log('datos',data)
-     out_01.innerHTML = `Hola ${data.username}`
-    } else {
-      out_01.innerHTML = 'Disculpa, no encontramos los datos que pides'
+/*     if ( && ) {
+      
+    } else if (http.readyState == 4) {
+      
       } 
       //out_01.innerHTML = 'Disculpa, tenemos un problema interno'
       
+     */
+    if (http.readyState == 4) {
+
+        if (http.status == 200) {
+        let data = JSON.parse(http.responseText)
+        console.log('datos',data)
+        out_01.innerHTML = `Hola ${data.username}`
+    } else {
+      //out_01.innerHTML = 'Disculpa, no encontramos los datos que pides'
+      location.assign('./error.html')
     }
+    }
+  
 
 
-  }
+}
+
 
   function ajax(metodo, url, callback) {
     const http = new XMLHttpRequest() //window.XMLHttpRequest
@@ -73,5 +84,5 @@ export function app() {
 
   // Función del evento readystatechange
 
+  }
 
-}
