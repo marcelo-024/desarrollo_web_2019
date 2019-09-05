@@ -1,34 +1,9 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Juan",
-      "age": "45"
-    },
-    {
-      "id": 2,
-      "name": "Pepa",
-      "age": "50"
-    },
-    {
-      "id": 3,
-      "name": "Julia",
-      "age": "25"
-    },
-    {
-      "name": "u",
-      "age": "1",
-      "id": 4
-    },
-    {
-      "name": "juan",
-      "age": "52",
-      "id": 5
-    },
-    {
-      "name": "juan",
-      "age": "52",
-      "id": 6
+      "nombre": "juana",
+      "edad": "20",
+      "id": 1
     }
   ],
   "posts": [
