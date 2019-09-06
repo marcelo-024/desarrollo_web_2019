@@ -10,9 +10,7 @@
        <script src="./js/bootstrap.js" type="module"></script>
 </head>
 <body>
-    <header>
-        <h1>JS en la Web</h1>
-    </header>
+    
     <main>
        <div class="container">
            <select name="continents" id="continents"> 
@@ -23,16 +21,18 @@
                <option value="Europe">Europa</option>
                <option value="Oceania">Oceanía</option>  
            </select>
-           <select name="countries" id="countries" ></select>
+           <select name="countries" id="countries" hidden></select>
           
+       </div>
+       <div class="window">
+           <div id="showL" class="showL"></div>
+           <div id="show" class="show">
+              
+           </div>
        </div>
     </main>
   
-    <footer>
-        <address>
-            Alejandro Cerezo
-        </address>
-    </footer> 
+  
     
 
 </body>
