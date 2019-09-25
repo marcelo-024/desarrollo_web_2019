@@ -1,14 +1,14 @@
 body {
 
-    font-family: Verdana;
+    font-family: Helvetica;
     margin: 0;
-    background-color: antiquewhite
+    background-color: rgb(255, 174, 67)
 }
 
 header {
-    background-color: #EC7357;
+    background-color: rgb(255, 175, 157);
     color: white;
-    font-family: 'Righteous', cursive;
+   
     padding: 0.8rem 0rem 0.5rem 2rem;
     text-align: center;
 }
