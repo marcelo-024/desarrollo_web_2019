@@ -1,0 +1,38 @@
+body {
+
+    font-family: Verdana;
+    margin: 0;
+    background-color: antiquewhite
+}
+
+header {
+    background-color: #EC7357;
+    color: white;
+    font-family: 'Righteous', cursive;
+    padding: 0.8rem 0rem 0.5rem 2rem;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.33rem;
+    }
+
+    main {
+
+        margin: 1rem
+    }
+
+footer {
+
+        font-family: calibri;
+        background-color: #6A2E35;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+  a{
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+      }
